@@ -1,0 +1,602 @@
+﻿PersonnelNumber,UserID,Lastname,Firstname,OChartDesc,Manager,ManagerFullName,BaseCity,EMail
+1302433,I302433,Bu,Limin,CN IVE – Auto,1347693,Zhang Chao,Shanghai -Wheelock,ARAGON.BU@SAP.COM
+1361940,I503546,Jiang,Hong,CN IVE – Auto,1302433,Bu Limin,Shanghai -Wheelock,CATHERINE.JIANG@SAP.COM
+1375284,I521470,Li,Aolei,CN IVE – Auto,1302433,Bu Limin,Shanghai -Wheelock,RAYMOND.LI02@SAP.COM
+1016869,I016869,Dai,Lili,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shanghai -Wheelock,JO.DAI@SAP.COM
+1367090,I508334,Ding,Yufeng,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shenzhen,ERIC.DING@SAP.COM
+1367194,I508480,Huang,Wei,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shanghai -Wheelock,VIVIAN.HUANG01@SAP.COM
+1355698,I355698,Liu,Kan,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shanghai -Wheelock,kan.liu02@sap.com
+1317217,I317217,Ren,Yingxi,CN Presales - GB Solution,1052907,Zhang Xuxiang,Chengdu,ROSEMARY.REN@SAP.COM
+1377264,I524313,Wang,Xiaodong,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shanghai -Wheelock,DAVID.WANG13@SAP.COM
+1366926,I508109,Wang,Yaxing,CN Presales - GB Solution,1052907,Zhang Xuxiang,Beijing-World Profit Center,ARTHUR.WANG01@SAP.COM
+1362064,I503723,Wu,Jie,CN Presales - GB Solution,1052907,Zhang Xuxiang,Beijing-World Profit Center,JIE.WU02@SAP.COM
+1305837,I305837,Xu,Xuechen,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shanghai -Wheelock,ECHO.XU@SAP.COM
+1344465,I344465,Yu,Shaohua,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shenzhen,ALLAN.YU@SAP.COM
+1355462,I355462,Zhang,Dingbang,CN Presales - GB Solution,1052907,Zhang Xuxiang,Shanghai -Wheelock,KIMSON.ZHANG@SAP.COM
+1374224,I520428,Zhang,Taiping,CN Presales - GB Solution,1052907,Zhang Xuxiang,Beijing-World Profit Center,taiping.zhang@SAP.COM
+1069640,I069640,Kwok,Golan,CN IVE,1347693,Zhang Chao,Shanghai -Wheelock,GOLAN.KWOK@SAP.COM
+1347693,I347693,Zhang,Chao,CN IVE,1030178,Li Xudong,Beijing-World Profit Center,TODD.ZHANG@SAP.COM
+1076759,I076759,Chai,Hai,CN Presales-Consumer Industry,1311027,Miao Wencheng,Chengdu,HAI.CHAI@SAP.COM
+1067436,I524379,Deng,Yunyun,CN Presales-Consumer Industry,1311027,Miao Wencheng,Guangzhou,janelle.deng@sap.com
+1074275,I074275,Ding,Yanwen,CN Presales-Consumer Industry,1311027,Miao Wencheng,Beijing-Haidian,johnson.ding@sap.com
+1360249,I502064,Jiang,Hu,CN Presales-Consumer Industry,1311027,Miao Wencheng,Beijing-World Profit Center,HU.JIANG04@SAP.COM
+1353640,I353640,Li,Yimin,CN Presales-Consumer Industry,1311027,Miao Wencheng,Guangzhou,ANDY.LI02@SAP.COM
+1041705,I041705,Lin,Tao,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,TELLER.LIN@SAP.COM
+1311027,I311027,Miao,Wencheng,CN Presales-Consumer Industry,1034535,Yao Fa,Shanghai -Wheelock,ALLEN.MIAO@SAP.COM
+1068181,I068181,Qi,Yuyao,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,YUYAO.QI@SAP.COM
+1059049,I059049,Ren,Bin,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,B.REN@SAP.COM
+1073836,I073836,Weng,Biqing,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,FORREST.WENG@SAP.COM
+1046218,I046218,Xu,Zhigang,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,STEVEN.XU@SAP.COM
+1345442,I345442,Yan,Jiyao,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,MICHAEL.YAN01@SAP.COM
+1070686,I070686,Yao,Weidong,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,B.YAO@SAP.COM
+1047871,I047871,Zhang,Chong,CN Presales-Consumer Industry,1311027,Miao Wencheng,Beijing-Haidian,chong.zhang@sap.com
+1074978,I074978,Zhang,Yuan,CN Presales-Consumer Industry,1311027,Miao Wencheng,Beijing-World Profit Center,YUAN.ZHANG01@SAP.COM
+1055455,I055455,Zheng,Yiqiong,CN Presales-Consumer Industry,1311027,Miao Wencheng,Shanghai -Wheelock,JANE.ZHENG@SAP.COM
+1046220,I046220,Zhu,Li,CN Presales-Consumer Industry,1311027,Miao Wencheng,Guangzhou,J.ZHU@SAP.COM
+1374645,I521071,Ba,Yun,CN IVE - ENR,1073000,Xu Meng,Shenzhen,BELINDA.BA@SAP.COM
+1030092,I030092,Cai,Wenrui,CN IVE - ENR,1073000,Xu Meng,Shanghai -Wheelock,RAY.CAI@SAP.COM
+1033634,I033634,Pu,Lixin,CN IVE - ENR,1073000,Xu Meng,Shanghai -Wheelock,LIXIN.PU@SAP.COM
+1310829,I310829,Sun,Fujie,CN IVE - ENR,1073000,Xu Meng,Beijing-World Profit Center,FUJIE.SUN@SAP.COM
+1374726,I521189,Wang,Hao,CN IVE - ENR,1073000,Xu Meng,Shanghai -Wheelock,ANTHONY.WANG01@SAP.COM
+1330726,I330726,Wang,Liming,CN IVE - ENR,1073000,Xu Meng,Beijing-World Profit Center,LIMING.WANG01@SAP.COM
+1324708,I324708,Wong,Chee On,CN IVE - ENR,1073000,Xu Meng,Beijing-World Profit Center,CHEE.ON.WONG@SAP.COM
+1073000,I073000,Xu,Meng,CN IVE - ENR,1347693,Zhang Chao,Beijing-World Profit Center,MENG.XU@SAP.COM
+1350863,I350863,He,Xiaodong,CN IVE - Service,1074614,Yu Shuqi,Beijing-World Profit Center,WESLEY.HE@SAP.COM
+1076300,I076300,Hu,Peng,CN IVE - Service,1074614,Yu Shuqi,Shenzhen,PETER.HU@SAP.COM
+1321909,I321909,Shen,Heling,CN IVE - Service,1074614,Yu Shuqi,Shanghai -Wheelock,HELING.SHEN@SAP.COM
+1370351,I515398,Wang,Yang,CN IVE - Service,1074614,Yu Shuqi,Beijing-World Profit Center,YANG.WANG12@SAP.COM
+1355715,I355715,Wu,Jun Hong,CN IVE - Service,1074614,Yu Shuqi,Shanghai -Wheelock,stanley.wu@sap.com
+1074614,I074614,Yu,Shuqi,CN IVE - Service,1347693,Zhang Chao,Shenzhen,RICKY.YU@SAP.COM
+1376043,I522264,Zeng,Weiguo,CN IVE - Service,1074614,Yu Shuqi,Shanghai -Wheelock,SAM.ZENG@SAP.COM
+1374602,I520995,Fang,Hao,CN IVE - Consumer,1347693,Zhang Chao,Beijing-World Profit Center,hans.fang01@SAP.COM
+1346556,I346556,Feng,Hui,CN IVE - Consumer,1347693,Zhang Chao,Guangzhou,HOVER.FENG@SAP.COM
+1369986,I514817,Luo,Siwei,CN IVE - Consumer,1347693,Zhang Chao,Chengdu,SIWEI.LUO@SAP.COM
+1325293,I325293,Sun,Hao,CN IVE - Consumer,1347693,Zhang Chao,Shanghai -Wheelock,HAO.SUN@SAP.COM
+1308820,I308820,Wu,Zhandong,CN IVE - Consumer,1347693,Zhang Chao,Beijing-World Profit Center,TED.WU@SAP.COM
+1337740,I337740,Yang,Lei,CN IVE - Consumer,1347693,Zhang Chao,Beijing-World Profit Center,RAYMOND.YANG@SAP.COM
+1017235,I017235,Yu,Desheng,CN IVE - Consumer,1347693,Zhang Chao,Shanghai -Wheelock,DAVID.YU01@SAP.COM
+1367270,I508594,Chen,Long,CN Presales - Service Industry,1034367,Feng Yu,Beijing-World Profit Center,LEO.CHEN03@SAP.COM
+1034367,I034367,Feng,Yu,CN Presales - Service Industry,1034535,Yao Fa,Beijing-World Profit Center,JASON.FENG@SAP.COM
+1068177,I068177,Fu,Xiaohui,CN Presales - Service Industry,1034367,Feng Yu,Shanghai -Wheelock,XIAOHUI.FU@SAP.COM
+1377393,I529526,Heng,Ping,CN Presales - Service Industry,1034367,Feng Yu,Shanghai -Wheelock,PING.HENG@SAP.COM
+1061420,I061420,Hong,Yuan,CN Presales - Service Industry,1034367,Feng Yu,Shanghai -Wheelock,AARON.HONG@SAP.COM
+1031415,I031415,Hu,Chunyan,CN Presales - Service Industry,1034367,Feng Yu,Beijing-World Profit Center,EUNICE.HU@SAP.COM
+1062702,I062702,Song,Yiping,CN Presales - Service Industry,1034367,Feng Yu,Beijing-World Profit Center,PETER.SONG@SAP.COM
+1075714,I075714,Wang,Pan,CN Presales - Service Industry,1034367,Feng Yu,Beijing-Haidian,pan.wang04@SAP.COM
+1072654,I072654,Wang,Shengyan,CN Presales - Service Industry,1034367,Feng Yu,Shanghai -Wheelock,CLAIRE.WANG01@SAP.COM
+1377508,I529740,Xu,Siqing,CN Presales - Service Industry,1034367,Feng Yu,Shanghai -Wheelock,CECILIA.XU@SAP.COM
+1373691,I519691,Yang,Qingzhao,CN Presales - Service Industry,1034367,Feng Yu,Shanghai -Wheelock,KINGZ.YANG@SAP.COM
+1357701,I500942,Yu,Changjiang,CN Presales - Service Industry,1034367,Feng Yu,Beijing-World Profit Center,CHANGJIANG.YU@SAP.COM
+1310944,I310944,Zhang,Weiwen,CN Presales - Service Industry,1034367,Feng Yu,Beijing-World Profit Center,KEVIN.ZHANG03@SAP.COM
+1026926,I026926,Zhang,Xiaoli,CN Presales - Service Industry,1034367,Feng Yu,Beijing-Haidian,XIAOLI.ZHANG@SAP.COM
+1353726,I353726,Zhong,Bin,CN Presales - Service Industry,1034367,Feng Yu,Beijing-World Profit Center,BIN.ZHONG@SAP.COM
+1048506,I048506,Gan,Huafeng,CN Presales - Product - DSCM,1059432,Li Guoyu,Shanghai -Wheelock,FENNY.GAN@SAP.COM
+1371126,I516687,Huang,Weilong,CN Presales - Product - DSCM,1059432,Li Guoyu,Shenzhen,bill.huang@sap.com
+1059432,I059432,Li,Guoyu,CN Presales - Product - DSCM,1034535,Yao Fa,Guangzhou,GUO.LI@SAP.COM
+1059340,I059340,Li,XiaoJun,CN Presales - Product - DSCM,1059432,Li Guoyu,Beijing-Haidian,LEVY.LI@SAP.COM
+1310867,I310867,Luo,Hao,CN Presales - Product - DSCM,1059432,Li Guoyu,Guangzhou,MICHAEL.LUO@SAP.COM
+1042950,I042950,Song,Ke,CN Presales - Product - DSCM,1059432,Li Guoyu,Shanghai -Wheelock,CA.SONG@SAP.COM
+1317232,I317232,Sun,Chengdan,CN Presales - Product - DSCM,1059432,Li Guoyu,Beijing-World Profit Center,BENNETT.SUN@SAP.COM
+1369065,I513376,Wang,Linhua,CN Presales - Product - DSCM,1059432,Li Guoyu,Shenzhen,STEVEN.WANG04@SAP.COM
+1022634,I022634,Xiao,Wei,CN Presales - Product - DSCM,1059432,Li Guoyu,Beijing-World Profit Center,WEI.XIAO@SAP.COM
+1068379,I068379,Xiong,Jie,CN Presales - Product - DSCM,1059432,Li Guoyu,Shanghai -Wheelock,EDWARD.XIONG@SAP.COM
+1066327,I066327,Yan,Shiyin,CN Presales - Product - DSCM,1059432,Li Guoyu,Shanghai -Wheelock,ROC.YAN@SAP.COM
+1341334,I341334,Ai,Xinghai,CN Presales - Discrete Industry,1034535,Yao Fa,Beijing-World Profit Center,ERIC.AI@SAP.COM
+1302575,I302575,Deng,Bin,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,BIN.DENG@SAP.COM
+1360907,I502869,Feng,Xiao Bo,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,BRYAN.FENG@SAP.COM
+1073098,I073098,Fu,Fan,CN Presales - Discrete Industry,1034535,Yao Fa,Beijing-World Profit Center,FAN.FU@SAP.COM
+1045350,I045350,Geng,Xuefeng,CN Presales - Discrete Industry,1034535,Yao Fa,Guangzhou,XUEFENG.GENG@SAP.COM
+1053046,I053046,Li,Yongfei,CN Presales - Discrete Industry,1034535,Yao Fa,Beijing-World Profit Center,YONGFEI.LI@SAP.COM
+1343164,I343164,Li,Zhiguo,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,GARY.LI01@SAP.COM
+1074617,I074617,Liu,Shan,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,DANIEL.LIU01@SAP.COM
+1302614,I302614,Lv,Dongkui,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,JACKSON.LV@SAP.COM
+1007092,I007092,Sha,Yi,CN Presales - Discrete Industry,1034535,Yao Fa,Beijing-World Profit Center,YI.SHA@SAP.COM
+1353013,I353013,Sun,Chen,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,BARRY.SUN@SAP.COM
+1062669,I062669,Tan,Hong-liang,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,HONG-LIANG.TAN@SAP.COM
+1070942,I070942,Yan,Shaohua,CN Presales - Discrete Industry,1034535,Yao Fa,Beijing-World Profit Center,DANNY.YAN@SAP.COM
+1372957,I518789,Zheng,Chun,CN Presales - Discrete Industry,1034535,Yao Fa,Shanghai -Wheelock,ALEX.ZHENG01@SAP.COM
+1077290,I062776,Che,Jie,CN Presales - Strategy & Ops,1062719,Guo Bao-qun,Beijing-World Profit Center,JIE.CHE@SAP.COM
+1062719,I062719,Guo,Bao-qun,CN Presales - Strategy & Ops,1034535,Yao Fa,Beijing-World Profit Center,BAO-QUN.GUO@SAP.COM
+1375143,I521358,Jia,Guangchang,CN Presales - Strategy & Ops,1062719,Guo Bao-qun,Beijing-World Profit Center,E.JIA@SAP.COM
+1378739,I531913,Jin,Jindi,GFO-Sales-CN-SF-GB North,1367433,Zhao Guangpeng,Shanghai -Wheelock,CARA.JIN@SAP.COM
+1373036,I518883,Peng,Hao,GFO-Sales-CN-SF-GB North,1367433,Zhao Guangpeng,Beijing-World Profit Center,HERMAN.PENG@SAP.COM
+1355484,I355484,Qian,Yi,GFO-Sales-CN-SF-GB North,1367433,Zhao Guangpeng,Beijing-World Profit Center,ethan.qian@sap.com
+1368236,I511655,Zhang,Bo,GFO-Sales-CN-SF-GB North,1367433,Zhao Guangpeng,Beijing-World Profit Center,ALBERT.ZHANG01@SAP.COM
+1367433,I508868,Zhao,Guangpeng,GFO-Sales-CN-SF-GB North,1070910,Zhou Jinhua,Beijing-World Profit Center,COOPER.ZHAO@SAP.COM
+1316730,I316730,Chen,Hongting,CN Sales,1025355,Li Qiang,Shanghai -Wheelock,TINA.CHEN01@SAP.COM
+1030308,I030308,Geng,Jianfeng,CN Sales,1025355,Li Qiang,Shanghai -Wheelock,JIANFENG.GENG@SAP.COM
+1025355,I025355,Li,Qiang,CN Sales,1047894,Gibbs Mark,Shanghai -Wheelock,SAM.LI@SAP.COM
+1311318,I311318,Mu,Ying,CN Sales,1025355,Li Qiang,Beijing-World Profit Center,Y.MU@SAP.COM
+1308815,I308815,Yao,Yizhao,CN Sales-Consumers,1025355,Li Qiang,Shanghai -Wheelock,YIZHAO.YAO@SAP.COM
+1355093,I355093,Li,Xiaocheng,CN Sales-SCP SOE-CNTC,1338233,Shi Mei,Shanghai -Wheelock,XIAOCHENG.LI@SAP.COM
+1071806,I071806,Yang,Ming,CN Sales-SCP SOE-CNTC,1338233,Shi Mei,Shanghai -Wheelock,MING.YANG@SAP.COM
+1340626,I340626,Zhang,Jiashi,CN Sales-SCP SOE-CNTC,1338233,Shi Mei,Beijing-World Profit Center,CALEN.ZHANG@SAP.COM
+1349783,I349783,Dai,Tengjing,CN Sales-Consumers-Fashion,1045601,Wei Li,Guangzhou,RAYMOND.DAI@SAP.COM
+1045601,I045601,Li,Wei,CN Sales-Consumers-Fashion,1308815,Yao Yizhao,Guangzhou,wei04.li@sap.com
+1040774,I040774,Li,Xin,CN Sales-Consumers-Fashion,1045601,Wei Li,Guangzhou,XIN.LI04@SAP.COM
+1374721,I521178,Lin,Xiang,CN Sales-Consumers-Fashion,1045601,Wei Li,Shanghai -Wheelock,ALLEN.LIN02@SAP.COM
+1069647,I069647,Wang,Xiushan,CN Sales-Consumers-Fashion,1045601,Wei Li,Shanghai -Wheelock,CHRIS.WANG01@SAP.COM
+1321907,I321907,Gu,Wei,CN Sales-Services,1025355,Li Qiang,Shanghai -Wheelock,WILLIAM.GU@SAP.COM
+1052823,I052823,Cao,Naigang,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Shanghai -Wheelock,NAIGANG.CAO@SAP.COM
+1367818,I509405,Huang,Jun,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Beijing-World Profit Center,FRANK.HUANG03@SAP.COM
+1361797,I503356,Shen,Chongju,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Shanghai -Wheelock,JANE.SHEN@SAP.COM
+1066815,I066815,Song,Fang,CN Sales-ENR-Mining & Building Material,1066141,Wang Qian,Beijing-World Profit Center,FANG.SONG@SAP.COM
+1067967,I067967,Wang,Xin,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Beijing-World Profit Center,XIN.WANG01@SAP.COM
+1306980,I306980,Wang,Xuyang,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Beijing-World Profit Center,XUYANG.WANG@SAP.COM
+1317214,I317214,Wu,Fan,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Beijing-World Profit Center,FAN.WU@SAP.COM
+1310186,I310186,Xing,Zhiqiang,CN Sales-ENR-Mining & Building Material,1066815,Song Fang,Beijing-World Profit Center,FRANK.XING@SAP.COM
+1340170,I340170,Chen,Yang,CN Sales-Services-Public Services,1312239,Ouyang Yiqing,Guangzhou,YANG.CHEN02@SAP.COM
+1354950,I354950,Li,YingZhi,CN Sales-Services-Public Services,1312239,Ouyang Yiqing,Guangzhou,ERIC.LI08@SAP.COM
+1363577,I506053,Gu,Lixia,CN Sales-ENR-Utilities,1306179,Li Yilong,Beijing-World Profit Center,EMILY.GU@SAP.COM
+1306179,I306179,Li,Yilong,CN Sales-ENR-Utilities,1066141,Wang Qian,Beijing-Haidian,ERIC.LI04@SAP.COM
+1369140,I513501,Liao,Wei,CN Sales-ENR-Utilities,1306179,Li Yilong,Guangzhou,JASON.LIAO@SAP.COM
+1360406,I502338,Lu,Jie,CN Sales-ENR-Utilities,1306179,Li Yilong,Shanghai -Wheelock,JIE.LU@SAP.COM
+1324438,I324438,Shan,Xiaowei,CN Sales-ENR-Utilities,1306179,Li Yilong,Beijing-World Profit Center,D.SHAN@SAP.COM
+1375739,I521915,Wu,Yuchen,CN Sales-ENR-Utilities,1306179,Li Yilong,Shanghai -Wheelock,ALEX.WU03@SAP.COM
+1357506,I500702,Zhang,Shaobo,CN Sales-ENR-Utilities,1306179,Li Yilong,Beijing-World Profit Center,BRADY.ZHANG@SAP.COM
+1364058,I506672,Zhao,Yang,CN Sales-ENR-Utilities,1306179,Li Yilong,Beijing-World Profit Center,ELIANA.ZHAO@SAP.COM
+1301472,I301472,Ding,Jian,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,JERRY.DING@SAP.COM
+1065823,I065823,Guo,Xu,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,FLORA.GUO@SAP.COM
+1054404,I054404,He,Bijun,CN Sales-Consumers-CP & LS East,1308815,Yao Yizhao,Shanghai -Wheelock,CADDIE.HE@SAP.COM
+1373816,I519875,Liu,Wei,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,ZOE.LIU02@SAP.COM
+1367195,I508481,Ma,Yuanyi,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,ELI.MA@SAP.COM
+1329342,I329342,Wang,Wei,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,ERIC.WANG08@SAP.COM
+1337840,I337840,Wu,Haoyu,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,KEVIN.WU03@SAP.COM
+1339688,I339688,Zhang,Lei,CN Sales-Consumers-CP & LS East,1054404,He Bijun,Shanghai -Wheelock,LEO.ZHANG07@SAP.COM
+1345325,I345325,Feng,Zhixuan,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,A.FENG@SAP.COM
+1335741,I335741,He,Haiming,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,HAIMING.HE@SAP.COM
+1364022,I506630,Hu,Rui,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,MAVIS.HU@SAP.COM
+1069646,I069646,Li,Xiaojin,CN Sales-Consumers-CP & LS North,1308815,Yao Yizhao,Beijing-World Profit Center,CAROL.LI@SAP.COM
+1313250,I313250,Lv,Shoujie,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,VINCENT.LV@SAP.COM
+1075161,I075161,Tian,Xuhui,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,XUHUI.TIAN@SAP.COM
+1367358,I508746,Xin,Peng,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,JACK.XIN@SAP.COM
+1376542,I523105,Yan,Song,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,LEON.YAN@SAP.COM
+1066393,I066393,Yu,Bo,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,WINNIE.YU@SAP.COM
+1075941,I075941,Zhao,Ming,CN Sales-Consumers-CP & LS North,1069646,Li Xiaojin,Beijing-World Profit Center,MING.ZHAO01@SAP.COM
+1369094,I513436,Cao,Lin,CN Sales-Consumers-CP & LS South,1308815,Yao Yizhao,Shenzhen,LIN.CAO01@SAP.COM
+1310871,I310871,Gan,Shanyong,CN Sales-Consumers-CP & LS South,1308815,Yao Yizhao,Guangzhou,SHANYONG.GAN@SAP.COM
+1376353,I522845,Huang,Hanrui,CN Sales-Consumers-CP & LS South,1308815,Yao Yizhao,Shenzhen,AARON.HUANG02@SAP.COM
+1369531,I514008,Liu,Zhengyu,CN Sales-Consumers-CP & LS South,1308815,Yao Yizhao,Shenzhen,DOUBLE.LIU@SAP.COM
+1033137,I508110,Zhang,Hao,CN Sales-Consumers-CP & LS South,1308815,Yao Yizhao,Chengdu,tony.zhang12@sap.com
+1054836,I054836,Gao,Zuopeng,CN Presales - PCSM/D,1034535,Yao Fa,Beijing-World Profit Center,K.GAO@SAP.COM
+1367348,I508735,Li,Xiaoyu,CN Presales - PCSM/D,1034535,Yao Fa,Beijing-World Profit Center,RITA.LI04@SAP.COM
+1033538,I033538,Lu,Jianhua,CN Presales - PCSM/D,1034535,Yao Fa,Beijing-World Profit Center,JIANHUA.LU@SAP.COM
+1360685,I502664,Wang,Peng,CN Presales - PCSM/D,1034535,Yao Fa,Beijing-World Profit Center,PENG.WANG11@SAP.COM
+1076743,I076743,Wang,Qi,CN Presales - PCSM/D,1034535,Yao Fa,Shanghai -Wheelock,CARL.WANG@SAP.COM
+1075730,I075730,Zhao,Yanxiang,CN Presales - PCSM/D,1034535,Yao Fa,Beijing-World Profit Center,D.ZHAO@SAP.COM
+1375670,I521825,Zhou,Dongping,CN Presales - PCSM/D,1034535,Yao Fa,Shanghai -Wheelock,MAX.ZHOU01@SAP.COM
+1335099,I335099,Zhu,Hao,CN Presales - PCSM/D,1034535,Yao Fa,Beijing-World Profit Center,STEVEN.ZHU@SAP.COM
+1072899,I072899,Li,Yanbing,CN Sales-Energy & Resource,1066141,Wang Qian,Beijing-World Profit Center,ROBERT.LI01@SAP.COM
+1375238,I521426,Liu,Jinlong,CN Sales-Energy & Resource,1066141,Wang Qian,Guangzhou,AARON.LIU02@SAP.COM
+1352708,I352708,Liu,Shuqiang,CN Sales-Energy & Resource,1066141,Wang Qian,Beijing-World Profit Center,PALM.LIU@SAP.COM
+1066141,I052066,Wang,Qian,CN Sales-Energy & Resource,1025355,Li Qiang,Beijing-Haidian,QIAN.WANG@SAP.COM
+1311312,I311312,Zheng,Yadan,CN Sales-Energy & Resource,1066141,Wang Qian,Beijing-Haidian,LAREINA.ZHENG@SAP.COM
+1330591,I330591,Gao,Yongxin,CN GB Demand Gen,1036021,Yin Jinming,Beijing-World Profit Center,DONALD.GAO@SAP.COM
+1074861,I074861,Huang,Weiying,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai -Wheelock,WEIYING.HUANG01@SAP.COM
+1363576,I506052,Lian,Na,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai - SW Park,L.LIAN@SAP.COM
+1313837,I313837,Ni,Shan,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai -Wheelock,HELEN.NI@SAP.COM
+1351486,I351486,Wang,Cheng,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai - SW Park,cheng.wang03@sap.com
+1313364,I313364,Wang,Dongping,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai -Wheelock,DONGPING.WANG@SAP.COM
+1357634,I500865,Yu,Nini,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai -Wheelock,AGNES.YU@SAP.COM
+1376308,I522767,Zheng,Zhongbo,CN GB Demand Gen,1330591,Gao Yongxin,Shanghai -Wheelock,ERIC.ZHENG01@SAP.COM
+1312008,I312008,Chen,Yuqing,CN ECO-PBM,1036021,Yin Jinming,Beijing-World Profit Center,SUSAN.CHEN@SAP.COM
+1365038,I507696,Li,Yang,CN ECO-PBM,1036021,Yin Jinming,Beijing-World Profit Center,YANG.LI14@SAP.COM
+1341552,I341552,Sun,Yi,CN ECO-PBM,1036021,Yin Jinming,Shanghai -Wheelock,KEVIN.SUN03@SAP.COM
+1313478,I313478,Tian,Lin,CN ECO-PBM,1036021,Yin Jinming,Beijing-World Profit Center,LIN.TIAN@SAP.COM
+1046813,I046813,Xiao,Binhua,CN ECO-PBM,1036021,Yin Jinming,Shanghai -Wheelock,STANLEY.XIAO@SAP.COM
+1067794,I067794,Zheng,Qingsheng,CN ECO-PBM,1036021,Yin Jinming,Shanghai -Wheelock,T.ZHENG@SAP.COM
+1300027,I300027,Chen,Huibo,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Beijing-Haidian,SALLY.CHEN01@SAP.COM
+1068209,I068209,Chen,Xi,CN ECO-Partner Enable & PMO,1036021,Yin Jinming,Shanghai -Wheelock,I.CHEN@SAP.COM
+1075923,I075923,Ding,Lin,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai -Wheelock,LYNNE.DING@SAP.COM
+1056128,I056128,Gao,Hong,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai -Wheelock,M.GAO@SAP.COM
+1075198,I075198,Jia,Libin,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Beijing-World Profit Center,LIBIN.JIA@SAP.COM
+1312899,I312899,Jin,Jing,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Beijing-World Profit Center,JENNIFER.JIN@SAP.COM
+1074217,I074217,Lian,Ping,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Beijing-World Profit Center,PING.LIAN@SAP.COM
+1058888,I058888,Na,Ren,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai - SW Park,NORA.NA@SAP.COM
+1312594,I312594,Qiu,Weixian,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai - SW Park,ROBIN.QIU@SAP.COM
+1062679,I062679,Shan,Wei-min,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai -Wheelock,WEI-MIN.SHAN@SAP.COM
+1313627,I313627,Yuan,Shuang,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai - SW Park,FROST.YUAN@SAP.COM
+1054044,I054044,Zhu,Yinan,CN ECO-Partner Enable & PMO,1068209,Chen Xi,Shanghai - SW Park,NANCY.ZHU@SAP.COM
+1068989,I068989,Dong,Zhigang,CN Sales-Discrete,1025355,Li Qiang,Shanghai -Wheelock,KEN.DONG@SAP.COM
+1338698,I338698,Yan,Tianlong,CN Sales-Services-T&P,1360722,Zhou Ning,Beijing-World Profit Center,STEVEN.YAN@SAP.COM
+1355998,I355998,Yao,Chen,CN Sales-Services-T&P,1360722,Zhou Ning,Beijing-World Profit Center,MICHAEL.YAO01@SAP.COM
+1360722,I502699,Zhou,Ning,CN Sales-Services-T&P,1321907,Gu Wei,Shanghai -Wheelock,joen.zhou@sap.com
+1357119,I500313,Cui,Wei,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Beijing-World Profit Center,david.cui01@sap.com
+1341333,I341333,Ji,Ran,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Beijing-World Profit Center,RYAN.JI@SAP.COM
+1340221,I506910,Lin,Zhenru,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Shanghai -Wheelock,queenie.lin@sap.com
+1068399,I068399,Liu,Xin,CN Sales-ENR-Chemical N&W,1066141,Wang Qian,Beijing-World Profit Center,XIN.LIU01@SAP.COM
+1350868,I350868,Qiu,Zhen,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Beijing-World Profit Center,ZHEN.QIU@SAP.COM
+1039432,I039432,Shu,Ge,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Shanghai -Wheelock,GORDON.SHU@SAP.COM
+1339227,I339227,Shu,Junping,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Beijing-World Profit Center,DYLAN.SHU@SAP.COM
+1353604,I353604,Zeng,Hui,CN Sales-ENR-Chemical N&W,1068399,Liu Xin,Beijing-World Profit Center,RICHARD.ZENG@SAP.COM
+1077184,I077184,Deng,Hua,CN Sales-ENR-Metal & Forest,1045848,Shao Yifei,Guangzhou,HUA.DENG@SAP.COM
+1340644,I340644,Liu,Jun,CN Sales-ENR-Metal & Forest,1045848,Shao Yifei,Beijing-World Profit Center,JUN.LIU03@SAP.COM
+1045848,I045848,Shao,Yifei,CN Sales-ENR-Metal & Forest,1066141,Wang Qian,Shanghai -Wheelock,Y.SHAO@SAP.COM
+1363578,I506054,Sun,Jun,CN Sales-ENR-Metal & Forest,1045848,Shao Yifei,Shanghai -Wheelock,BENSON.SUN@SAP.COM
+1363599,I506087,Wang,Jiankun,CN Sales-ENR-Metal & Forest,1045848,Shao Yifei,Shanghai -Wheelock,JIANKUN.WANG01@SAP.COM
+1337684,I337684,Zhang,Peng,CN Sales-ENR-Metal & Forest,1045848,Shao Yifei,Beijing-World Profit Center,ALLEN.ZHANG08@SAP.COM
+1341017,I319287,Chiu,Wei-Pin,CN Sales-HT South,1065206,Hu Liang,Shenzhen,JAMES.CHIU01@SAP.COM
+1364048,I506661,Feng,Jiadong,CN Sales-HT South,1065206,Hu Liang,Shenzhen,JIADONG.FENG@SAP.COM
+1065206,I065206,Hu,Liang,CN Sales-HT South,1066179,Cao Lei,Guangzhou,LIANG.HU01@SAP.COM
+1329667,I329667,Lin,Hailian,CN Sales-HT South,1065206,Hu Liang,Shenzhen,COCO.LIN@SAP.COM
+1331870,I331870,Lin,Jin,CN Sales-HT South,1065206,Hu Liang,Guangzhou,JASON.LIN01@SAP.COM
+1353383,I353383,Tan,Shusheng,CN Sales-HT South,1065206,Hu Liang,Guangzhou,TONY.TAN@SAP.COM
+1302185,I302185,Wei,Zhenduo,CN Sales-HT South,1065206,Hu Liang,Shenzhen,DANNY.WEI@SAP.COM
+1364675,I507269,Xie,Weiling,CN Sales-HT South,1065206,Hu Liang,Shenzhen,NICO.XIE@SAP.COM
+1366862,I508054,Bao,Teng,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,BARBARA.BAO@SAP.COM
+1336708,I336708,Fan,Ying,CN Sales-HT North,1066179,Cao Lei,Beijing-World Profit Center,ELAINE.FAN@SAP.COM
+1356230,I356230,Fu,Chungang,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,gonnon.fu@sap.com
+1321525,I321525,Qi,Yue,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,YUE.QI@SAP.COM
+1345112,I345112,Sha,Shi,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,JULIAN.SHA@SAP.COM
+1375724,I521893,Yang,Ying,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,SHAWN.YANG03@SAP.COM
+1331649,I331649,Zhao,Jingyan,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,REGINA.ZHAO@SAP.COM
+1352639,I352639,Zhu,Huiying,CN Sales-HT North,1336708,Fan Ying,Beijing-World Profit Center,VICKY.ZHU@SAP.COM
+1313824,I313824,He,Haimin,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,CARLOS.HE@SAP.COM
+1072710,I072710,Li,Youmeng,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,YOUMENG.LI@SAP.COM
+1318007,I318007,Lu,Huanyu,CN Sales-HT East,1066179,Cao Lei,Shanghai -Wheelock,HUANYU.LU@SAP.COM
+1352751,I352751,Lu,Weiqi,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,KEVIN.LU01@SAP.COM
+1367425,I508855,Wu,Shaojie,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,JESSE.WU01@SAP.COM
+1350599,I350599,Xu,Jingyin,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,JALEN.XU@SAP.COM
+1318470,I318470,Xu,Qin,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,JEFF.XU@SAP.COM
+1349926,I349926,Xu,Yongze,CN Sales-HT East,1318007,Lu Huanyu,Shanghai -Wheelock,DANIEL.XU02@SAP.COM
+1378124,I530806,Jia,Honghao,CN Sales-Discrete-IMC South,1068989,Dong Zhigang,Chengdu,AARON.JIA@SAP.COM
+1074177,I074177,Lin,Yongxiang,CN Sales-Discrete-IMC South,1068989,Dong Zhigang,Guangzhou,SAMUEL.LIN@SAP.COM
+1073696,I073696,Wang,Jun,CN Sales-Discrete-IMC South,1068989,Dong Zhigang,Guangzhou,LUCY.WANG01@SAP.COM
+1372538,I518425,Yang,Di,CN Sales-Discrete-IMC South,1068989,Dong Zhigang,Shenzhen,BRANDON.YANG@SAP.COM
+1349675,I349675,Zhang,Mingjie,CN Sales-Discrete-IMC South,1068989,Dong Zhigang,Chengdu,JERRY.ZHANG06@SAP.COM
+1364057,I506671,Zhao,Yuhui,CN Sales-Discrete-IMC South,1068989,Dong Zhigang,Shenzhen,RAY.ZHAO01@SAP.COM
+1019399,I019399,Liu,Xinqi,CN Sales-Discrete-CRRC&CHINT,1068989,Dong Zhigang,Shenzhen,ANDY.LIU@SAP.COM
+1324458,I324458,Zhang,Yue,CN Sales-Discrete-CRRC&CHINT,1068989,Dong Zhigang,Beijing-World Profit Center,YUE.ZHANG07@SAP.COM
+1357681,I500920,Li,Weibo,CN Sales-Discrete-IMC East,1068206,Wang Zhanlin,Shanghai -Wheelock,TONY.LI02@SAP.COM
+1323252,I323252,Tang,Liang,CN Sales-Discrete-IMC East,1068206,Wang Zhanlin,Shanghai -Wheelock,LEO.TANG01@SAP.COM
+1068206,I068206,Wang,Zhanlin,CN Sales-Discrete-IMC East,1068989,Dong Zhigang,Shanghai -Wheelock,ZHANLIN.WANG@SAP.COM
+1371275,I516867,Yu,Mingsheng,CN Sales-Discrete-IMC East,1068206,Wang Zhanlin,Shanghai -Wheelock,TONY.YU@SAP.COM
+1348839,I348839,Zou,Yanchun,CN Sales-Discrete-IMC East,1068206,Wang Zhanlin,Shanghai -Wheelock,JACK.ZOU@SAP.COM
+1070925,I070925,Zuo,Jing,CN Sales-Discrete-IMC East,1068206,Wang Zhanlin,Shanghai -Wheelock,JANE.ZUO@SAP.COM
+1345069,I345069,Li,Qiuyang,CN Sales-Discrete-IMC N & AD,1066179,Cao Lei,Beijing-World Profit Center,LAURA.LI02@SAP.COM
+1348781,I348781,Qi,Kai,CN Sales-Discrete-IMC N & AD,1066179,Cao Lei,Xi'an,KAI.QI02@SAP.COM
+1347814,I347814,Qin,Han,CN Sales-Discrete-IMC N & AD,1066179,Cao Lei,Beijing-World Profit Center,HAN.QIN@SAP.COM
+1376891,I523664,Qin,Shengjie,CN Sales-Discrete-IMC N & AD,1066179,Cao Lei,Beijing-World Profit Center,JERRY.QIN01@SAP.COM
+1312926,I312926,Zhou,Jingjun,CN Sales-Discrete-IMC N & AD,1066179,Cao Lei,Shanghai -Wheelock,JESSICA.ZHOU@SAP.COM
+1319123,I319123,Liu,Dongdong,CN Sales-Discrete-Auto North,1318454,Tian Chongquan,Beijing-World Profit Center,DONGDONG.LIU@SAP.COM
+1318454,I318454,Tian,Chongquan,CN Sales-Discrete-Auto North,1068989,Dong Zhigang,Beijing-World Profit Center,GARY.TIAN@SAP.COM
+1328109,I328109,Wang,Jianrong,CN Sales-Discrete-Auto North,1318454,Tian Chongquan,Shanghai -Wheelock,BARGITTA.WANG@SAP.COM
+1328925,I328925,Yan,Yue,CN Sales-Discrete-Auto North,1318454,Tian Chongquan,Beijing-World Profit Center,LINDA.YAN01@SAP.COM
+1362532,I504463,Yang,Dapeng,CN Sales-Discrete-Auto North,1318454,Tian Chongquan,Beijing-World Profit Center,DAPENG.YANG@SAP.COM
+1374777,I521263,Zhou,Kai,CN Sales-Discrete-Auto North,1318454,Tian Chongquan,Beijing-World Profit Center,KAI.ZHOU01@SAP.COM
+1068081,I068081,Chen,Xiangbin,CN Sales-Discrete-Auto Service,1068989,Dong Zhigang,Shanghai -Wheelock,FRANK.CHEN01@SAP.COM
+1350915,I350915,Ding,Sheng,CN Sales-Discrete-Auto Service,1068081,Chen Xiangbin,Shanghai -Wheelock,KARL.DING@SAP.COM
+1357769,I501018,Qin,Zijian,CN Sales-Discrete-Auto Service,1068081,Chen Xiangbin,Beijing-World Profit Center,PETER.QIN@SAP.COM
+1306934,I306934,Zhang,Jie,CN Sales-Discrete-Auto Service,1068081,Chen Xiangbin,Shanghai -Wheelock,JANNY.ZHANG@SAP.COM
+1340583,I340583,Zhang,Musui,CN Sales-Discrete-Auto Service,1068081,Chen Xiangbin,Shanghai -Wheelock,ALAN.ZHANG@SAP.COM
+1375719,I521885,Zhang,Yin,CN Sales-Discrete-Auto Service,1068081,Chen Xiangbin,Shanghai -Wheelock,TIMOTHY.ZHANG@SAP.COM
+1074200,I074200,Zhou,Ting,CN Sales-Discrete-Auto Service,1068081,Chen Xiangbin,Shanghai -Wheelock,VIVIAN.ZHOU01@SAP.COM
+1354099,I354099,Ding,Jie Jing,GFO-Sales-CN-SF-Industry 1,1353950,Liang Kefei,Shanghai -Wheelock,IVY.DING@SAP.COM
+1353950,I353950,Liang,Kefei,GFO-Sales-CN-SF-Industry 1,1070910,Zhou Jinhua,Beijing-World Profit Center,KEVIN.LIANG@SAP.COM
+1369119,I513473,Luo,Ningrong,GFO-Sales-CN-SF-Industry 1,1353950,Liang Kefei,Beijing-World Profit Center,JOANNA.LUO@SAP.COM
+1356678,I500051,Miao,Jian,GFO-Sales-CN-SF-Industry 1,1353950,Liang Kefei,Shanghai -Wheelock,miller.miao01@sap.com
+1362108,I503763,Wang,Yang,GFO-Sales-CN-SF-Industry 1,1353950,Liang Kefei,Beijing-World Profit Center,YVONNE.WANG01@SAP.COM
+1378121,I530801,Yu,Xiaozhe,GFO-Sales-CN-SF-Industry 1,1353950,Liang Kefei,Beijing-World Profit Center,NINA.YU@SAP.COM
+1327801,I327801,Zhou,Yan,GFO-Sales-CN-SF-Industry 1,1353950,Liang Kefei,Beijing-World Profit Center,YAN.ZHOU02@SAP.COM
+1066179,I052039,Cao,Lei,CN Sales-HT & Telco,1025355,Li Qiang,Beijing-World Profit Center,LEI.CAO@SAP.COM
+1065105,I065105,Gu,Yingying,GFO-Sales-CN-SF-GB South,1070910,Zhou Jinhua,Shanghai -Wheelock,FLORA.GU@SAP.COM
+1364476,I507056,Han,Buliang,GFO-Sales-CN-SF-GB South,1065105,Gu Yingying,Shenzhen,BRIGHT.HAN@SAP.COM
+1378404,I531335,Lao,Zhiguang,GFO-Sales-CN-SF-GB South,1065105,Gu Yingying,Shenzhen,DAVID.LAO@SAP.COM
+1361914,I503516,Wei,Wei,GFO-Sales-CN-SF-GB South,1065105,Gu Yingying,Shanghai -Wheelock,KEVIN.WEI01@SAP.COM
+1355609,I355609,Zhu,Wanqiu,GFO-Sales-CN-SF-GB South,1065105,Gu Yingying,Shanghai -Wheelock,ivy.zhu01@sap.com
+1355508,I355508,Jiang,Chaoping,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Shanghai -Wheelock,jiang.jiang@sap.com
+1349628,I349628,Liu,Peihua,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Shenzhen,POPPY.LIU@SAP.COM
+1378183,I530931,Peng,Lei,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Beijing-World Profit Center,HENRY.PENG@SAP.COM
+1072661,I072661,Shen,Jinmin,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Guangzhou,H.SHEN@SAP.COM
+1321627,I321627,Wang,Bing,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Beijing-World Profit Center,ELIANE.WANG@SAP.COM
+1353841,I353841,Xu,Jia,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Shanghai -Wheelock,NICOLE.XU01@SAP.COM
+1330502,I330502,Yan,Xiaojie,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Shanghai -Wheelock,JACK.YAN01@SAP.COM
+1307204,I307204,Zhang,Donghai,CN Sales-Consumers-Retail,1308815,Yao Yizhao,Beijing-World Profit Center,DONGHAI.ZHANG@SAP.COM
+1322719,I322719,Zhang,Jiangang,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Beijing-World Profit Center,JEREMY.ZHANG01@SAP.COM
+1367871,I509488,Zhang,Xiaowei,CN Sales-Consumers-Retail,1307204,Zhang Donghai,Beijing-World Profit Center,XIAOWEI.ZHANG@SAP.COM
+1313453,I313453,Cai,Yanli,CN Sales-COO Office,1030178,Li Xudong,Shanghai -Wheelock,ELAINE.CAI@SAP.COM
+1345015,I345015,Huang,Yan,CN Sales-COO Office,1030178,Li Xudong,Beijing-World Profit Center,YAN.HUANG01@SAP.COM
+1040350,I040350,Li,Ningbin,CN Sales-COO Office,1030178,Li Xudong,Shanghai -Wheelock,NINA.LI@SAP.COM
+1030178,I030178,Li,Xudong,CN Sales-COO Office,1025355,Li Qiang,Beijing-World Profit Center,ALLEN.LI@SAP.COM
+1062674,I062674,Tang,Yao,CN Sales-COO Office,1030178,Li Xudong,Guangzhou,YAO.TANG@SAP.COM
+1073782,I073782,Xu,Hengsha,CN Sales-COO Office,1030178,Li Xudong,Shanghai -Wheelock,AMBER.XU@SAP.COM
+1034535,I034535,Yao,Fa,CN Presales,1030178,Li Xudong,Beijing-World Profit Center,ANDY.YAO@SAP.COM
+1308309,I530466,Zhu,Yu,CN Presales,1034535,Yao Fa,Beijing-World Profit Center,george.zhu02@SAP.COM
+1339984,I339984,Li,Jinpeng,CN Sales-Discrete-Auto East,1074071,Zhang Qingkun,Shanghai - SW Park,DYLAN.LI01@SAP.COM
+1360462,I502414,Li,Xin,CN Sales-Discrete-Auto East,1074071,Zhang Qingkun,Shanghai -Wheelock,LEO.LI13@SAP.COM
+1331648,I331648,Shao,Yunyun,CN Sales-Discrete-Auto East,1074071,Zhang Qingkun,Shanghai -Wheelock,YUN.SHAO@SAP.COM
+1072610,I072610,Wang,Jianfeng,CN Sales-Discrete-Auto East,1074071,Zhang Qingkun,Shanghai -Wheelock,JIANFENG.WANG01@SAP.COM
+1072106,I072106,Wang,Xiaoqin,CN Sales-Discrete-Auto East,1074071,Zhang Qingkun,Shanghai -Wheelock,G.WANG@SAP.COM
+1363072,I505293,Xiao,Yidong,CN Sales-Discrete-Auto East,1074071,Zhang Qingkun,Shanghai -Wheelock,YIDONG.XIAO@SAP.COM
+1074071,I074071,Zhang,Qingkun,CN Sales-Discrete-Auto East,1068989,Dong Zhigang,Shanghai -Wheelock,HAROLD.ZHANG01@SAP.COM
+1072486,I523442,Guan,Jian,CN Sales-GB-Shenzhen,1067636,Zhang Bin,Shenzhen,k.guan@SAP.COM
+1375666,I521821,Qiu,Zhijian,CN Sales-GB-Shenzhen,1072486,Guan Jian,Guangzhou,DANIEL.QIU01@SAP.COM
+1367356,I508743,Ruan,Jun,CN Sales-GB-Shenzhen,1072486,Guan Jian,Shenzhen,JOHNNY.RUAN@SAP.COM
+1350997,I350997,Wang,Wei,CN Sales-GB-Shenzhen,1072486,Guan Jian,Shenzhen,SEKER.WANG@SAP.COM
+1345358,D066525,Wu,Wenjie,CN Sales-GB-Shenzhen,1072486,Guan Jian,Shenzhen,LINDA.WU01@SAP.COM
+1329675,I530148,Xiao,Zhihong,CN Sales-GB-Shenzhen,1072486,Guan Jian,Guangzhou,f.xiao@SAP.COM
+1377377,I529504,Zhang,Mengyao,CN Sales-GB-Shenzhen,1072486,Guan Jian,Shenzhen,YOYO.ZHANG@SAP.COM
+1371120,I516681,Gao,Song,CN Sales-GB-North China,1067636,Zhang Bin,Dalian,JERRY.GAO01@SAP.COM
+1376641,I523259,Ji,Ying,CN Sales-GB-North China,1067636,Zhang Bin,Beijing-World Profit Center,ANATA.JI@SAP.COM
+1364644,I507209,Shen,Yuezhen,CN Sales-GB-North China,1067636,Zhang Bin,Beijing-World Profit Center,YUEZHEN.SHEN@SAP.COM
+1350495,I350495,Wu,Yi,CN Sales-GB-North China,1067636,Zhang Bin,Beijing-World Profit Center,EVIE.WU@SAP.COM
+1368144,I511520,Yang,Weichao,CN Sales-GB-North China,1067636,Zhang Bin,Beijing-World Profit Center,WOLF.YANG@SAP.COM
+1355744,I355744,Yu,Cong,CN Sales-GB-North China,1067636,Zhang Bin,Shanghai -Wheelock,jessica.yu@sap.com
+1036021,I036021,Yin,Jinming,CN Sales-Ecosystem,1025355,Li Qiang,Shanghai - SW Park,ERIC.YIN@SAP.COM
+1042679,I042679,Fu,Jia,CN Sales-HT-Telco & HW,1066179,Cao Lei,Beijing-World Profit Center,ALEX.FU@SAP.COM
+1070537,I506603,Gao,Ying,CN Sales-HT-Telco & HW,1066179,Cao Lei,Beijing-World Profit Center,serina.gao@sap.com
+1058745,I058745,Ma,Haiyan,CN Sales-HT-Telco & HW,1066179,Cao Lei,Beijing-World Profit Center,HAIYAN.MA@SAP.COM
+1351671,I351671,Wang,Yanfang,CN Sales-HT-Telco & HW,1066179,Cao Lei,Beijing-World Profit Center,YANFANG.WANG@SAP.COM
+1356692,I500060,Zha,Xiaomu,CN Sales-HT-Telco & HW,1066179,Cao Lei,Beijing-World Profit Center,xiaomu.zha@sap.com
+1350529,I350529,Chen,Jie,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai - SW Park,JIE.CHEN06@SAP.COM
+1366888,I508093,Chen,Xinglin,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai - SW Park,TIM.CHEN02@SAP.COM
+1355457,I355457,Chen,Xu,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai -Wheelock,flynn.chen@sap.com
+1370161,I515163,Guo,Haigang,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai -Wheelock,HAIGANG.GUO@SAP.COM
+1377862,I530350,Song,Fan,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai - SW Park,VINSONG.SONG@SAP.COM
+1376479,I522940,Zhang,Shuai,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai - SW Park,JOSHUA.ZHANG01@SAP.COM
+1357508,I500705,Zhang,Zhiyuan,CN Sales-GB-Zhejiang,1069160,Zhao Dapeng,Shanghai -Wheelock,ZAIRA.ZHANG@SAP.COM
+1069160,I069160,Zhao,Dapeng,CN Sales-GB-Zhejiang,1067636,Zhang Bin,Shanghai - SW Park,ALEX.ZHAO@SAP.COM
+1338855,I338855,Guo,Lei,CN Sales-GB-Guangzhou,1067636,Zhang Bin,Guangzhou,RICKY.GUO@SAP.COM
+1374126,I520265,Li,Xuan,CN Sales-GB-Guangzhou,1338855,Guo Lei,Guangzhou,RICKY.LI02@SAP.COM
+1366938,I508132,Qiu,Ze,CN Sales-GB-Guangzhou,1338855,Guo Lei,Guangzhou,SHAWN.QIU@SAP.COM
+1377575,I529901,Wang,Yancong,CN Sales-GB-Guangzhou,1338855,Guo Lei,Shenzhen,DARREN.WANG@SAP.COM
+1350110,I350110,Zhao,Xiaoyang,CN Sales-GB-Guangzhou,1338855,Guo Lei,Guangzhou,AVIVA.ZHAO@SAP.COM
+1349617,I349617,Chen,Zhang,CN Sales-HT-Digital,1318488,Shi Yu,Shenzhen,CARRIE.CHEN02@SAP.COM
+1350735,I350735,Liu,Bin,CN Sales-HT-Digital,1318488,Shi Yu,Shenzhen,BINCOLE.LIU@SAP.COM
+1318488,I318488,Shi,Yu,CN Sales-HT-Digital,1066179,Cao Lei,Shenzhen,YU.SHI@SAP.COM
+1351040,I351040,Wang,Yingsheng,CN Sales-HT-Digital,1318488,Shi Yu,Guangzhou,WILSON.WANG04@SAP.COM
+1350144,I350144,Xu,Peng,CN Sales-HT-Digital,1318488,Shi Yu,Shenzhen,RYAN.XU@SAP.COM
+1356888,I500182,Chen,Jingyang,CN Sales-Services-Estate,1321108,Yan Pengfei,Guangzhou,TONY.CHEN03@SAP.COM
+1350968,I350968,Li,Zhe,CN Sales-Services-Estate,1321108,Yan Pengfei,Shenzhen,LIZ.LI01@SAP.COM
+1360858,I502818,Ren,Bingzhe,CN Sales-Services-Estate,1321108,Yan Pengfei,Guangzhou,KEVIN.REN@SAP.COM
+1321108,I321108,Yan,Pengfei,CN Sales-Services-Estate,1321907,Gu Wei,Guangzhou,JACK.YAN@SAP.COM
+1364009,I506611,Feng,Zian,CN Sales-Digital Office,1054416,Peng Junsong,Beijing-World Profit Center,KELVIN.FENG@SAP.COM
+1366842,I508033,Gong,Weian,CN Sales-Digital Office,1054416,Peng Junsong,Guangzhou,BANKMANN.GONG@SAP.COM
+1369181,I513561,Lu,Ning,CN Sales-Digital Office,1054416,Peng Junsong,Beijing-World Profit Center,MICHAEL.LU01@SAP.COM
+1054416,I054416,Peng,Junsong,CN Sales-Digital Office,1025355,Li Qiang,Shanghai -Wheelock,JUNSONG.PENG@SAP.COM
+1374193,I520389,Song,Yisu,CN Sales-Digital Office,1054416,Peng Junsong,Shanghai -Wheelock,YISU.SONG@SAP.COM
+1363440,I505889,Sun,Huimin,CN Sales-Digital Office,1054416,Peng Junsong,Guangzhou,ALFRED.SUN@SAP.COM
+1376949,I523770,Tan,Guoxin,CN Sales-Digital Office,1054416,Peng Junsong,Beijing-World Profit Center,CHARLES.TAN01@SAP.COM
+1362362,I504187,Wang,Fang,CN Sales-Digital Office,1054416,Peng Junsong,Beijing-World Profit Center,ANNIE.WANG01@SAP.COM
+1355983,I355983,Wang,Xuehong,CN Sales-Digital Office,1054416,Peng Junsong,Chengdu,justin.wang02@sap.com
+1369662,I514185,Xing,Lin,CN Sales-Digital Office,1054416,Peng Junsong,Shanghai -Wheelock,lin.xing@sap.com
+1364227,I506855,Xu,Yongshuo,CN Sales-Digital Office,1054416,Peng Junsong,Beijing-World Profit Center,YONGSHUO.XU@SAP.COM
+1352755,I352755,Zheng,Fanghua,CN Sales-Digital Office,1054416,Peng Junsong,Beijing-World Profit Center,CAMILLE.ZHENG@SAP.COM
+1062811,I062811,Chen,Wei-zeng,CN Sales-Services-Insurance,1321907,Gu Wei,Guangzhou,ROY01.CHEN@SAP.COM
+1063108,I063108,Du,Gang,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Shanghai -Wheelock,GANG.DU@SAP.COM
+1339678,I339678,Li,Feinan,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Beijing-World Profit Center,FIONA.LI02@SAP.COM
+1365133,I507797,Sun,Haihong,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Beijing-World Profit Center,shawn.sun@sap.com
+1349193,I349193,Wang,Danze,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Beijing-World Profit Center,MICHAEL.WANG05@SAP.COM
+1375900,I522060,Zhang,Xuechun,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Shenzhen,SUSIE.ZHANG@SAP.COM
+1307304,I307304,Zhang,Yan,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Beijing-World Profit Center,YAN.ZHANG04@SAP.COM
+1364445,I507035,Zhao,Xiaoshu,CN Sales-Services-Insurance,1062811,Chen Wei-zeng,Beijing-World Profit Center,VINNIE.ZHAO@SAP.COM
+1364669,I507254,Cao,Dongliang,CN Sales-GB-Shanghai,1067636,Zhang Bin,Shanghai -Wheelock,HUGH.CAO@SAP.COM
+1367108,I508340,Jin,Jiancheng,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai - SW Park,VIC.JIN@SAP.COM
+1350792,I350792,Lin,Xiting,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai - SW Park,ALLEN.LIN01@SAP.COM
+1368273,I511719,Ma,Lihua,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai -Wheelock,AILSA.MA@SAP.COM
+1347406,I347406,Xiao,Yanjun,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai -Wheelock,SHADOW.XIAO@SAP.COM
+1345405,I345405,Yang,Guang,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai -Wheelock,KATE.YANG@SAP.COM
+1355740,I355740,Yang,Tian,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai -Wheelock,tim.yang@sap.com
+1364587,I507135,Zhang,Bo,CN Sales-GB-Shanghai,1364669,Cao Dongliang,Shanghai -Wheelock,OSCAR.ZHANG@SAP.COM
+1304123,I304123,Chen,Li,CN ECO-Marketing,1036021,Yin Jinming,Beijing-World Profit Center,HELEN.CHEN02@SAP.COM
+1302972,I302972,Chang,Junling,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,JUNLING.CHANG@SAP.COM
+1063012,I063012,Chen,Wen-hua,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Guangzhou,DAVID01.CHEN@SAP.COM
+1379367,I533083,Chi,Ya-Hsun,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai - SW Park,JOANNA.CHI01@SAP.COM
+1334806,I334806,Du,Liang,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-Haidian,LIANG.DU@SAP.COM
+1373039,I518886,Jia,Xiaomei,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,JENNIFER.JIA@SAP.COM
+1066152,I052137,Jia,Xuejie,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,MICHAEL.JIA@SAP.COM
+1058572,I058572,Jiang,Kai,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,KAI.JIANG@SAP.COM
+1067648,I067648,Li,Juan,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-Haidian,JUAN.LI@SAP.COM
+1325096,I325096,Li,Zhengjun,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,FRANKY.LI@SAP.COM
+1378791,I531973,Lin,Fei,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,FRANK.LIN01@SAP.COM
+1068078,I068078,Lin,He Shun,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,HE.SHUN.LIN@SAP.COM
+1063184,I063184,Luo,Yong-qiang,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Guangzhou,YONG-QIANG.LUO@SAP.COM
+1343153,I343153,Ma,Song,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Guangzhou,SONG.MA@SAP.COM
+1062845,I062845,Ma,Ze-Jiong,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,ZE-JIONG.MA@SAP.COM
+1324754,I324754,Song,Binyu,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,BINYU.SONG@SAP.COM
+1075562,I075562,Sun,Rong,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,SAM.SUN01@SAP.COM
+1067812,I067812,Tang,Gang,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,GANG.TANG@SAP.COM
+1062837,I062837,Wang,Ming-zhi,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,MING-ZHI.WANG@SAP.COM
+1300765,I062905,Wang,Nan,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,NAN.WANG@SAP.COM
+1360587,I823233,Xiao,Dixi,CN Presales-Platform & Technologies,1034535,Yao Fa,Shanghai -Wheelock,ALEX.XIAO@SAP.COM
+1312999,I312999,Xie,Aihua,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,MARTIN.XIE01@SAP.COM
+1303068,I303068,Xu,Min,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,HUNT.XU@SAP.COM
+1349634,I349634,Yu,Han,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Beijing-World Profit Center,HAN.YU@SAP.COM
+1062312,I062312,Zheng,Han,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Shanghai -Wheelock,HAN.ZHENG@SAP.COM
+1062709,I062709,Zhou,Hai-tao,CN Presales-Platform & Technologies,1360587,Xiao Dixi,Guangzhou,HAI-TAO.ZHOU@SAP.COM
+1075553,I075553,Cheng,Hongyan,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Shanghai -Wheelock,MACRO.CHENG@SAP.COM
+1056640,I056640,Duan,Jiyun,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Beijing-World Profit Center,J.DUAN@SAP.COM
+1350995,I350995,Jing,Danping,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Beijing-World Profit Center,BRUCE.JING@SAP.COM
+1378049,I530717,Liu,Kesheng,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Beijing-World Profit Center,KESHENG.LIU@SAP.COM
+1075604,I075604,Luo,Xuan,CN Presales - Product - S/4H & S/4HC,1034535,Yao Fa,Beijing-Haidian,FANCIA.LUO@SAP.COM
+1305694,I305694,Ni,Mengting,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Shanghai -Wheelock,MENGTING.NI@SAP.COM
+1061426,I061426,Wang,Bing,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Shenzhen,BING.WANG@SAP.COM
+1372497,I518345,Yin,Dali,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Shanghai -Wheelock,ALEX.YIN01@SAP.COM
+1072321,I072321,Yin,Zi,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Shanghai -Wheelock,LUCY.YIN@SAP.COM
+1052821,I052821,Zhang,Hongqiu,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Beijing-World Profit Center,ANDREW.ZHANG@SAP.COM
+1307248,I307248,Zhang,Yimin,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Shanghai -Wheelock,JAMIN.ZHANG@SAP.COM
+1348757,I348757,Zhao,Mengping,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Beijing-World Profit Center,MENGPING.ZHAO@SAP.COM
+1045202,I045202,Zhou,Jiaqiong,CN Presales - Product - S/4H & S/4HC,1075604,Luo Xuan,Guangzhou,JENNY.ZHOU@SAP.COM
+1325057,I325057,Cheng,Long,CN Presales - ENR Industry,1329108,Xu Yijun,Beijing-Haidian,LONG.CHENG03@SAP.COM
+1375650,I521804,Han,Hui,CN Presales - ENR Industry,1329108,Xu Yijun,Beijing-World Profit Center,HARLEM.HAN@SAP.COM
+1365747,I507898,Jiao,Yanwei,CN Presales - ENR Industry,1329108,Xu Yijun,Beijing-World Profit Center,YANWEI.JIAO@SAP.COM
+1324447,I324447,Lang,Xianlai,CN Presales - ENR Industry,1329108,Xu Yijun,Shanghai -Wheelock,LAWSON.LANG@SAP.COM
+1067765,I067765,Liu,Qiaozhen,CN Presales - ENR Industry,1329108,Xu Yijun,Beijing-World Profit Center,CATHY.LIU01@SAP.COM
+1378017,I530658,Wu,Deming,CN Presales - ENR Industry,1329108,Xu Yijun,Shanghai -Wheelock,CHARLEE.WU01@SAP.COM
+1329108,I329108,Xu,Yijun,CN Presales - ENR Industry,1034535,Yao Fa,Shanghai -Wheelock,DAVID.XU04@SAP.COM
+1070960,I530484,Zhu,Minqi,CN Presales - ENR Industry,1329108,Xu Yijun,Shanghai -Wheelock,mickey.zhu01@SAP.COM
+1338104,I338104,Zhu,Peigang,CN Presales - ENR Industry,1329108,Xu Yijun,Beijing-World Profit Center,PETER.ZHU@SAP.COM
+1055846,I055846,Bai,Jie,CN Presales - HT Industry,1034535,Yao Fa,Beijing-World Profit Center,JEFF.BAI@SAP.COM
+1302842,I302842,Bing,Jinyou,CN Presales - HT Industry,1034535,Yao Fa,Shanghai -Wheelock,FRANK.BING@SAP.COM
+1076867,I076867,Duan,Hailong,CN Presales - HT Industry,1034535,Yao Fa,Shenzhen,HAILONG.DUAN@SAP.COM
+1359868,I501872,Fan,Xiaojie,CN Presales - HT Industry,1034535,Yao Fa,Shanghai -Wheelock,HEITER.FAN@SAP.COM
+1046755,I046755,Li,Jia,CN Presales - HT Industry,1034535,Yao Fa,Beijing-World Profit Center,DEREK.LI03@SAP.COM
+1371542,I517172,Li,Xiaolin,CN Presales - HT Industry,1034535,Yao Fa,Guangzhou,VICTOR.LI01@SAP.COM
+1364692,I507309,Lu,Weiwei,CN Presales - HT Industry,1034535,Yao Fa,Shenzhen,ANDY.LU02@SAP.COM
+1033543,I033543,Meng,Lei,CN Presales - HT Industry,1034535,Yao Fa,Shanghai -Wheelock,JACK.MENG@SAP.COM
+1326933,I326933,Xiang,Shigan,CN Presales - HT Industry,1034535,Yao Fa,Shanghai -Wheelock,SCOTT.XIANG@SAP.COM
+1352009,I352009,Zeng,Yan,CN Presales - HT Industry,1034535,Yao Fa,Shenzhen,JANE.ZENG@SAP.COM
+1045585,I045585,Zhang,Kun,CN Presales - HT Industry,1034535,Yao Fa,Guangzhou,KUN.ZHANG@SAP.COM
+1066135,I052231,Lu,Bai Nian,CN Presales - I&D Factory,1046216,Yu Rong,Beijing-World Profit Center,LINCOLN.LU@SAP.COM
+1352079,I352079,Sun,Wei,CN Presales - I&D Factory,1046216,Yu Rong,Shanghai -Wheelock,WEI.SUN05@SAP.COM
+1070228,I070228,Yang,Yifan,CN Presales - I&D Factory,1046216,Yu Rong,Beijing-World Profit Center,YIFAN.YANG@SAP.COM
+1030432,I030432,Yu,Chuanxin,CN Presales - I&D Factory,1046216,Yu Rong,Beijing-World Profit Center,JEFFREY.YU@SAP.COM
+1046216,I046216,Yu,Rong,CN Presales - I&D Factory,1034535,Yao Fa,Shanghai -Wheelock,RICK.YU@SAP.COM
+1076748,I076748,Zhao,Nan,CN Presales - I&D Factory,1046216,Yu Rong,Beijing-World Profit Center,CINDY.ZHAO01@SAP.COM
+1375369,I521497,Feng,Xiao,CN Sales-Discrete-Auto South,1323095,Yang Fan,Shenzhen,VICTOR.FENG01@SAP.COM
+1357424,I500596,Li,Min,CN Sales-Discrete-Auto South,1323095,Yang Fan,Guangzhou,rose.li@sap.com
+1300371,I300371,Sun,Shan,CN Sales-Discrete-Auto South,1323095,Yang Fan,Guangzhou,LEO.SUN02@SAP.COM
+1042131,I042131,Wang,Jianhui,CN Sales-Discrete-Auto South,1323095,Yang Fan,Shanghai -Wheelock,JIANHUI.WANG@SAP.COM
+1323095,I323095,Yang,Fan,CN Sales-Discrete-Auto South,1068989,Dong Zhigang,Guangzhou,GEORGE.YANG01@SAP.COM
+1342818,I342818,Yao,Haoqian,CN Sales-Discrete-Auto South,1323095,Yang Fan,Guangzhou,ALEX.YAO01@SAP.COM
+1045775,I045775,Jiang,Xianghui,CN Sales-SCP HT-Alibaba,1072198,Lee Chun,Shanghai -Wheelock,JETT.JIANG@SAP.COM
+1326936,I326936,Ren,Meie,CN Sales-SCP HT-Alibaba,1045775,Jiang Xianghui,Shanghai -Wheelock,MERRY.REN@SAP.COM
+1379051,I532537,Zhang,Jing,CN Sales-SCP HT-Alibaba,1045775,Jiang Xianghui,Shanghai -Wheelock,JING.ZHANG10@SAP.COM
+1362061,I503718,Zheng,Peng,CN Sales-SCP HT-Alibaba,1045775,Jiang Xianghui,Beijing-World Profit Center,JASON.ZHENG@SAP.COM
+1357464,I500645,Huang,Jiong,CN Sales-GB-Southwest China,1067636,Zhang Bin,Chengdu,JOHN.HUANG01@SAP.COM
+1341673,I341673,Liu,Kebin,CN Sales-GB-Southwest China,1357464,Huang Jiong,Chengdu,KEBIN.LIU@SAP.COM
+1377410,I529559,Miao,Limin,CN Sales-GB-Southwest China,1357464,Huang Jiong,Chengdu,LEO.MIAO@SAP.COM
+1369768,I514413,Tan,Zhengfang,CN Sales-GB-Southwest China,1357464,Huang Jiong,Chengdu,TOM.TAN@SAP.COM
+1364670,I507261,Zhang,Qiao,CN Sales-GB-Southwest China,1357464,Huang Jiong,Chengdu,GEORGE.ZHANG@SAP.COM
+1367662,I509171,Zhao,Qiong,CN Sales-GB-Southwest China,1357464,Huang Jiong,Chengdu,ZOLA.ZHAO@SAP.COM
+1067636,I067636,Zhang,Bin,CN Sales-GB,1025355,Li Qiang,Shanghai -Wheelock,JACKY.ZHANG01@SAP.COM
+1372950,I518781,Zhong,Hengliang,CN Sales-GB,1067636,Zhang Bin,Guangzhou,RICO.ZHONG@SAP.COM
+1346692,I346692,Chen,Qi,CN Sales-GB-Beijing,1326941,Ren Penghao,Beijing-World Profit Center,CHARLES.CHEN02@SAP.COM
+1363601,I506089,Li,Mengmeng,CN Sales-GB-Beijing,1326941,Ren Penghao,Beijing-World Profit Center,MONA.LI01@SAP.COM
+1346994,I346994,Long,Pengyue,CN Sales-GB-Beijing,1326941,Ren Penghao,Beijing-World Profit Center,KELLY.LONG@SAP.COM
+1326941,I326941,Ren,Penghao,CN Sales-GB-Beijing,1067636,Zhang Bin,Beijing-World Profit Center,NICOLAS.REN@SAP.COM
+1357502,I500699,Shi,Ge,CN Sales-GB-Beijing,1326941,Ren Penghao,Beijing-World Profit Center,AMY.SHI01@SAP.COM
+1372876,I518570,Zhang,Yawei,CN Sales-GB-Beijing,1326941,Ren Penghao,Beijing-World Profit Center,YAWEI.ZHANG@SAP.COM
+1369427,I513810,He,Yi,CN Sales-GB-Shandong,1363376,Zhang Qinhong,Beijing-World Profit Center,LEO.HE@SAP.COM
+1363536,I505986,Ji,Jingjing,CN Sales-GB-Shandong,1363376,Zhang Qinhong,Beijing-World Profit Center,JESSIE.JI@SAP.COM
+1366826,I508020,Lin,Jingxian,CN Sales-GB-Shandong,1363376,Zhang Qinhong,Beijing-World Profit Center,TINA.LIN01@SAP.COM
+1077968,I524232,Shang,Jianjun,CN Sales-GB-Shandong,1363376,Zhang Qinhong,Beijing-World Profit Center,jianjun.shang01@SAP.COM
+1363376,I505774,Zhang,Qinhong,CN Sales-GB-Shandong,1067636,Zhang Bin,Beijing-World Profit Center,NICHOLAS.ZHANG01@SAP.COM
+1377414,I529563,Zhao,Yuebo,CN Sales-GB-Shandong,1363376,Zhang Qinhong,Beijing-World Profit Center,ELIANA.ZHAO01@SAP.COM
+1342346,I342346,Lu,Yuan,CN Sales-GB-Jiangsu,1319960,Yang Ke,Shanghai - SW Park,MICHELLE.LU@SAP.COM
+1369007,I513242,Shi,Qiyu,CN Sales-GB-Jiangsu,1319960,Yang Ke,Nanjing,LEO.SHI01@SAP.COM
+1364050,I506663,Tang,Zhulin,CN Sales-GB-Jiangsu,1319960,Yang Ke,Nanjing,JULIE.TANG@SAP.COM
+1353298,I353298,Wang,Ziyi,CN Sales-GB-Jiangsu,1319960,Yang Ke,Nanjing,JOCELYN.WANG@SAP.COM
+1319960,I319960,Yang,Ke,CN Sales-GB-Jiangsu,1067636,Zhang Bin,Shanghai -Wheelock,KEITH.YANG@SAP.COM
+1337305,I337305,Zhang,Hailing,CN Sales-GB-Jiangsu,1319960,Yang Ke,Shanghai - SW Park,HELEN.ZHANG01@SAP.COM
+1040997,I507480,Chen,Xiongfei,CN Sales-Consumers-Wine & Brewery,1308815,Yao Yizhao,Shanghai -Wheelock,jason.chen06@sap.com
+1366985,I508197,Gan,Youqin,CN Sales-Consumers-Wine & Brewery,1040997,Chen Xiongfei,Shanghai -Wheelock,RICK.GAN@SAP.COM
+1351279,I351279,Li,Jun,CN Sales-Consumers-Wine & Brewery,1040997,Chen Xiongfei,Shenzhen,HARLEY.LI@SAP.COM
+1366995,I508216,Tong,Fujia,CN Sales-Consumers-Wine & Brewery,1040997,Chen Xiongfei,Beijing-World Profit Center,FUJIA.TONG@SAP.COM
+1070586,I070586,Xu,Jian,CN Sales-Consumers-Wine & Brewery,1040997,Chen Xiongfei,Shenzhen,JIAN.XU01@SAP.COM
+1376902,I523679,Dong,Chi,CN Sales-Consumers-Catering,1329835,Hu Siyi,Beijing-World Profit Center,CHRIS.DONG@SAP.COM
+1369994,I514832,Dong,Tian Lun,CN Sales-Consumers-Catering,1329835,Hu Siyi,Shenzhen,DANIEL.DONG@SAP.COM
+1329835,I329835,Hu,Siyi,CN Sales-Consumers-Catering,1308815,Yao Yizhao,Shanghai -Wheelock,SIYI.HU@SAP.COM
+1351227,I351227,Li,Kui,CN Sales-Consumers-Catering,1329835,Hu Siyi,Shenzhen,JAY.LI@SAP.COM
+1356284,I356284,Qi,Yan,CN Sales-Consumers-Catering,1329835,Hu Siyi,Shenzhen,young.qi@sap.com
+1056138,I056138,Yao,Zhizhong,CN Sales-Consumers-Catering,1329835,Hu Siyi,Shanghai -Wheelock,JERRY.YAO@SAP.COM
+1349034,I349034,Yu,Xiaohua,CN Sales-Consumers-Catering,1329835,Hu Siyi,Shenzhen,SALLY.YU@SAP.COM
+1371538,I517166,Chen,Liang,CN Sales-GB-Central China,1367866,Wang Bin,Shanghai -Wheelock,LION.CHEN@SAP.COM
+1365522,I507895,Pan,Lei,CN Sales-GB-Central China,1367866,Wang Bin,Shanghai -Wheelock,LEI.PAN01@SAP.COM
+1367866,I509480,Wang,Bin,CN Sales-GB-Central China,1067636,Zhang Bin,Shanghai -Wheelock,BINGO.WANG@SAP.COM
+1371699,I517410,Wang,Xia,CN Sales-GB-Central China,1367866,Wang Bin,Shanghai -Wheelock,STAR.WANG@SAP.COM
+1367261,I508588,Wei,Lei,CN Sales-GB-Central China,1367866,Wang Bin,Shanghai -Wheelock,VICK.WEI@SAP.COM
+1364223,I506848,Yu,Yi,CN Sales-GB-Central China,1367866,Wang Bin,Shanghai -Wheelock,COCO.YU@SAP.COM
+1374660,I521080,Jiang,Jiandao,CN Sales-Services-Logistics,1304409,Zheng Taiyang,Shanghai -Wheelock,MICHAEL.JIANG@SAP.COM
+1362038,I503683,Liu,Jingnan,CN Sales-Services-Logistics,1304409,Zheng Taiyang,Guangzhou,PHOENIX.LIU01@SAP.COM
+1376310,I522770,Xu,Yichong,CN Sales-Services-Logistics,1304409,Zheng Taiyang,Shanghai -Wheelock,COLIN.XU@SAP.COM
+1304409,I304409,Zheng,Taiyang,CN Sales-Services-Logistics,1321907,Gu Wei,Shanghai -Wheelock,TAIYANG.ZHENG@SAP.COM
+1323368,I508178,Chen,Xiaojian,CN Sales-Services-Sports&Entmt,1312239,Ouyang Yiqing,Beijing-World Profit Center,winstom.chen01@sap.com
+1307224,I511975,Chen,Yi,CN Sales-Services-Sports&Entmt,1312239,Ouyang Yiqing,Shanghai -Wheelock,cecelia.chen01@sap.com
+1329943,I329943,Feng,JiaYu,CN Sales-Services-Sports&Entmt,1312239,Ouyang Yiqing,Shanghai -Wheelock,SIMON.FENG@SAP.COM
+1324550,I324550,Lin,Ying,CN Sales-Services-Sports&Entmt,1312239,Ouyang Yiqing,Guangzhou,LINDA.LIN01@SAP.COM
+1312239,I312239,Ouyang,Yiqing,CN Sales-Services-Sports&Entmt,1321907,Gu Wei,Beijing-World Profit Center,ERIC.OUYANG@SAP.COM
+1301775,I301775,Yi,Lewei,CN Sales-Services-Sports&Entmt,1312239,Ouyang Yiqing,Beijing-Haidian,ARIES.YI@SAP.COM
+1376387,I522898,Zhang,Yu,CN Sales-Services-Sports&Entmt,1312239,Ouyang Yiqing,Beijing-World Profit Center,LEON.ZHANG01@SAP.COM
+1350670,I350670,Fang,Jia,CN Sales-ENR-Chemical E&S,1307606,Guo Ning,Shanghai -Wheelock,ALEN.FANG@SAP.COM
+1307606,I307606,Guo,Ning,CN Sales-ENR-Chemical E&S,1066141,Wang Qian,Shanghai -Wheelock,NING.GUO@SAP.COM
+1377934,I530511,Guo,Panfei,CN Sales-ENR-Chemical E&S,1307606,Guo Ning,Shanghai -Wheelock,MICHAEL.GUO01@SAP.COM
+1062802,I062802,Song,Yu Hang,CN Sales-ENR-Chemical E&S,1307606,Guo Ning,Shanghai -Wheelock,V.SONG@SAP.COM
+1342236,I342236,Tang,Jing,CN Sales-ENR-Chemical E&S,1307606,Guo Ning,Shanghai -Wheelock,JING.TANG@SAP.COM
+1364804,I507471,Ye,Tian,CN Sales-ENR-Chemical E&S,1307606,Guo Ning,Guangzhou,TIM.YE@SAP.COM
+1364372,I506980,Huang,Hongwei,CN IVE - High Tech,1365029,Jonathan Dong Zhang,Guangzhou,DAVID.HUANG02@SAP.COM
+1373688,I519686,Lv,Jinhan,CN IVE - High Tech,1365029,Jonathan Dong Zhang,Shanghai -Wheelock,henry.lv@SAP.COM
+1365029,I507677,Zhang,Jonathan Dong,CN IVE - High Tech,1347693,Zhang Chao,Shanghai -Wheelock,jon.zhang@sap.com
+1365912,I507927,Gong,Fei,CN Sales-HT-Internet,1350491,Yang Xiao,Beijing-World Profit Center,FAYE.GONG@SAP.COM
+1350491,I350491,Yang,Xiao,CN Sales-HT-Internet,1066179,Cao Lei,Beijing-World Profit Center,SIREN.YANG@SAP.COM
+1378525,I531536,Zhang,Hui,CN Sales-HT-Internet,1350491,Yang Xiao,Beijing-World Profit Center,SUNNY.ZHANG03@SAP.COM
+1348358,I348358,Zhao,Jia,CN Sales-HT-Internet,1350491,Yang Xiao,Beijing-World Profit Center,ALEX.ZHAO03@SAP.COM
+1366836,I508026,Cai,Yao,CN ECO-CCM,1374194,Xu Minghui,Shanghai -Wheelock,FILIPPO.CAI@SAP.COM
+1376811,I523559,Chen,Jinfeng,CN ECO-CCM,1374194,Xu Minghui,Guangzhou,SISSI.CHEN01@SAP.COM
+1378862,I532116,Han,Jian,CN ECO-CCM,1374194,Xu Minghui,Dalian,HANK.HAN01@SAP.COM
+1378453,I531424,Hu,Yiting,CN ECO-CCM,1374194,Xu Minghui,Shanghai -Wheelock,KEN.HU@SAP.COM
+1351182,I351182,Li,Yang,CN ECO-CCM,1374194,Xu Minghui,Beijing-World Profit Center,IAN.LI02@SAP.COM
+1311765,I311765,Liang,Jianbin,CN ECO-CCM,1374194,Xu Minghui,Guangzhou,STEVEN.LIANG@SAP.COM
+1377678,I530083,Liu,Sai,CN ECO-CCM,1374194,Xu Minghui,Nanjing,LUNA.LIU02@SAP.COM
+1370353,I515402,Ma,Xu,CN ECO-CCM,1374194,Xu Minghui,Shanghai -Wheelock,MAX.MA01@SAP.COM
+1340505,I340505,Miao,Yan,CN ECO-CCM,1374194,Xu Minghui,Guangzhou,YAN.MIAO01@SAP.COM
+1367814,I509398,Qi,Fei,CN ECO-CCM,1374194,Xu Minghui,Nanjing,KRYS.QI@SAP.COM
+1377976,I530590,Wei,Yan,CN ECO-CCM,1374194,Xu Minghui,Chengdu,clare.wei@sap.com
+1374194,I520390,Xu,Minghui,CN ECO-CCM,1036021,Yin Jinming,Guangzhou,KALON.XU@SAP.COM
+1361013,I503029,Yu,Haifeng,CN ECO-CCM,1374194,Xu Minghui,Beijing-World Profit Center,SHAWN.YU01@SAP.COM
+1377158,I524100,Yuan,Qi,CN ECO-CCM,1374194,Xu Minghui,Xi'an,JASON.YUAN@SAP.COM
+1364751,I507392,Yuan,Tianjun,CN ECO-CCM,1374194,Xu Minghui,Beijing-World Profit Center,ALLEN.YUAN01@SAP.COM
+1308871,I308871,Wang,Jianping,CN Sales-Discrete-Dongfeng,1068989,Dong Zhigang,Shanghai -Wheelock,JIANPING.WANG@SAP.COM
+1378853,I532096,Gao,Yingming,CN Sales-SF,1070910,Zhou Jinhua,Beijing-World Profit Center,LOUIE.GAO@SAP.COM
+1310548,I310548,Liu,Jiaji,CN Sales-SF,1070910,Zhou Jinhua,Beijing-World Profit Center,STEVEN.LIU03@SAP.COM
+1376808,I523550,Liu,Yanfang,CN Sales-SF,1070910,Zhou Jinhua,Beijing-World Profit Center,HELEN.LIU@SAP.COM
+1371968,I517669,Peng,Yuqi,CN Sales-SF,1070910,Zhou Jinhua,Chengdu,YUQI.PENG01@SAP.COM
+1353810,I353810,Wang,Yu,CN Sales-SF,1070910,Zhou Jinhua,Beijing-World Profit Center,YU.WANG05@SAP.COM
+1375260,I521443,Yang,Dongsheng,CN Sales-SF,1070910,Zhou Jinhua,Beijing-World Profit Center,ELVIS.YANG@SAP.COM
+1372933,I518698,Ye,Qifang,CN Sales-SF,1070910,Zhou Jinhua,Shenzhen,KEN.YE@SAP.COM
+1070910,I070910,Zhou,Jinhua,CN Sales-SF,1025355,Li Qiang,Beijing-World Profit Center,CHERRY.ZHOU01@SAP.COM
+1306064,I531524,Cheng,Long,GFO-Sales-CN-SF-Industry 2,1317129,Liu Leilei,Beijing-World Profit Center,stephen.cheng01@sap.com
+1357666,I500910,Li,Xiaofeng,GFO-Sales-CN-SF-Industry 2,1317129,Liu Leilei,Beijing-World Profit Center,AARON.LI01@SAP.COM
+1317129,I317129,Liu,Leilei,GFO-Sales-CN-SF-Industry 2,1070910,Zhou Jinhua,Shanghai -Wheelock,STONE.LIU@SAP.COM
+1368667,I512746,Tang,Yige,GFO-Sales-CN-SF-Industry 2,1317129,Liu Leilei,Shanghai -Wheelock,EAGLE.TANG@SAP.COM
+1317106,I317106,Yang,Chenqi,GFO-Sales-CN-SF-Industry 2,1317129,Liu Leilei,Beijing-Haidian,CHENQI.YANG@SAP.COM
+1368063,I509779,Zhang,Wuyun,GFO-Sales-CN-SF-Industry 2,1317129,Liu Leilei,Shanghai -Wheelock,WUYUN.ZHANG@SAP.COM
+1378957,I532363,Liu,Yingmei,CN Presales - GB Presales,1052907,Zhang Xuxiang,Beijing-World Profit Center,MICHELLE.LIU01@SAP.COM
+1074797,I074797,Zhang,Hui,CN Presales - GB Presales,1052907,Zhang Xuxiang,Guangzhou,HUI.ZHANG03@SAP.COM
+1052907,I052907,Zhang,Xuxiang,CN Presales - GB Presales,1034535,Yao Fa,Beijing-Haidian,XUXIANG.ZHANG@SAP.COM
+1036470,I036470,Deng,Shengyu,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Beijing-World Profit Center,MICHAEL.DENG@SAP.COM
+1349570,I349570,Feng,Hongda,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Beijing-World Profit Center,DYLAN.FENG@SAP.COM
+1040758,I040758,Kou,Mingjun,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Chengdu,TERRY.KOU@SAP.COM
+1336799,I336799,Lan,Xiang,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Guangzhou,XIANG.LAN@SAP.COM
+1342389,I342389,Li,Qiang,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Shanghai -Wheelock,HOWE.LI@SAP.COM
+1356909,I500197,Pan,Xibing,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Guangzhou,PAUL.PAN01@SAP.COM
+1034620,I034620,Wang,Danmei,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Shanghai -Wheelock,DEMI.WANG@SAP.COM
+1047786,I047786,Wang,Xin,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Beijing-Haidian,SEAN.WANG@SAP.COM
+1364869,I507541,Wei,Shaya,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Beijing-World Profit Center,SHASHA.WEI@SAP.COM
+1070263,I070263,Yao,Yuan,CN Presales - GB PCSM,1052907,Zhang Xuxiang,Shanghai -Wheelock,Y.YAO@SAP.COM
+1358258,I501579,Gong,Cheng,CN SF Presales,1070910,Zhou Jinhua,Shanghai -Wheelock,HEAVEN.GONG@SAP.COM
+1061208,I061208,Hao,Ping,CN SF Presales,1070910,Zhou Jinhua,Beijing-World Profit Center,JUDY.HAO@SAP.COM
+1018957,I018957,Li,Xiaowu,CN SF Presales,1070910,Zhou Jinhua,Shanghai -Wheelock,ALBERT.LI@SAP.COM
+1348771,I348771,Liu,Qiuwei,CN SF Presales,1070910,Zhou Jinhua,Guangzhou,SOPHIE.LIU03@SAP.COM
+1073243,I073243,Liu,Yutao,CN SF Presales,1070910,Zhou Jinhua,Shenzhen,YUTAO.LIU@SAP.COM
+1342275,I342275,Wang,Feng,CN SF Presales,1070910,Zhou Jinhua,Shanghai -Wheelock,MAC.WANG01@SAP.COM
+1378396,I531319,Hao,Liqi,CN Presales - PCSM/D Discrete&HT,1034535,Yao Fa,Guangzhou,L.HAO@SAP.COM
+1356399,I356399,Li,Guohui,CN Presales - PCSM/D Discrete&HT,1034535,Yao Fa,Beijing-World Profit Center,guohui.li01@sap.com
+1045867,I045867,Shu,Yi,CN Presales - PCSM/D Discrete&HT,1034535,Yao Fa,Shanghai -Wheelock,MIKKO.SHU@SAP.COM
+1378602,I531661,Wang,Tieshi,CN Presales - PCSM/D Discrete&HT,1034535,Yao Fa,Shanghai -Wheelock,STONE.WANG@SAP.COM
+1367667,I509178,Yang,Yu-Chang,CN Presales - PCSM/D Discrete&HT,1034535,Yao Fa,Shanghai -Wheelock,ARROW.YANG01@SAP.COM
+1038222,I038222,Zhou,Weifeng,CN Presales - PCSM/D Discrete&HT,1034535,Yao Fa,Shanghai -Wheelock,EVAN.ZHOU@SAP.COM
+1351538,I351538,Chen,Chao,IVE - IMC & AD,1347693,Zhang Chao,Beijing-World Profit Center,CARSON.CHEN@SAP.COM
+1357637,I500869,Dong,Yanshan,IVE - IMC & AD,1347693,Zhang Chao,Beijing-World Profit Center,THOMAS.DONG@SAP.COM
+1053374,I523226,Sun,Gang,IVE - IMC & AD,1347693,Zhang Chao,Beijing-World Profit Center,michael.sun07@SAP.COM
+1338233,I338233,Shi,Mei,CN Sales-SCP SOE,1025355,Li Qiang,Beijing-World Profit Center,MEI.SHI@SAP.COM
+1072198,I072198,Lee,Chun,CN Sales-SCP HT,1025355,Li Qiang,Guangzhou,CHUN.LEE@SAP.COM
+1357425,I500597,Jin,Zhenying,CN Sales-SCP HT-Lenovo,1072198,Lee Chun,Beijing-World Profit Center,JENNIFER.JIN01@SAP.COM
+1002205,I002205,Schwartzman,Scott,CN Sales-SCP HT-Lenovo,1072198,Lee Chun,New York – Hudson Yards,SCOTT.SCHWARTZMAN@SAP.COM
+1332921,I332921,Wu,Shan,CN Sales-SCP HT-Huawei,1072198,Lee Chun,Shenzhen,EMMA.WU@SAP.COM
+1366859,I508050,Chen,Bin,CN Sales-Services-E&C,1335385,Zhang Xiaofei,Shanghai -Wheelock,ETHAN.CHEN01@SAP.COM
+1344303,I344303,Fang,Jun,CN Sales-Services-E&C,1335385,Zhang Xiaofei,Shanghai -Wheelock,THOMAS.FANG@SAP.COM
+1364819,I507496,Wang,Ze,CN Sales-Services-E&C,1335385,Zhang Xiaofei,Beijing-World Profit Center,BILL.WANG02@SAP.COM
+1356009,I356009,Yao,Liyuan,CN Sales-Services-E&C,1335385,Zhang Xiaofei,Beijing-World Profit Center,MICHELLE.YAO@SAP.COM
+1074898,I074898,Zhan,Yiping,CN Sales-Services-E&C,1335385,Zhang Xiaofei,Shanghai -Wheelock,JANET.ZHAN@SAP.COM
+1367100,I508355,Zhang,Tao,CN Sales-Services-E&C,1335385,Zhang Xiaofei,Beijing-World Profit Center,ALEX.ZHANG08@SAP.COM
+1335385,I335385,Zhang,Xiaofei,CN Sales-Services-E&C,1321907,Gu Wei,Shanghai -Wheelock,SOPHIE.ZHANG01@SAP.COM
+1359928,I501902,Yang,Qiuxia,CN Sales-GB-Northwest China,1067636,Zhang Bin,Xi'an,YOYO.YANG@SAP.COM
+1370576,I515781,Shen,Xiaowei,CN Sales-SCP SOE-SGCC,1338233,Shi Mei,Shanghai -Wheelock,TONY.SHEN01@SAP.COM
+1320806,I320806,Wu,Liying,CN Sales-SCP SOE-SGCC,1338233,Shi Mei,Beijing-World Profit Center,JESSICA.WU02@SAP.COM
+1368374,I511884,Xu,Yanning,CN Sales-SCP SOE-SGCC,1338233,Shi Mei,Beijing-World Profit Center,SOFIA.XU01@SAP.COM
+1357470,I500653,Zhang,Yue,CN Sales-SCP SOE-SGCC,1338233,Shi Mei,Shanghai -Wheelock,YUE.ZHANG09@SAP.COM
+1367095,I508344,Zheng,Chengguang,CN Sales-SCP SOE-SGCC,1338233,Shi Mei,Beijing-World Profit Center,CHENGGUANG.ZHENG@SAP.COM
+1377871,I530364,Cao,Yuan,CN Sales-SCP SOE-Sinopec,1338233,Shi Mei,Beijing-World Profit Center,COLIN.CAO01@SAP.COM
+1354357,I354357,Yu,Yue,CN Sales-SCP SOE-Sinopec,1338233,Shi Mei,Beijing-World Profit Center,ERIC.YU06@SAP.COM
+1375372,I521499,Wang,Yanwei,CN Sales-SCP SOE-PetroChina,1338233,Shi Mei,Beijing-World Profit Center,YANWEI.WANG@SAP.COM

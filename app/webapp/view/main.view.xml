@@ -1,0 +1,86 @@
+<mvc:View xmlns:mvc="sap.ui.core.mvc" 
+	xmlns="sap.m" 
+	xmlns:l="sap.ui.layout" 
+	xmlns:u="sap.ui.unified" 
+	xmlns:f="sap.ui.layout.form" 
+	xmlns:core="sap.ui.core" controllerName="healthcheckv2.healthcheckv2.controller.main" displayBlock="true">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="健康信息采集">
+					<content>
+						<l:Grid class="sapUiSmallMarginTop" defaultSpan="XL4 L4 M4 S12">
+							<FlexBox alignItems="Center" justifyContent="Center">
+								<layoutData>
+									<l:GridData span="XL3 L3 M5 S12" indent="XL1 L1 M1 S0"/>
+								</layoutData>
+								<l:VerticalLayout>
+									<u:Calendar id="calendar1" legend="legend1" intervalSelection="false" specialDates="{/HealthData}" select="handleSelectDate" startDateChange="handleCalendarChange">
+										<u:specialDates>
+											<u:DateTypeRange startDate="{ReportDate}" type="{path: 'Status',formatter: '.formatter.specialDateType'}"/>
+										</u:specialDates>
+									</u:Calendar>
+									<u:CalendarLegend id="legend1" standardItems="Today"/>
+								</l:VerticalLayout>
+							</FlexBox>
+							<f:SimpleForm id="SimpleFormChange354" editable="true" layout="ResponsiveGridLayout" title="" labelSpanXL="3" labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0" columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false" visible="{form>/status}">
+								<f:layoutData>
+									<l:GridData span="XL6 L6 M5 S12" indent="XL1 L1 M1 S0"/>
+								</f:layoutData>
+								<f:content>
+									<Label text="所在地点"/>
+									<Select selectedKey="{Location}" items="{province>/p}" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }">
+										<core:Item text="{province>v}" key="{province>v}"/>
+									</Select>
+									<Label text="健康状态"/>
+									<Select selectedKey="{Status}" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }" change="onStatusChange">
+										<items>
+											<core:Item text="健康" key="健康"/>
+											<core:Item text="发烧" key="发烧"/>
+											<core:Item text="咳嗽" key="咳嗽"/>
+										</items>
+									</Select>
+									<Label text="体温" visible="{= %{Status} !== '健康' }"/>
+									<Input value="{Temperature}" visible="{= %{Status} !== '健康' }" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }"/>
+									<Label text="是否就医" visible="{= %{Status} !== '健康' }"/>
+									<Switch state="{hospitalize}" visible="{= %{Status} !== '健康' }" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }">
+										<layoutData>
+											<FlexItemData growFactor="1"/>
+										</layoutData>
+									</Switch>
+									<Label text="今日出差"/>
+									<Switch state="{Travel}" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }">
+										<layoutData>
+											<FlexItemData growFactor="1"/>
+										</layoutData>
+									</Switch>
+									<Label text="目标城市" visible="{Travel}"/>
+									<Select selectedKey="{Destination}" visible="{Travel}" items="{province>/p}" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }">
+										<items>
+											<core:Item text="{province>v}" key="{province>v}"/>
+										</items>
+									</Select>
+								</f:content>
+								<f:toolbar>
+									<Toolbar width="100%" id="toolbar1">
+										<content>
+											<ToolbarSpacer/>
+											<Title text="{path:'INumber', formatter:'.formatter.shortName'} { path: 'ReportDate', formatter: '.formatter.ReportDateString' }"/>
+											<ToolbarSpacer/>
+											<Button xmlns:mvc="sap.ui.core.mvc" 
+												xmlns:l="sap.ui.layout" 
+												xmlns:u="sap.ui.unified" 
+												xmlns:f="sap.ui.layout.form" 
+												xmlns:core="sap.ui.core" 
+												xmlns="sap.m" text="提交" id="button1" activeIcon="sap-icon://add" icon="sap-icon://add" enabled="{ path: 'ReportDate', targetType : 'sap.ui.model.type.Date', formatter: '.formatter.buttonEnabled' }" press="buttonPress"/>
+										</content>
+									</Toolbar>
+								</f:toolbar>
+							</f:SimpleForm>
+						</l:Grid>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

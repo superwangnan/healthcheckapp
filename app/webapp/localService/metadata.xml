@@ -1,0 +1,99 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="4.0" xmlns:edmx="http://docs.oasis-open.org/odata/ns/edmx">
+  <edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470974/Common.xml?api=v2">
+    <edmx:Include Alias="Common" Namespace="com.sap.vocabularies.Common.v1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://oasis-tcs.github.io/odata-vocabularies/vocabularies/Org.OData.Core.V1.xml">
+    <edmx:Include Alias="Core" Namespace="Org.OData.Core.V1"/>
+  </edmx:Reference>
+  <edmx:Reference Uri="https://wiki.scn.sap.com/wiki/download/attachments/448470968/UI.xml?api=v2">
+    <edmx:Include Alias="UI" Namespace="com.sap.vocabularies.UI.v1"/>
+  </edmx:Reference>
+  <edmx:DataServices>
+    <Schema Namespace="AdminService" xmlns="http://docs.oasis-open.org/odata/ns/edm">
+      <EntityContainer Name="EntityContainer">
+        <EntitySet Name="HealthData" EntityType="AdminService.HealthData"/>
+        <EntitySet Name="OChart" EntityType="AdminService.OChart"/>
+        <EntitySet Name="Report1" EntityType="AdminService.Report1"/>
+      </EntityContainer>
+      <EntityType Name="HealthData">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="modifiedAt" Type="Edm.DateTimeOffset"/>
+        <Property Name="createdAt" Type="Edm.DateTimeOffset"/>
+        <Property Name="createdBy" Type="Edm.String" MaxLength="255"/>
+        <Property Name="modifiedBy" Type="Edm.String" MaxLength="255"/>
+        <Property Name="ID" Type="Edm.String" MaxLength="32" Nullable="false"/>
+        <Property Name="INumber" Type="Edm.String" MaxLength="16"/>
+        <Property Name="ReportDate" Type="Edm.Date"/>
+        <Property Name="Location" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Status" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Temperature" Type="Edm.String" MaxLength="16"/>
+        <Property Name="hospitalize" Type="Edm.Boolean"/>
+        <Property Name="Travel" Type="Edm.Boolean"/>
+        <Property Name="Destination" Type="Edm.String" MaxLength="16"/>
+      </EntityType>
+      <EntityType Name="OChart">
+        <Key>
+          <PropertyRef Name="PersonnelNumber"/>
+        </Key>
+        <Property Name="PersonnelNumber" Type="Edm.String" MaxLength="16" Nullable="false"/>
+        <Property Name="UserID" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Lastname" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Firstname" Type="Edm.String" MaxLength="16"/>
+        <Property Name="OChartDesc" Type="Edm.String" MaxLength="64"/>
+        <Property Name="Manager" Type="Edm.String" MaxLength="16"/>
+        <Property Name="ManagerFullName" Type="Edm.String" MaxLength="32"/>
+        <Property Name="BaseCity" Type="Edm.String" MaxLength="32"/>
+        <Property Name="EMail" Type="Edm.String" MaxLength="32"/>
+      </EntityType>
+      <EntityType Name="Report1">
+        <Key>
+          <PropertyRef Name="ID"/>
+        </Key>
+        <Property Name="ID" Type="Edm.String" MaxLength="32" Nullable="false"/>
+        <Property Name="PersonnelNumber" Type="Edm.String" MaxLength="16"/>
+        <Property Name="INumber" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Firstname" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Lastname" Type="Edm.String" MaxLength="16"/>
+        <Property Name="ReportDate" Type="Edm.Date"/>
+        <Property Name="Location" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Status" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Temperature" Type="Edm.String" MaxLength="16"/>
+        <Property Name="hospitalize" Type="Edm.Boolean"/>
+        <Property Name="Travel" Type="Edm.Boolean"/>
+        <Property Name="Destination" Type="Edm.String" MaxLength="16"/>
+        <Property Name="Manager" Type="Edm.String" MaxLength="16"/>
+        <Property Name="ManagerFullName" Type="Edm.String" MaxLength="32"/>
+      </EntityType>
+      <Annotations Target="AdminService.HealthData/modifiedAt">
+        <Annotation Term="Common.Label" String="Changed At"/>
+        <Annotation Term="Core.Computed" Bool="true"/>
+        <Annotation Term="Core.Immutable" Bool="true"/>
+        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+      </Annotations>
+      <Annotations Target="AdminService.HealthData/createdAt">
+        <Annotation Term="Common.Label" String="Created At"/>
+        <Annotation Term="Core.Computed" Bool="true"/>
+        <Annotation Term="Core.Immutable" Bool="true"/>
+        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+      </Annotations>
+      <Annotations Target="AdminService.HealthData/createdBy">
+        <Annotation Term="Common.Label" String="Created By"/>
+        <Annotation Term="Core.Computed" Bool="true"/>
+        <Annotation Term="Core.Description" String="A user's unique ID"/>
+        <Annotation Term="Core.Immutable" Bool="true"/>
+        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+      </Annotations>
+      <Annotations Target="AdminService.HealthData/modifiedBy">
+        <Annotation Term="Common.Label" String="Changed By"/>
+        <Annotation Term="Core.Computed" Bool="true"/>
+        <Annotation Term="Core.Description" String="A user's unique ID"/>
+        <Annotation Term="Core.Immutable" Bool="true"/>
+        <Annotation Term="UI.HiddenFilter" Bool="true"/>
+      </Annotations>
+    </Schema>
+  </edmx:DataServices>
+</edmx:Edmx>

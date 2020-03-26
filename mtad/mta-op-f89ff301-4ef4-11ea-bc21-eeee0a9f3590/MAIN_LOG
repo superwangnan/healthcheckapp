@@ -1,0 +1,3746 @@
+#2.0#2020 02 14 06:41:03.864#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.startEvent#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########http-nio-0.0.0.0-8080-exec-6###
+[XS2StartProcessListener] Process environment: {
+  "PLATFORM" : "{\n  \"name\": \"CLOUD-FOUNDRY\",\n  \"module-types\": [\n    { \"name\": \"custom\" },\n    { \"name\": \"javascript.nodejs\" },\n    { \"name\": \"java\", \"parameters\": { \"buildpack\": \"sap_java_buildpack\" }},\n    { \"name\": \"java.tomcat\", \"parameters\": { \"buildpack\": \"sap_java_buildpack\" }, \"properties\": { \"TARGET_RUNTIME\": \"tomcat\" }},\n    { \"name\": \"java.tomee\",  \"parameters\": { \"buildpack\": \"sap_java_buildpack\" }, \"properties\": { \"TARGET_RUNTIME\": \"tomee\" }},\n    { \"name\": \"com.sap.xs.hdi-dynamic\", \"parameters\": { \"buildpack\": \"nodejs_buildpack\" }},\n    { \"name\": \"com.sap.xs.hdi\", \"parameters\": { \"no-route\": true, \"no-start\": true, \"memory\": \"256M\", \"tasks\": [{ \"name\": \"deploy\", \"memory\": \"256M\", \"command\": \"npm start\" }], \"dependency-type\": \"hard\" }, \"properties\" : { \"EXIT\": 1 }},\n    { \"name\": \"com.sap.xs.hdi-zdm\", \"parameters\": { \"zdm-mode\": true, \"no-route\": true, \"no-start\": true, \"memory\": \"256M\", \"tasks\": [{ \"name\": \"deploy\", \"memory\": \"256M\", \"command\": \"npm start\" }], \"dependency-type\": \"hard\" }, \"properties\" : { \"EXIT\": 1, \"HDI_DEPLOY_MODE\": \"ZDM\" }},\n    { \"name\": \"com.sap.portal.site-content\", \"parameters\": { \"no-route\": true, \"memory\": \"256M\", \"execute-app\": true, \"success-marker\": \"STDOUT:Deployment of site content to .* done.*\", \"failure-marker\": \"STDERR:Deployment of site content to .* failed.*\", \"stop-app\": true, \"check-deploy-id\": true, \"dependency-type\": \"hard\", \"health-check-type\": \"none\" }},\n    { \"name\": \"com.sap.portal.content\", \"parameters\": { \"no-route\": true, \"no-start\": true, \"memory\": \"256M\", \"tasks\": [{ \"name\": \"deploy\", \"memory\": \"256M\", \"command\": \"npm start\" }], \"dependency-type\": \"hard\" }, \"properties\" : { \"EXIT\": 1 }},\n    { \"name\": \"com.sap.xs.dwf\", \"parameters\": { \"no-route\": true, \"memory\": \"256M\", \"execute-app\": true, \"success-marker\": \"STDOUT:The deployment of DWF content to .* container finished successfully .*\", \"failure-marker\": \"STDERR:The deployment of DWF content to .* container failed .*\", \"stop-app\": true, \"check-deploy-id\": true, \"dependency-type\": \"hard\", \"health-check-type\": \"none\" }},\n    { \"name\": \"business-logging\", \"parameters\": { \"no-route\": true, \"memory\": \"256M\", \"execute-app\": true, \"success-marker\": \"STDOUT:Deployment of content deployer done.\", \"failure-marker\": \"STDERR:Deployment of content deployer failed.\", \"stop-app\": true, \"health-check-type\": \"none\" }},\n    { \"name\": \"com.sap.business-logging.content\", \"parameters\": { \"no-route\": true, \"no-start\": true, \"memory\": \"256M\", \"tasks\": [{ \"name\": \"deploy\", \"memory\": \"256M\", \"command\": \"npm start\" }], \"dependency-type\": \"hard\" }, \"properties\" : { \"EXIT\": 1 }},\n    { \"name\": \"com.sap.html5.application-content\", \"parameters\": { \"no-route\": true, \"memory\": \"256M\", \"execute-app\": true, \"success-marker\": \"STDOUT:Deployment of html5 application content done.*\", \"failure-marker\": \"STDERR:Deployment of html5 application content failed.*\", \"stop-app\": true, \"check-deploy-id\": true, \"dependency-type\": \"hard\", \"health-check-type\": \"none\" }}, \n    { \"name\": \"com.sap.html5.application.content\", \"parameters\": { \"no-route\": true, \"no-start\": true, \"memory\": \"256M\", \"tasks\": [{ \"name\": \"deploy\", \"memory\": \"256M\", \"command\": \"npm start\" }], \"dependency-type\": \"hard\" }, \"properties\" : { \"EXIT\": 1 }},\n    { \"name\": \"staticfile\", \"parameters\": { \"buildpack\": \"staticfile_buildpack\" }},\n    { \"name\": \"ruby\", \"parameters\": { \"buildpack\": \"ruby_buildpack\" }},\n    { \"name\": \"nodejs\", \"parameters\": { \"buildpack\": \"nodejs_buildpack\" }},\n    { \"name\": \"go\", \"parameters\": { \"buildpack\": \"go_buildpack\" }},\n    { \"name\": \"python\", \"parameters\": { \"buildpack\": \"python_buildpack\" }},\n    { \"name\": \"php\", \"parameters\": { \"buildpack\": \"php_buildpack\" }},\n    { \"name\": \"binary\", \"parameters\": { \"buildpack\": \"binary_buildpack\" }},\n    { \"name\": \"dotnet_core\", \"parameters\": { \"buildpack\": \"dotnet_core_buildpack\" }},\n    { \"name\": \"application\" },\n    { \"name\": \"com.sap.application.content\" }\n  ],\n  \"resource-types\": [\n    { \"name\": \"com.sap.xs.hdi-container\", \"parameters\": { \"service\": \"hana\", \"service-plan\": \"hdi-shared\", \"service-alternatives\": [\"hanatrial\"], \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.hana-sbss\", \"parameters\": { \"service\": \"hana\", \"service-plan\": \"sbss\", \"service-alternatives\": [\"hanatrial\"], \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.hana-schema\", \"parameters\": { \"service\": \"hana\", \"service-plan\": \"schema\", \"service-alternatives\": [\"hanatrial\"], \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.hana-securestore\", \"parameters\": { \"service\": \"hana\", \"service-plan\": \"securestore\", \"service-alternatives\": [\"hanatrial\"], \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.managed-hdi-container\", \"parameters\": { \"service\": \"managed-hana\", \"service-plan\": \"hdi-shared\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.managed-hana-schema\", \"parameters\": { \"service\": \"managed-hana\", \"service-plan\": \"schema\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.managed-hana-securestore\", \"parameters\": { \"service\": \"managed-hana\", \"service-plan\": \"securestore\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.job-scheduler\", \"parameters\": { \"service\": \"jobscheduler\", \"service-plan\": \"lite\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.fs\", \"parameters\": { \"service\": \"fs-storage\", \"service-plan\": \"lite\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.uaa\", \"parameters\": { \"service\": \"xsuaa\", \"service-plan\": \"application\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.uaa-space\", \"parameters\": { \"service\": \"xsuaa\", \"service-plan\": \"application\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.uaa-devuser\", \"parameters\": { \"service\": \"xsuaa\", \"service-plan\": \"application\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.uaa-application\", \"parameters\": { \"service\": \"xsuaa\", \"service-plan\": \"application\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.uaa-broker\", \"parameters\": { \"service\": \"xsuaa\", \"service-plan\": \"broker\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.application-logs\", \"parameters\": { \"service\": \"application-logs\", \"service-plan\": \"lite\", \"ignore-update-errors\": true , \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.portal.site-host\", \"parameters\": { \"service\": \"portal-services\", \"service-plan\": \"site-host\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.portal.site-content\", \"parameters\": { \"service\": \"portal-services\", \"service-plan\": \"site-content\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.sap.xs.dwf-edw-client\", \"parameters\": { \"service\": \"dwf\", \"service-plan\": \"edw-client\", \"type\": \"managed-service\"}},\n    { \"name\": \"com.sap.xs.auditlog\", \"parameters\": { \"service\": \"auditlog\", \"service-plan\": \"standard\", \"ignore-update-errors\": true , \"type\": \"managed-service\" }},\n    { \"name\": \"auditlog\", \"parameters\": { \"service\": \"auditlog\", \"service-plan\": \"standard\", \"ignore-update-errors\": true , \"type\": \"managed-service\" }},\n    { \"name\": \"org.mongodb\", \"parameters\": { \"service\": \"mongodb\", \"service-plan\": \"v3.0-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"mongodb\", \"parameters\": { \"service\": \"mongodb\", \"service-plan\": \"v3.0-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"org.postgresql\", \"parameters\": { \"service\": \"postgresql\", \"service-plan\": \"v9.4-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"postgresql\", \"parameters\": { \"service\": \"postgresql\", \"service-plan\": \"v9.4-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.rabbitmq\", \"parameters\": { \"service\": \"rabbitmq\", \"service-plan\": \"v3.6-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"rabbitmq\", \"parameters\": { \"service\": \"rabbitmq\", \"service-plan\": \"v3.6-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"io.redis\", \"parameters\": { \"service\": \"redis\", \"service-plan\": \"v3.0-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"redis\", \"parameters\": { \"service\": \"redis\", \"service-plan\": \"v3.0-dev\", \"type\": \"managed-service\" }},\n    { \"name\": \"com.influxdb\", \"parameters\": { \"service\": \"influxdb\", \"service-plan\": \"v0.13-container\", \"type\": \"managed-service\" }},\n    { \"name\": \"influxdb\", \"parameters\": { \"service\": \"influxdb\", \"service-plan\": \"v0.13-container\", \"type\": \"managed-service\" }},\n    { \"name\": \"org.cloudfoundry.user-provided-service\", \"parameters\": { \"type\": \"user-provided-service\" }},\n    { \"name\": \"org.cloudfoundry.managed-service\", \"parameters\": { \"type\": \"managed-service\" }},\n    { \"name\": \"org.cloudfoundry.existing-service\", \"parameters\": { \"type\": \"existing-service\" }},\n    { \"name\": \"org.cloudfoundry.existing-service-key\", \"parameters\": { \"type\": \"existing-service-key\" }},\n    { \"name\": \"mta-provided\", \"parameters\": { \"type\": \"mta-provides-dependency\" }},\n    { \"name\": \"configuration\", \"parameters\": { \"type\": \"configuration\" }},\n    { \"name\": \"autoscaler\", \"parameters\": { \"service\": \"autoscaler\", \"service-plan\": \"lite\", \"ignore-update-errors\": true , \"type\": \"managed-service\" }},\n    { \"name\": \"application-logs\", \"parameters\": { \"service\": \"application-logs\", \"service-plan\": \"lite\", \"ignore-update-errors\": true , \"type\": \"managed-service\" }},\n    { \"name\": \"connectivity\", \"parameters\": { \"service\": \"connectivity\", \"service-plan\": \"lite\", \"type\": \"managed-service\" }},\n    { \"name\": \"feature-flags\", \"parameters\": { \"service\": \"feature-flags\", \"service-plan\": \"lite\", \"type\": \"managed-service\" }},\n    { \"name\": \"metering\", \"parameters\": { \"service\": \"metering\", \"service-plan\": \"standard\", \"type\": \"managed-service\" }},\n    { \"name\": \"ml-foundation-services\", \"parameters\": { \"service\": \"ml-foundation-services\", \"service-plan\": \"lite\", \"type\": \"managed-service\" }},\n    { \"name\": \"objectstore\", \"parameters\": { \"service\": \"objectstore\", \"service-plan\": \"s3-standard\", \"type\": \"managed-service\" }},\n    { \"name\": \"destination\", \"parameters\": { \"service\": \"destination\", \"service-plan\": \"lite\", \"type\": \"managed-service\" }}\n  ]\n}\n",
+  "SKIP_SSL_VALIDATION" : "false",
+  "DB_TYPE" : "POSTGRESQL",
+  "XS_TYPE" : "CF",
+  "FLOWABLE_JOB_EXECUTOR_MAX_THREADS" : "32",
+  "VERSION" : "1.91.2",
+  "MAIL_API_URL" : "https://slanamailproxyab00ec583.hana.ondemand.com/SendFeedbackMail/",
+  "BASIC_AUTH_ENABLED" : "true",
+  "FLOWABLE_JOB_EXECUTOR_QUEUE_CAPACITY" : "16",
+  "GLOBAL_AUDITOR_USER" : "provisioned_user_xsa_deploy-serviceDSglobalAuditorUser",
+  "FLOWABLE_JOB_EXECUTOR_CORE_THREADS" : "8",
+  "GATHER_USAGE_STATISTICS" : "false"
+}#
+
+#2.0#2020 02 14 06:41:03.865#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.startEvent#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########http-nio-0.0.0.0-8080-exec-6###
+[XS2StartProcessListener] Current user: nan.wang@sap.com#
+
+#2.0#2020 02 14 06:41:03.865#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.startEvent#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########http-nio-0.0.0.0-8080-exec-6###
+[XS2StartProcessListener] Client space: Dev#
+
+#2.0#2020 02 14 06:41:03.865#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.startEvent#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########http-nio-0.0.0.0-8080-exec-6###
+[XS2StartProcessListener] Client org: China_Presales_InnoTest001#
+
+#2.0#2020 02 14 06:41:03.865#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.startEvent#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########http-nio-0.0.0.0-8080-exec-6###
+[XS2StartProcessListener] Process variables: {
+  "abortOnError" : false,
+  "keepFiles" : false,
+  "versionRule" : "SAME_HIGHER",
+  "verifyArchiveSignature" : false,
+  "gitSkipSsl" : false,
+  "failOnCrashed" : true,
+  "noFailOnMissingPermissions" : false,
+  "useNamespacesForServices" : true,
+  "skipOwnershipValidation" : false,
+  "startTimeout" : 3600,
+  "deleteServiceBrokers" : false,
+  "appArchiveId" : "d3373491-369b-43af-bb44-90faf189395e",
+  "gitUri" : "",
+  "deleteServiceKeys" : false,
+  "noRestartSubscribedApps" : false,
+  "useNamespaces" : false,
+  "noStart" : false,
+  "deleteServices" : false
+}#
+
+#2.0#2020 02 14 06:41:03.945#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.validateParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[ValidateDeployParametersStep] Executing task "validateParametersTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:03.955#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.validateParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[ValidateDeployParametersStep] Validating parameters...#
+
+#2.0#2020 02 14 06:41:03.956#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.validateParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[ValidateDeployParametersStep] Deploying in org "China_Presales_InnoTest001" and space "Dev"#
+
+#2.0#2020 02 14 06:41:03.964#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.validateParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[ValidateDeployParametersStep] Parameters validated#
+
+#2.0#2020 02 14 06:41:03.968#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.validateParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Validate Parameters" finished#
+
+#2.0#2020 02 14 06:41:04.030#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.deleteRemainingFileParts#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[DeleteRemainingFileParts] Executing task "deleteRemainingFileParts" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:04.074#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.deleteRemainingFileParts#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Delete Remaining File Parts" finished#
+
+#2.0#2020 02 14 06:41:04.145#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] Executing task "processArchiveTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:04.158#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] Processing MTA archive...#
+
+#2.0#2020 02 14 06:41:04.198#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] MTA Archive ID: d3373491-369b-43af-bb44-90faf189395e#
+
+#2.0#2020 02 14 06:41:04.199#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] MTA Archive Modules: [healthcheck-srv, approuter-healthcheck, healthcheck-db]#
+
+#2.0#2020 02 14 06:41:04.199#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] MTA Archive Requires: []#
+
+#2.0#2020 02 14 06:41:04.199#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] MTA Archive Resources: []#
+
+#2.0#2020 02 14 06:41:04.222#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[XS2ProcessMtaArchiveStep] MTA archive processed#
+
+#2.0#2020 02 14 06:41:04.226#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processArchiveTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Process Archive" finished#
+
+#2.0#2020 02 14 06:41:04.312#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processExtensionDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[ProcessMtaExtensionDescriptorsStep] Executing task "processExtensionDescriptorsTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:04.324#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processExtensionDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[ProcessMtaExtensionDescriptorsStep] Processing MTA extension descriptors...#
+
+#2.0#2020 02 14 06:41:04.325#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processExtensionDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[ProcessMtaExtensionDescriptorsStep] Extension descriptors: [ ]#
+
+#2.0#2020 02 14 06:41:04.325#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processExtensionDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[ProcessMtaExtensionDescriptorsStep] MTA extension descriptors processed#
+
+#2.0#2020 02 14 06:41:04.329#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processExtensionDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+Step "Process Extension Descriptors" finished#
+
+#2.0#2020 02 14 06:41:04.408#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectSchemaVersionTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetectMtaSchemaVersionStep] Executing task "detectSchemaVersionTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:04.420#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectSchemaVersionTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetectMtaSchemaVersionStep] Detecting MTA major schema version...#
+
+#2.0#2020 02 14 06:41:04.424#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectSchemaVersionTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetectMtaSchemaVersionStep] Detected MTA schema version: "2"#
+
+#2.0#2020 02 14 06:41:04.436#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectSchemaVersionTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Detect Schema Version" finished#
+
+#2.0#2020 02 14 06:41:04.511#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.mergeDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[MergeDescriptorsStep] Executing task "mergeDescriptorsTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:04.523#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.mergeDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[MergeDescriptorsStep] Validating and merging descriptors...#
+
+#2.0#2020 02 14 06:41:04.529#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.mergeDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[MergeDescriptorsStep] Merged deployment descriptor: {
+  "majorSchemaVersion" : 2,
+  "schemaVersion" : "2.0.0",
+  "id" : "com.nan.healthcheck",
+  "version" : "0.1.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "type" : "javascript.nodejs",
+    "path" : "app",
+    "properties" : {
+      "destinations" : [ {
+        "name" : "local",
+        "url" : "https://sapui5.hana.ondemand.com/resources/",
+        "forwardAuthToken" : false
+      }, {
+        "name" : "srv_api",
+        "url" : "~{healthcheck-srv/url}",
+        "forwardAuthToken" : true
+      } ]
+    },
+    "parameters" : { },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "approuter-healthcheck",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "type" : "javascript.nodejs",
+    "path" : "db",
+    "properties" : { },
+    "parameters" : { },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "type" : "javascript.nodejs",
+    "path" : "srv",
+    "properties" : {
+      "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+    },
+    "parameters" : {
+      "command" : "node srv/index.js"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "isPublic" : true,
+      "properties" : {
+        "url" : "${default-url}"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "type" : "com.sap.xs.uaa",
+    "properties" : { },
+    "parameters" : {
+      "service" : "xsuaa",
+      "service-plan" : "application",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "service" : "hana",
+      "service-alternatives" : [ "hanatrial" ],
+      "service-plan" : "hdi-shared",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  } ],
+  "parameters" : { },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+
+#2.0#2020 02 14 06:41:04.532#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.mergeDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[MergeDescriptorsStep] Descriptors validated and merged#
+
+#2.0#2020 02 14 06:41:04.535#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.mergeDescriptorsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+Step "Merge Descriptors" finished#
+
+#2.0#2020 02 14 06:41:04.610#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectDeployedMtaTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[DetectDeployedMtaStep] Executing task "detectDeployedMtaTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:04.622#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectDeployedMtaTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[DetectDeployedMtaStep] Detecting deployed MTA...#
+
+#2.0#2020 02 14 06:41:05.356#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectDeployedMtaTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[DetectDeployedMtaStep] Deployed MTA: {
+  "metadata" : {
+    "id" : "com.nan.healthcheck",
+    "version" : "0.1.0"
+  },
+  "modules" : [ {
+    "moduleName" : "healthcheck-db",
+    "appName" : "healthcheck-db",
+    "createdOn" : 1581603054000,
+    "updatedOn" : 1581603073000,
+    "services" : [ "healthcheck-db-hdi-container" ],
+    "providedDependencyNames" : [ "healthcheck-db" ],
+    "uris" : [ "china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top" ]
+  } ],
+  "services" : [ "healthcheck-db-hdi-container" ]
+}#
+
+#2.0#2020 02 14 06:41:05.357#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectDeployedMtaTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[DetectDeployedMtaStep] Detected deployed MTA with ID "com.nan.healthcheck" and version "0.1.0"#
+
+#2.0#2020 02 14 06:41:05.369#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectDeployedMtaTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[DetectDeployedMtaStep] Deployed apps: [ {
+  "metadata" : {
+    "guid" : "fa959a48-1983-40c2-a2e9-021bc5ebb114",
+    "createdAt" : 1581173368000,
+    "updatedAt" : 1581173383000,
+    "url" : "/v2/apps/fa959a48-1983-40c2-a2e9-021bc5ebb114"
+  },
+  "name" : "firstapp",
+  "memory" : 1024,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ "sap_java_buildpack" ],
+    "detectedBuildpack" : "",
+    "healthCheckTimeout" : 300,
+    "healthCheckType" : "port",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ "firstapp.innolab.oncloud.top" ],
+  "services" : [ "healthcheck-uaa" ],
+  "env" : {
+    "JBP_CONFIG_SAPJVM_MEMORY_SIZES" : "metaspace:128m..",
+    "SET_LOGGING_LEVEL" : "{ROOT: INFO, com.sap.cloud.sdk: INFO}",
+    "TARGET_RUNTIME" : "tomee7",
+    "destinations" : "********"
+  },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "4fc0a195-d797-41c5-b65c-9e3bf613d842",
+    "createdAt" : 1581328406000,
+    "updatedAt" : 1581438160000,
+    "url" : "/v2/apps/4fc0a195-d797-41c5-b65c-9e3bf613d842"
+  },
+  "name" : "bookshop-srv",
+  "memory" : 128,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ ],
+    "command" : "node srv/index.js",
+    "detectedBuildpack" : "nodejs",
+    "healthCheckType" : "port",
+    "healthCheckHttpEndpoint" : "",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ "bookshop-srv.innolab.oncloud.top" ],
+  "services" : [ "bookshop-db-hdi-container" ],
+  "env" : { },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "671a213e-a9de-434a-b4d3-c4fdf06ee361",
+    "createdAt" : 1581603054000,
+    "updatedAt" : 1581603073000,
+    "url" : "/v2/apps/671a213e-a9de-434a-b4d3-c4fdf06ee361"
+  },
+  "name" : "healthcheck-db",
+  "memory" : 1024,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 0,
+  "state" : "STOPPED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ ],
+    "healthCheckType" : "port",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "FAILED",
+  "stagingError" : "App staging failed in the buildpack compile phase",
+  "uris" : [ "china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top" ],
+  "services" : [ "healthcheck-db-hdi-container" ],
+  "env" : {
+    "DEPLOY_ATTRIBUTES" : "{\n  \"app-content-digest\" : \"2948757DC1756B5F2C69583125A271D3\"\n}",
+    "MTA_METADATA" : "{\n  \"id\" : \"com.nan.healthcheck\",\n  \"version\" : \"0.1.0\"\n}",
+    "MTA_MODULE_METADATA" : "{\n  \"name\" : \"healthcheck-db\"\n}",
+    "MTA_MODULE_PROVIDED_DEPENDENCIES" : "[ \"healthcheck-db\" ]",
+    "MTA_SERVICES" : "[ \"healthcheck-db-hdi-container\" ]"
+  },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "3ae42912-ec06-4410-8662-85947a29a548",
+    "createdAt" : 1580995230000,
+    "updatedAt" : 1581328176000,
+    "url" : "/v2/apps/3ae42912-ec06-4410-8662-85947a29a548"
+  },
+  "name" : "bookshop-db",
+  "memory" : 128,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ ],
+    "detectedBuildpack" : "nodejs",
+    "healthCheckType" : "process",
+    "healthCheckHttpEndpoint" : "",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ ],
+  "services" : [ "bookshop-db-hdi-container" ],
+  "env" : { },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "1871ff48-ccb3-4841-bd3d-bdc505a69da6",
+    "createdAt" : 1581173180000,
+    "updatedAt" : 1581174580000,
+    "url" : "/v2/apps/1871ff48-ccb3-4841-bd3d-bdc505a69da6"
+  },
+  "name" : "approuter",
+  "memory" : 128,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ "nodejs_buildpack" ],
+    "detectedBuildpack" : "nodejs",
+    "healthCheckType" : "port",
+    "healthCheckHttpEndpoint" : "",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ "approuter-InnoTest001.innolab.oncloud.top" ],
+  "services" : [ "healthcheck-uaa" ],
+  "env" : {
+    "TENANT_HOST_PATTERN" : "approuter-(.*).innolab.oncloud.top",
+    "destinations" : "[{\"name\":\"app-destination\", \"url\" :\"https://firstapp.innolab.oncloud.top\", \"forwardAuthToken\": true}, {\"name\":\"svc-api\", \"url\" :\"https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top\", \"forwardAuthToken\": true}]"
+  },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "7adfba15-e67d-4e04-8249-ed58c79fcf5f",
+    "createdAt" : 1580885783000,
+    "updatedAt" : 1580885883000,
+    "url" : "/v2/apps/7adfba15-e67d-4e04-8249-ed58c79fcf5f"
+  },
+  "name" : "odata-mock-server",
+  "memory" : 64,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ "nodejs_buildpack" ],
+    "detectedBuildpack" : "nodejs",
+    "healthCheckType" : "port",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ "odata-mock-server-daring-lion.innolab.oncloud.top" ],
+  "services" : [ ],
+  "env" : { },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "58a341c1-20e4-4c6e-9b6c-2830f14faf8d",
+    "createdAt" : 1581597207000,
+    "updatedAt" : 1581597317000,
+    "url" : "/v2/apps/58a341c1-20e4-4c6e-9b6c-2830f14faf8d"
+  },
+  "name" : "haa",
+  "memory" : 512,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ "nodejs_buildpack" ],
+    "detectedBuildpack" : "nodejs",
+    "healthCheckType" : "port",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ "china-presales-innotest001-dev-haa.innolab.oncloud.top" ],
+  "services" : [ "haa-uaa" ],
+  "env" : {
+    "COOKIES" : "{\"SameSite\": \"None\"}",
+    "CORS" : "[{\"uriPattern\": \"^/sap/bc/ina/(.*)$\", \"allowedOrigin\": [{\"host\":\"*\", \"protocol\":\"https\"}], \"allowedMethods\": [\"GET\", \"POST\", \"OPTIONS\"], \"allowedHeaders\": [\"Origin\", \"Accept\", \"X-Requested-With\", \"Content-Type\", \"Access-Control-Request-Method\", \"Access-Control-Request-Headers\", \"Authorization\", \"X-Sap-Cid\", \"X-Csrf-Token\"], \"exposeHeaders\": [\"Accept\", \"Authorization\", \"X-Requested-With\", \"X-Sap-Cid\", \"Access-Control-Allow-Origin\", \"Access-Control-Allow-Credentials\", \"X-Csrf-Token\", \"Content-Type\"]}]",
+    "DEPLOY_ATTRIBUTES" : "{\n  \"app-content-digest\" : \"83341CCDA055B0EE499AA17EC0B16374\"\n}",
+    "INCOMING_CONNECTION_TIMEOUT" : "600000",
+    "MTA_METADATA" : "{\n  \"id\" : \"haa\",\n  \"version\" : \"0.0.1\"\n}",
+    "MTA_MODULE_METADATA" : "{\n  \"name\" : \"haa\"\n}",
+    "MTA_MODULE_PROVIDED_DEPENDENCIES" : "[ ]",
+    "MTA_SERVICES" : "[ \"haa-uaa\" ]",
+    "TENANT_HOST_PATTERN" : "^(.*).cfapps.jp10.hana.ondemand.com",
+    "destinations" : "[ {\n  \"forwardAuthToken\" : true,\n  \"name\" : \"haa-java\",\n  \"timeout\" : 600000,\n  \"url\" : \"https://china-presales-innotest001-dev-haa-java.innolab.oncloud.top\"\n} ]"
+  },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+}, {
+  "metadata" : {
+    "guid" : "5565af43-17a4-4462-a38f-502429cbab34",
+    "createdAt" : 1581597054000,
+    "updatedAt" : 1581597167000,
+    "url" : "/v2/apps/5565af43-17a4-4462-a38f-502429cbab34"
+  },
+  "name" : "haa-java",
+  "memory" : 1024,
+  "diskQuota" : 1024,
+  "instances" : 1,
+  "runningInstances" : 1,
+  "state" : "STARTED",
+  "staging" : {
+    "isSshEnabled" : true,
+    "buildpacks" : [ "sap_java_buildpack" ],
+    "detectedBuildpack" : "",
+    "healthCheckType" : "port",
+    "stack" : "cflinuxfs3"
+  },
+  "packageState" : "STAGED",
+  "uris" : [ "china-presales-innotest001-dev-haa-java.innolab.oncloud.top" ],
+  "services" : [ "hdi-i062905", "haa-uaa" ],
+  "env" : {
+    "DEPLOY_ATTRIBUTES" : "{\n  \"app-content-digest\" : \"501A5D2D9A3925FA4967EE6881899AFF\"\n}",
+    "JBP_CONFIG_RESOURCE_CONFIGURATION" : "['tomee/webapps/ROOT/WEB-INF/resources.xml': {'xsahaa-hdi-container':'hdi-i062905'}]",
+    "MTA_METADATA" : "{\n  \"id\" : \"haa\",\n  \"version\" : \"0.0.1\"\n}",
+    "MTA_MODULE_METADATA" : "{\n  \"name\" : \"haa-java\"\n}",
+    "MTA_MODULE_PROVIDED_DEPENDENCIES" : "[ ]",
+    "MTA_SERVICES" : "[ \"haa-uaa\" ]",
+    "SAP_JWT_TRUST_ACL" : "[{\"clientid\":\"sb-haa-java\", \"identityzone\": \"*\"}]",
+    "SECONDARY_ROUTING_PERCENT" : "0",
+    "TARGET_RUNTIME" : "tomee",
+    "USE_NAMED_USER" : "true"
+  },
+  "space" : {
+    "metadata" : {
+      "guid" : "888fb3ef-2f45-4cec-bd30-add0e14281c2",
+      "createdAt" : 1578233919000,
+      "updatedAt" : 1578233919000,
+      "url" : "/v2/spaces/888fb3ef-2f45-4cec-bd30-add0e14281c2"
+    },
+    "name" : "Dev",
+    "organization" : {
+      "metadata" : {
+        "guid" : "4d001c3c-51b8-4292-8863-e0d077e29342",
+        "createdAt" : 1578233905000,
+        "updatedAt" : 1578233906000,
+        "url" : "/v2/organizations/4d001c3c-51b8-4292-8863-e0d077e29342"
+      },
+      "name" : "China_Presales_InnoTest001"
+    }
+  }
+} ]#
+
+#2.0#2020 02 14 06:41:05.372#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.detectDeployedMtaTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+Step "Detect Deployed MTA" finished#
+
+#2.0#2020 02 14 06:41:05.458#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Executing task "collectSystemParametersTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:05.469#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Collecting system parameters...#
+
+#2.0#2020 02 14 06:41:05.541#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Default domain: innolab.oncloud.top#
+
+#2.0#2020 02 14 06:41:05.541#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Checking for overwriting read-only parameters for mta with id: "com.nan.healthcheck"#
+
+#2.0#2020 02 14 06:41:05.542#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] No read-only parameters are overwritten#
+
+#2.0#2020 02 14 06:41:05.577#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Descriptor with system parameters: {
+  "majorSchemaVersion" : 2,
+  "schemaVersion" : "2.0.0",
+  "id" : "com.nan.healthcheck",
+  "version" : "0.1.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "type" : "javascript.nodejs",
+    "path" : "app",
+    "properties" : {
+      "destinations" : [ {
+        "name" : "local",
+        "url" : "https://sapui5.hana.ondemand.com/resources/",
+        "forwardAuthToken" : false
+      }, {
+        "name" : "srv_api",
+        "url" : "~{healthcheck-srv/url}",
+        "forwardAuthToken" : true
+      } ]
+    },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "default-app-name" : "approuter-healthcheck",
+      "default-host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : "QQ]pZQAil_7WbIGp",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "approuter-healthcheck",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "type" : "javascript.nodejs",
+    "path" : "db",
+    "properties" : { },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "default-app-name" : "healthcheck-db",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-db",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : ")o5XgSFdPfd[cFvv",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "type" : "javascript.nodejs",
+    "path" : "srv",
+    "properties" : {
+      "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+    },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "command" : "node srv/index.js",
+      "default-app-name" : "healthcheck-srv",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : "p6)KCaulUrlG[Vv1",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "isPublic" : true,
+      "properties" : {
+        "url" : "${default-url}"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "type" : "com.sap.xs.uaa",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_UAA",
+      "default-service-name" : "healthcheck-uaa",
+      "default-xsappname" : "healthcheck-uaa",
+      "generated-password" : "********",
+      "generated-user" : "rXPb*n*SnAytliap",
+      "service" : "xsuaa",
+      "service-name" : "${default-service-name}",
+      "service-plan" : "application",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_DB_HDI_CONTAINER",
+      "default-service-name" : "healthcheck-db-hdi-container",
+      "default-xsappname" : "healthcheck-db-hdi-container",
+      "generated-password" : "********",
+      "generated-user" : "oOwJBArLvQ(_isZ&",
+      "service" : "hana",
+      "service-alternatives" : [ "hanatrial" ],
+      "service-name" : "${default-service-name}",
+      "service-plan" : "hdi-shared",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  } ],
+  "parameters" : {
+    "authorization-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "controller-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "default-domain" : "innolab.oncloud.top",
+    "deploy-target" : "China_Presales_InnoTest001 Dev",
+    "deploy-url" : "deploy-service.cfapps.cn40.platform.sapcloud.cn",
+    "org" : "China_Presales_InnoTest001",
+    "space" : "Dev",
+    "user" : "nan.wang@sap.com",
+    "xs-api-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "xs-auth-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "xs-type" : "CF"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+
+#2.0#2020 02 14 06:41:05.580#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Version rule: SAME_HIGHER#
+
+#2.0#2020 02 14 06:41:05.581#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Detected new MTA version: "0.1.0"#
+
+#2.0#2020 02 14 06:41:05.590#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] Deployed MTA version: "0.1.0"#
+
+#2.0#2020 02 14 06:41:05.599#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] MTA accepted for deployment#
+
+#2.0#2020 02 14 06:41:05.599#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CollectSystemParametersStep] System parameters collected#
+
+#2.0#2020 02 14 06:41:05.602#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.collectSystemParametersTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+Step "Collect System Parameters" finished#
+
+#2.0#2020 02 14 06:41:05.681#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] Executing task "processDescriptorTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:05.698#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] Resolved deployment descriptor with ZDM enhancements: {
+  "majorSchemaVersion" : 2,
+  "schemaVersion" : "2.0.0",
+  "id" : "com.nan.healthcheck",
+  "version" : "0.1.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "type" : "javascript.nodejs",
+    "path" : "app",
+    "properties" : {
+      "destinations" : [ {
+        "name" : "local",
+        "url" : "https://sapui5.hana.ondemand.com/resources/",
+        "forwardAuthToken" : false
+      }, {
+        "name" : "srv_api",
+        "url" : "~{healthcheck-srv/url}",
+        "forwardAuthToken" : true
+      } ]
+    },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "default-app-name" : "approuter-healthcheck",
+      "default-host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : "QQ]pZQAil_7WbIGp",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "approuter-healthcheck",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "type" : "javascript.nodejs",
+    "path" : "db",
+    "properties" : { },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "default-app-name" : "healthcheck-db",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-db",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : ")o5XgSFdPfd[cFvv",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "type" : "javascript.nodejs",
+    "path" : "srv",
+    "properties" : {
+      "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+    },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "command" : "node srv/index.js",
+      "default-app-name" : "healthcheck-srv",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : "p6)KCaulUrlG[Vv1",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "isPublic" : true,
+      "properties" : {
+        "url" : "${default-url}"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "type" : "com.sap.xs.uaa",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_UAA",
+      "default-service-name" : "healthcheck-uaa",
+      "default-xsappname" : "healthcheck-uaa",
+      "generated-password" : "********",
+      "generated-user" : "rXPb*n*SnAytliap",
+      "service" : "xsuaa",
+      "service-name" : "${default-service-name}",
+      "service-plan" : "application",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_DB_HDI_CONTAINER",
+      "default-service-name" : "healthcheck-db-hdi-container",
+      "default-xsappname" : "healthcheck-db-hdi-container",
+      "generated-password" : "********",
+      "generated-user" : "oOwJBArLvQ(_isZ&",
+      "service" : "hana",
+      "service-alternatives" : [ "hanatrial" ],
+      "service-name" : "${default-service-name}",
+      "service-plan" : "hdi-shared",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  } ],
+  "parameters" : {
+    "authorization-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "controller-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "default-domain" : "innolab.oncloud.top",
+    "deploy-target" : "China_Presales_InnoTest001 Dev",
+    "deploy-url" : "deploy-service.cfapps.cn40.platform.sapcloud.cn",
+    "org" : "China_Presales_InnoTest001",
+    "space" : "Dev",
+    "user" : "nan.wang@sap.com",
+    "xs-api-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "xs-auth-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "xs-type" : "CF"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+
+#2.0#2020 02 14 06:41:05.704#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] Resolving properties and parameters in merged descriptor...#
+
+#2.0#2020 02 14 06:41:05.709#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] Subscriptions: [ ]#
+
+#2.0#2020 02 14 06:41:05.709#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] MTA Modules: [healthcheck-srv, approuter-healthcheck, healthcheck-db]#
+
+#2.0#2020 02 14 06:41:05.711#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] Resolved deployment descriptor: {
+  "majorSchemaVersion" : 2,
+  "schemaVersion" : "2.0.0",
+  "id" : "com.nan.healthcheck",
+  "version" : "0.1.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "type" : "javascript.nodejs",
+    "path" : "app",
+    "properties" : {
+      "destinations" : [ {
+        "forwardAuthToken" : false,
+        "name" : "local",
+        "url" : "https://sapui5.hana.ondemand.com/resources/"
+      }, {
+        "forwardAuthToken" : true,
+        "name" : "srv_api",
+        "url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top"
+      } ]
+    },
+    "parameters" : {
+      "app-name" : "approuter-healthcheck",
+      "default-app-name" : "approuter-healthcheck",
+      "default-host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "default-instances" : 1,
+      "default-uri" : "china-presales-innotest001-dev-approuter-healthcheck.innolab.oncloud.top",
+      "default-url" : "https://china-presales-innotest001-dev-approuter-healthcheck.innolab.oncloud.top",
+      "domain" : "innolab.oncloud.top",
+      "generated-password" : "********",
+      "generated-user" : "QQ]pZQAil_7WbIGp",
+      "host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "instances" : 1,
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "approuter-healthcheck",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "type" : "javascript.nodejs",
+    "path" : "db",
+    "properties" : { },
+    "parameters" : {
+      "app-name" : "healthcheck-db",
+      "default-app-name" : "healthcheck-db",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-db",
+      "default-instances" : 1,
+      "default-uri" : "china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top",
+      "default-url" : "https://china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top",
+      "domain" : "innolab.oncloud.top",
+      "generated-password" : "********",
+      "generated-user" : ")o5XgSFdPfd[cFvv",
+      "host" : "china-presales-innotest001-dev-healthcheck-db",
+      "instances" : 1,
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "type" : "javascript.nodejs",
+    "path" : "srv",
+    "properties" : {
+      "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+    },
+    "parameters" : {
+      "app-name" : "healthcheck-srv",
+      "command" : "node srv/index.js",
+      "default-app-name" : "healthcheck-srv",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "default-instances" : 1,
+      "default-uri" : "china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top",
+      "default-url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top",
+      "domain" : "innolab.oncloud.top",
+      "generated-password" : "********",
+      "generated-user" : "p6)KCaulUrlG[Vv1",
+      "host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "instances" : 1,
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "isPublic" : true,
+      "properties" : {
+        "url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "type" : "com.sap.xs.uaa",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_UAA",
+      "default-service-name" : "healthcheck-uaa",
+      "default-xsappname" : "healthcheck-uaa",
+      "generated-password" : "********",
+      "generated-user" : "rXPb*n*SnAytliap",
+      "service" : "xsuaa",
+      "service-name" : "healthcheck-uaa",
+      "service-plan" : "application",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_DB_HDI_CONTAINER",
+      "default-service-name" : "healthcheck-db-hdi-container",
+      "default-xsappname" : "healthcheck-db-hdi-container",
+      "generated-password" : "********",
+      "generated-user" : "oOwJBArLvQ(_isZ&",
+      "service" : "hana",
+      "service-alternatives" : [ "hanatrial" ],
+      "service-name" : "healthcheck-db-hdi-container",
+      "service-plan" : "hdi-shared",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  } ],
+  "parameters" : {
+    "authorization-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "controller-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "default-domain" : "innolab.oncloud.top",
+    "deploy-target" : "China_Presales_InnoTest001 Dev",
+    "deploy-url" : "deploy-service.cfapps.cn40.platform.sapcloud.cn",
+    "org" : "China_Presales_InnoTest001",
+    "space" : "Dev",
+    "user" : "nan.wang@sap.com",
+    "xs-api-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "xs-auth-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "xs-type" : "CF"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+
+#2.0#2020 02 14 06:41:05.711#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[XS2ProcessDescriptorStep] Merged descriptor properties and parameters resolved#
+
+#2.0#2020 02 14 06:41:05.715#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.processDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Process Descriptor Step" finished#
+
+#2.0#2020 02 14 06:41:05.799#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Executing task "buildDeployModelTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:05.812#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Building cloud deployment model...#
+
+#2.0#2020 02 14 06:41:05.821#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] MTA archive modules: [healthcheck-srv, approuter-healthcheck, healthcheck-db]#
+
+#2.0#2020 02 14 06:41:05.822#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Deployed modules: [healthcheck-db]#
+
+#2.0#2020 02 14 06:41:05.825#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] MTA modules: [healthcheck-srv, approuter-healthcheck, healthcheck-db]#
+
+#2.0#2020 02 14 06:41:05.826#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Service keys to create: {
+  "healthcheck-uaa" : [ ],
+  "healthcheck-db-hdi-container" : [ ]
+}#
+
+#2.0#2020 02 14 06:41:05.828#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Modules to deploy: [ {
+  "majorSchemaVersion" : 2,
+  "name" : "healthcheck-db",
+  "type" : "javascript.nodejs",
+  "path" : "db",
+  "properties" : { },
+  "parameters" : {
+    "app-name" : "healthcheck-db",
+    "default-app-name" : "healthcheck-db",
+    "default-host" : "china-presales-innotest001-dev-healthcheck-db",
+    "default-instances" : 1,
+    "default-uri" : "china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top",
+    "default-url" : "https://china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top",
+    "dependency-type" : "soft",
+    "domain" : "innolab.oncloud.top",
+    "generated-password" : "********",
+    "generated-user" : ")o5XgSFdPfd[cFvv",
+    "host" : "china-presales-innotest001-dev-healthcheck-db",
+    "instances" : 1,
+    "protocol" : "https",
+    "timestamp" : "20200214064105"
+  },
+  "requiredDependencies" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "providedDependencies" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "isPublic" : true,
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "propertiesMetadata" : {
+    "metadata" : { }
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  },
+  "hooks" : [ ]
+}, {
+  "majorSchemaVersion" : 2,
+  "name" : "healthcheck-srv",
+  "type" : "javascript.nodejs",
+  "path" : "srv",
+  "properties" : {
+    "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+  },
+  "parameters" : {
+    "app-name" : "healthcheck-srv",
+    "command" : "node srv/index.js",
+    "default-app-name" : "healthcheck-srv",
+    "default-host" : "china-presales-innotest001-dev-healthcheck-srv",
+    "default-instances" : 1,
+    "default-uri" : "china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top",
+    "default-url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top",
+    "dependency-type" : "soft",
+    "domain" : "innolab.oncloud.top",
+    "generated-password" : "********",
+    "generated-user" : "p6)KCaulUrlG[Vv1",
+    "host" : "china-presales-innotest001-dev-healthcheck-srv",
+    "instances" : 1,
+    "protocol" : "https",
+    "timestamp" : "20200214064105"
+  },
+  "requiredDependencies" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "providedDependencies" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "isPublic" : true,
+    "properties" : {
+      "url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top"
+    },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "propertiesMetadata" : {
+    "metadata" : { }
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  },
+  "hooks" : [ ]
+}, {
+  "majorSchemaVersion" : 2,
+  "name" : "approuter-healthcheck",
+  "type" : "javascript.nodejs",
+  "path" : "app",
+  "properties" : {
+    "destinations" : [ {
+      "forwardAuthToken" : false,
+      "name" : "local",
+      "url" : "https://sapui5.hana.ondemand.com/resources/"
+    }, {
+      "forwardAuthToken" : true,
+      "name" : "srv_api",
+      "url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top"
+    } ]
+  },
+  "parameters" : {
+    "app-name" : "approuter-healthcheck",
+    "default-app-name" : "approuter-healthcheck",
+    "default-host" : "china-presales-innotest001-dev-approuter-healthcheck",
+    "default-instances" : 1,
+    "default-uri" : "china-presales-innotest001-dev-approuter-healthcheck.innolab.oncloud.top",
+    "default-url" : "https://china-presales-innotest001-dev-approuter-healthcheck.innolab.oncloud.top",
+    "dependency-type" : "soft",
+    "domain" : "innolab.oncloud.top",
+    "generated-password" : "********",
+    "generated-user" : "QQ]pZQAil_7WbIGp",
+    "host" : "china-presales-innotest001-dev-approuter-healthcheck",
+    "instances" : 1,
+    "protocol" : "https",
+    "timestamp" : "20200214064105"
+  },
+  "requiredDependencies" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "providedDependencies" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "isPublic" : true,
+    "properties" : { },
+    "parameters" : { },
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    }
+  } ],
+  "propertiesMetadata" : {
+    "metadata" : { }
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  },
+  "hooks" : [ ]
+} ]#
+
+#2.0#2020 02 14 06:41:05.830#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Custom domains: []#
+
+#2.0#2020 02 14 06:41:05.832#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Services to create: [ {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "healthcheck-uaa",
+  "label" : "xsuaa",
+  "plan" : "application",
+  "alternativeLabels" : [ ],
+  "resourceName" : "healthcheck-uaa",
+  "credentials" : { },
+  "tags" : [ ],
+  "shouldIgnoreUpdateErrors" : false
+}, {
+  "isOptional" : false,
+  "isManaged" : true,
+  "name" : "healthcheck-db-hdi-container",
+  "label" : "hana",
+  "plan" : "hdi-shared",
+  "alternativeLabels" : [ "hanatrial" ],
+  "resourceName" : "healthcheck-db-hdi-container",
+  "credentials" : { },
+  "tags" : [ ],
+  "shouldIgnoreUpdateErrors" : false
+} ]#
+
+#2.0#2020 02 14 06:41:05.832#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildCloudDeployModelStep] Cloud deployment model built#
+
+#2.0#2020 02 14 06:41:05.836#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Build Deploy Model" finished#
+
+#2.0#2020 02 14 06:41:05.924#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Executing task "buildUndeployModelTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:05.937#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Building cloud undeployment model...#
+
+#2.0#2020 02 14 06:41:05.958#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] MTA modules: [healthcheck-srv, approuter-healthcheck, healthcheck-db]#
+
+#2.0#2020 02 14 06:41:05.958#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Modules to undeploy: [ ]#
+
+#2.0#2020 02 14 06:41:05.958#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Modules that wont be changed: {0}#
+
+#2.0#2020 02 14 06:41:05.962#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Subscriptions to delete: [ ]#
+
+#2.0#2020 02 14 06:41:05.967#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Cloud services to delete: []#
+
+#2.0#2020 02 14 06:41:05.967#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Cloud applications to undeploy: [ ]#
+
+#2.0#2020 02 14 06:41:05.967#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[BuildCloudUndeployModelStep] Cloud undeployment model built#
+
+#2.0#2020 02 14 06:41:05.970#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildUndeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Build Undeploy Model" finished#
+
+#2.0#2020 02 14 06:41:06.052#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Executing task "checkForCreationConflictsTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:06.071#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Validating services to create...#
+
+#2.0#2020 02 14 06:41:06.385#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Trying to validate association of service "healthcheck-uaa"#
+
+#2.0#2020 02 14 06:41:06.386#Z#WARN#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Service "healthcheck-uaa" already exists, but is bound to standalone application(s): firstapp, approuter#
+
+#2.0#2020 02 14 06:41:06.763#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Trying to validate association of service "healthcheck-db-hdi-container"#
+
+#2.0#2020 02 14 06:41:06.763#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Services to create successfully validated#
+
+#2.0#2020 02 14 06:41:06.763#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Validating applications to deploy...#
+
+#2.0#2020 02 14 06:41:06.766#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Trying to validate association of application "healthcheck-db"#
+
+#2.0#2020 02 14 06:41:06.766#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[CheckForCreationConflictsStep] Applications to deploy successfully validated#
+
+#2.0#2020 02 14 06:41:06.770#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.checkForCreationConflictsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+Step "Check For Creation Conflicts" finished#
+
+#2.0#2020 02 14 06:41:06.839#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.addDomainsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[AddDomainsStep] Executing task "addDomainsTask" of process "f89ff31c-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:06.854#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.addDomainsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[AddDomainsStep] Custom domains: []#
+
+#2.0#2020 02 14 06:41:06.857#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.addDomainsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Add Domains" finished#
+
+#2.0#2020 02 14 06:41:07.032#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.CheckForOperationsInProgressTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[CheckForOperationsInProgressStep] Executing task "CheckForOperationsInProgressTask" of process "fa7b4262-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:07.402#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.CheckForOperationsInProgressTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+Step "Check for operations in Progress" finished#
+
+#2.0#2020 02 14 06:41:07.250#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.CheckForOperationsInProgressTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[CheckForOperationsInProgressStep] Executing task "CheckForOperationsInProgressTask" of process "fa9b26f7-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:07.938#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.CheckForOperationsInProgressTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Check for operations in Progress" finished#
+
+#2.0#2020 02 14 06:41:07.467#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[DetermineServiceCreateUpdateServiceActionsStep] Executing task "DetermineServiceCreateUpdateActionsTask" of process "fa7b4262-4ef4-11ea-bc21-eeee0a9f3590"...#
+
+#2.0#2020 02 14 06:41:07.479#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[DetermineServiceCreateUpdateServiceActionsStep] Processing service "healthcheck-uaa"...#
+
+#2.0#2020 02 14 06:41:07.782#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[DetermineServiceCreateUpdateServiceActionsStep] Existing service: {
+  "metadata" : {
+    "guid" : "bd06bf78-9c2a-4652-b131-9d7b4c8a5718",
+    "createdAt" : 1581149709000,
+    "updatedAt" : 1581149709000,
+    "url" : "/v2/service_instances/bd06bf78-9c2a-4652-b131-9d7b4c8a5718"
+  },
+  "name" : "healthcheck-uaa",
+  "label" : "xsuaa",
+  "plan" : "application"
+}#
+
+#2.0#2020 02 14 06:41:08.043#Z#WARN#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[DetermineServiceCreateUpdateServiceActionsStep] Cannot retrieve service parameters of service "healthcheck-uaa"#
+
+org.cloudfoundry.client.lib.CloudOperationException: 400 Bad Request: CF-ServiceFetchInstanceParametersNotSupported(120004): This service does not support fetching service instance parameters.
+	at org.cloudfoundry.client.lib.CloudControllerClientImpl.convertV3ClientException(CloudControllerClientImpl.java:1058)
+	at org.cloudfoundry.client.lib.CloudControllerClientImpl.handleExceptions(CloudControllerClientImpl.java:1037)
+	at org.cloudfoundry.client.lib.CloudControllerClientImpl.getServiceParameters(CloudControllerClientImpl.java:613)
+	at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.lambda$getServiceParameters$27(ResilientCloudControllerClient.java:227)
+	at com.sap.cloud.lm.sl.cf.client.util.ResilientOperationExecutor.execute(ResilientOperationExecutor.java:41)
+	at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.executeWithRetry(ResilientCloudControllerClient.java:916)
+	at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.getServiceParameters(ResilientCloudControllerClient.java:227)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.shouldUpdateCredentials(DetermineServiceCreateUpdateServiceActionsStep.java:271)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActions(DetermineServiceCreateUpdateServiceActionsStep.java:153)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActionsAndHandleExceptions(DetermineServiceCreateUpdateServiceActionsStep.java:94)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.executeStep(DetermineServiceCreateUpdateServiceActionsStep.java:73)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:67)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:58)
+	at com.sap.cloud.lm.sl.cf.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:15)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:58)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:111)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:275)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:159)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:114)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:78)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:72)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:56)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:56)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:128)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: org.cloudfoundry.client.v2.ClientV2Exception: CF-ServiceFetchInstanceParametersNotSupported(120004): This service does not support fetching service instance parameters.
+	at org.cloudfoundry.reactor.util.ErrorPayloadMappers.lambda$null$0(ErrorPayloadMappers.java:47)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoFlatMap] :
+	reactor.core.publisher.Mono.checkpoint(Mono.java:1854)
+	org.cloudfoundry.reactor.client.v2.serviceinstances.ReactorServiceInstances.getParameters(ReactorServiceInstances.java:91)
+Error has been observed at the following site(s):
+	|_ Mono.checkpoint ? at org.cloudfoundry.reactor.client.v2.serviceinstances.ReactorServiceInstances.getParameters(ReactorServiceInstances.java:91)
+Stack trace:
+		at org.cloudfoundry.reactor.util.ErrorPayloadMappers.lambda$null$0(ErrorPayloadMappers.java:47)
+		at org.cloudfoundry.reactor.util.ErrorPayloadMappers.lambda$null$9(ErrorPayloadMappers.java:100)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:118)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:112)
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:213)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:123)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:330)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1592)
+		at reactor.core.publisher.MonoReduceSeed$ReduceSeedSubscriber.onComplete(MonoReduceSeed.java:156)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:136)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onComplete(FluxDoFinally.java:138)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:136)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:414)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:204)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:362)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:363)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:412)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:556)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:306)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at reactor.netty.http.HttpOperations.lambda$static$4(HttpOperations.java:282)
+		at reactor.netty.ReactorNetty$ExtractorHandler.channelRead(ReactorNetty.java:652)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1478)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1227)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1274)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:505)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:283)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+		at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:792)
+		at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:502)
+		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:407)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:836)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:93)
+		at reactor.core.publisher.Mono.block(Mono.java:1663)
+		at org.cloudfoundry.client.lib.rest.CloudControllerRestClientImpl.getServiceParameters(CloudControllerRestClientImpl.java:933)
+		at org.cloudfoundry.client.lib.CloudControllerClientImpl.lambda$getServiceParameters$80(CloudControllerClientImpl.java:613)
+		at org.cloudfoundry.client.lib.CloudControllerClientImpl.handleExceptions(CloudControllerClientImpl.java:1035)
+		at org.cloudfoundry.client.lib.CloudControllerClientImpl.getServiceParameters(CloudControllerClientImpl.java:613)
+		at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.lambda$getServiceParameters$27(ResilientCloudControllerClient.java:227)
+		at com.sap.cloud.lm.sl.cf.client.util.ResilientOperationExecutor.execute(ResilientOperationExecutor.java:41)
+		at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.executeWithRetry(ResilientCloudControllerClient.java:916)
+		at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.getServiceParameters(ResilientCloudControllerClient.java:227)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.shouldUpdateCredentials(DetermineServiceCreateUpdateServiceActionsStep.java:271)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActions(DetermineServiceCreateUpdateServiceActionsStep.java:153)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActionsAndHandleExceptions(DetermineServiceCreateUpdateServiceActionsStep.java:94)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.executeStep(DetermineServiceCreateUpdateServiceActionsStep.java:73)
+		at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:67)
+		at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:58)
+		at com.sap.cloud.lm.sl.cf.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:15)
+		at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:58)
+		at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+		at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:35)
+		at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+		at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:111)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:275)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:159)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:114)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:78)
+		at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88)
+		at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72)
+		at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56)
+		at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25)
+		at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+		at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:72)
+		at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:56)
+		at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+		at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:56)
+		at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+		at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+		at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+		at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:128)
+		at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:116)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:836)
+#2.0#2020 02 14 06:41:08.049#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Determine update actions" finished#
+
+#2.0#2020 02 14 06:41:08.013#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[DetermineServiceCreateUpdateServiceActionsStep] Executing task "DetermineServiceCreateUpdateActionsTask" of process "fa9b26f7-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:08.027#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[DetermineServiceCreateUpdateServiceActionsStep] Processing service "healthcheck-db-hdi-container"...#
+
+#2.0#2020 02 14 06:41:08.306#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[DetermineServiceCreateUpdateServiceActionsStep] Existing service: {
+  "metadata" : {
+    "guid" : "33d1d4e6-e3e6-4d86-8d71-20ab9f34a183",
+    "createdAt" : 1581005824000,
+    "updatedAt" : 1581005824000,
+    "url" : "/v2/service_instances/33d1d4e6-e3e6-4d86-8d71-20ab9f34a183"
+  },
+  "name" : "healthcheck-db-hdi-container",
+  "label" : "hana",
+  "plan" : "hdi-shared"
+}#
+
+#2.0#2020 02 14 06:41:08.598#Z#WARN#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[DetermineServiceCreateUpdateServiceActionsStep] Cannot retrieve service parameters of service "healthcheck-db-hdi-container"#
+
+org.cloudfoundry.client.lib.CloudOperationException: 400 Bad Request: CF-ServiceFetchInstanceParametersNotSupported(120004): This service does not support fetching service instance parameters.
+	at org.cloudfoundry.client.lib.CloudControllerClientImpl.convertV3ClientException(CloudControllerClientImpl.java:1058)
+	at org.cloudfoundry.client.lib.CloudControllerClientImpl.handleExceptions(CloudControllerClientImpl.java:1037)
+	at org.cloudfoundry.client.lib.CloudControllerClientImpl.getServiceParameters(CloudControllerClientImpl.java:613)
+	at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.lambda$getServiceParameters$27(ResilientCloudControllerClient.java:227)
+	at com.sap.cloud.lm.sl.cf.client.util.ResilientOperationExecutor.execute(ResilientOperationExecutor.java:41)
+	at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.executeWithRetry(ResilientCloudControllerClient.java:916)
+	at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.getServiceParameters(ResilientCloudControllerClient.java:227)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.shouldUpdateCredentials(DetermineServiceCreateUpdateServiceActionsStep.java:271)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActions(DetermineServiceCreateUpdateServiceActionsStep.java:153)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActionsAndHandleExceptions(DetermineServiceCreateUpdateServiceActionsStep.java:94)
+	at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.executeStep(DetermineServiceCreateUpdateServiceActionsStep.java:73)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:67)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:58)
+	at com.sap.cloud.lm.sl.cf.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:15)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:58)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:111)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:275)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:159)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:114)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:78)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:72)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:56)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:56)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:128)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+Caused by: org.cloudfoundry.client.v2.ClientV2Exception: CF-ServiceFetchInstanceParametersNotSupported(120004): This service does not support fetching service instance parameters.
+	at org.cloudfoundry.reactor.util.ErrorPayloadMappers.lambda$null$0(ErrorPayloadMappers.java:47)
+	Suppressed: reactor.core.publisher.FluxOnAssembly$OnAssemblyException: 
+Assembly trace from producer [reactor.core.publisher.MonoFlatMap] :
+	reactor.core.publisher.Mono.checkpoint(Mono.java:1854)
+	org.cloudfoundry.reactor.client.v2.serviceinstances.ReactorServiceInstances.getParameters(ReactorServiceInstances.java:91)
+Error has been observed at the following site(s):
+	|_ Mono.checkpoint ? at org.cloudfoundry.reactor.client.v2.serviceinstances.ReactorServiceInstances.getParameters(ReactorServiceInstances.java:91)
+Stack trace:
+		at org.cloudfoundry.reactor.util.ErrorPayloadMappers.lambda$null$0(ErrorPayloadMappers.java:47)
+		at org.cloudfoundry.reactor.util.ErrorPayloadMappers.lambda$null$9(ErrorPayloadMappers.java:100)
+		at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:118)
+		at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:67)
+		at reactor.core.publisher.FluxHandle$HandleSubscriber.onNext(FluxHandle.java:112)
+		at reactor.core.publisher.FluxMap$MapConditionalSubscriber.onNext(FluxMap.java:213)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onNext(FluxDoFinally.java:123)
+		at reactor.core.publisher.FluxFilterFuseable$FilterFuseableConditionalSubscriber.onNext(FluxFilterFuseable.java:330)
+		at reactor.core.publisher.Operators$MonoSubscriber.complete(Operators.java:1592)
+		at reactor.core.publisher.MonoReduceSeed$ReduceSeedSubscriber.onComplete(MonoReduceSeed.java:156)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:136)
+		at reactor.core.publisher.FluxDoFinally$DoFinallySubscriber.onComplete(FluxDoFinally.java:138)
+		at reactor.core.publisher.FluxMap$MapSubscriber.onComplete(FluxMap.java:136)
+		at reactor.netty.channel.FluxReceive.terminateReceiver(FluxReceive.java:414)
+		at reactor.netty.channel.FluxReceive.drainReceiver(FluxReceive.java:204)
+		at reactor.netty.channel.FluxReceive.onInboundComplete(FluxReceive.java:362)
+		at reactor.netty.channel.ChannelOperations.onInboundComplete(ChannelOperations.java:363)
+		at reactor.netty.channel.ChannelOperations.terminate(ChannelOperations.java:412)
+		at reactor.netty.http.client.HttpClientOperations.onInboundNext(HttpClientOperations.java:556)
+		at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:93)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:306)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at reactor.netty.http.HttpOperations.lambda$static$4(HttpOperations.java:282)
+		at reactor.netty.ReactorNetty$ExtractorHandler.channelRead(ReactorNetty.java:652)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:102)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:438)
+		at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:328)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:302)
+		at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:253)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.logging.LoggingHandler.channelRead(LoggingHandler.java:241)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1478)
+		at io.netty.handler.ssl.SslHandler.decodeJdkCompatible(SslHandler.java:1227)
+		at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1274)
+		at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:505)
+		at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:444)
+		at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:283)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:352)
+		at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1422)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:374)
+		at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:360)
+		at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:931)
+		at io.netty.channel.epoll.AbstractEpollStreamChannel$EpollStreamUnsafe.epollInReady(AbstractEpollStreamChannel.java:792)
+		at io.netty.channel.epoll.EpollEventLoop.processReady(EpollEventLoop.java:502)
+		at io.netty.channel.epoll.EpollEventLoop.run(EpollEventLoop.java:407)
+		at io.netty.util.concurrent.SingleThreadEventExecutor$6.run(SingleThreadEventExecutor.java:1044)
+		at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+		at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+		at java.lang.Thread.run(Thread.java:836)
+	Suppressed: java.lang.Exception: #block terminated with an error
+		at reactor.core.publisher.BlockingSingleSubscriber.blockingGet(BlockingSingleSubscriber.java:93)
+		at reactor.core.publisher.Mono.block(Mono.java:1663)
+		at org.cloudfoundry.client.lib.rest.CloudControllerRestClientImpl.getServiceParameters(CloudControllerRestClientImpl.java:933)
+		at org.cloudfoundry.client.lib.CloudControllerClientImpl.lambda$getServiceParameters$80(CloudControllerClientImpl.java:613)
+		at org.cloudfoundry.client.lib.CloudControllerClientImpl.handleExceptions(CloudControllerClientImpl.java:1035)
+		at org.cloudfoundry.client.lib.CloudControllerClientImpl.getServiceParameters(CloudControllerClientImpl.java:613)
+		at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.lambda$getServiceParameters$27(ResilientCloudControllerClient.java:227)
+		at com.sap.cloud.lm.sl.cf.client.util.ResilientOperationExecutor.execute(ResilientOperationExecutor.java:41)
+		at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.executeWithRetry(ResilientCloudControllerClient.java:916)
+		at com.sap.cloud.lm.sl.cf.client.ResilientCloudControllerClient.getServiceParameters(ResilientCloudControllerClient.java:227)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.shouldUpdateCredentials(DetermineServiceCreateUpdateServiceActionsStep.java:271)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActions(DetermineServiceCreateUpdateServiceActionsStep.java:153)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.determineActionsAndHandleExceptions(DetermineServiceCreateUpdateServiceActionsStep.java:94)
+		at com.sap.cloud.lm.sl.cf.process.steps.DetermineServiceCreateUpdateServiceActionsStep.executeStep(DetermineServiceCreateUpdateServiceActionsStep.java:73)
+		at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:67)
+		at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:58)
+		at com.sap.cloud.lm.sl.cf.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:15)
+		at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:58)
+		at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+		at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:35)
+		at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+		at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:111)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:275)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:159)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:114)
+		at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:78)
+		at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88)
+		at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72)
+		at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56)
+		at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25)
+		at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+		at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:72)
+		at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:56)
+		at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+		at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:56)
+		at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+		at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+		at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+		at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:128)
+		at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:116)
+		at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+		at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+		at java.lang.Thread.run(Thread.java:836)
+#2.0#2020 02 14 06:41:08.606#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.DetermineServiceCreateUpdateActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+Step "Determine update actions" finished#
+
+#2.0#2020 02 14 06:41:08.971#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.prepareModulesDeploymentTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PrepareModulesDeploymentStep] Executing task "prepareModulesDeploymentTask" of process "fb99d168-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:08.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.prepareModulesDeploymentTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PrepareModulesDeploymentStep] Preparing modules deployment...#
+
+#2.0#2020 02 14 06:41:09.002#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.prepareModulesDeploymentTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+Step "Prepare Modules Deployment" finished#
+
+#2.0#2020 02 14 06:41:09.297#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] Executing task "reprocessDescriptorTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:09.314#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] Resolved deployment descriptor with ZDM enhancements: {
+  "majorSchemaVersion" : 2,
+  "schemaVersion" : "2.0.0",
+  "id" : "com.nan.healthcheck",
+  "version" : "0.1.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "type" : "javascript.nodejs",
+    "path" : "app",
+    "properties" : {
+      "destinations" : [ {
+        "name" : "local",
+        "url" : "https://sapui5.hana.ondemand.com/resources/",
+        "forwardAuthToken" : false
+      }, {
+        "name" : "srv_api",
+        "url" : "~{healthcheck-srv/url}",
+        "forwardAuthToken" : true
+      } ]
+    },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "default-app-name" : "approuter-healthcheck",
+      "default-host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : "QQ]pZQAil_7WbIGp",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "approuter-healthcheck",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "type" : "javascript.nodejs",
+    "path" : "db",
+    "properties" : { },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "default-app-name" : "healthcheck-db",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-db",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : ")o5XgSFdPfd[cFvv",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "type" : "javascript.nodejs",
+    "path" : "srv",
+    "properties" : {
+      "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+    },
+    "parameters" : {
+      "app-name" : "${default-app-name}",
+      "command" : "node srv/index.js",
+      "default-app-name" : "healthcheck-srv",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "default-instances" : 1,
+      "default-uri" : "${host}.${domain}",
+      "default-url" : "${protocol}://${default-uri}",
+      "domain" : "${default-domain}",
+      "generated-password" : "********",
+      "generated-user" : "p6)KCaulUrlG[Vv1",
+      "host" : "${default-host}",
+      "instances" : "${default-instances}",
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "isPublic" : true,
+      "properties" : {
+        "url" : "${default-url}"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "type" : "com.sap.xs.uaa",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_UAA",
+      "default-service-name" : "healthcheck-uaa",
+      "default-xsappname" : "healthcheck-uaa",
+      "generated-password" : "********",
+      "generated-user" : "rXPb*n*SnAytliap",
+      "service" : "xsuaa",
+      "service-name" : "${default-service-name}",
+      "service-plan" : "application",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_DB_HDI_CONTAINER",
+      "default-service-name" : "healthcheck-db-hdi-container",
+      "default-xsappname" : "healthcheck-db-hdi-container",
+      "generated-password" : "********",
+      "generated-user" : "oOwJBArLvQ(_isZ&",
+      "service" : "hana",
+      "service-alternatives" : [ "hanatrial" ],
+      "service-name" : "${default-service-name}",
+      "service-plan" : "hdi-shared",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  } ],
+  "parameters" : {
+    "authorization-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "controller-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "default-domain" : "innolab.oncloud.top",
+    "deploy-target" : "China_Presales_InnoTest001 Dev",
+    "deploy-url" : "deploy-service.cfapps.cn40.platform.sapcloud.cn",
+    "org" : "China_Presales_InnoTest001",
+    "space" : "Dev",
+    "user" : "nan.wang@sap.com",
+    "xs-api-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "xs-auth-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "xs-type" : "CF"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+
+#2.0#2020 02 14 06:41:09.320#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] Resolving properties and parameters in merged descriptor...#
+
+#2.0#2020 02 14 06:41:09.324#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] Subscriptions: [ ]#
+
+#2.0#2020 02 14 06:41:09.342#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] MTA Modules: [healthcheck-srv, approuter-healthcheck, healthcheck-db]#
+
+#2.0#2020 02 14 06:41:09.351#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] Resolved deployment descriptor: {
+  "majorSchemaVersion" : 2,
+  "schemaVersion" : "2.0.0",
+  "id" : "com.nan.healthcheck",
+  "version" : "0.1.0",
+  "modules" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "approuter-healthcheck",
+    "type" : "javascript.nodejs",
+    "path" : "app",
+    "properties" : {
+      "destinations" : [ {
+        "forwardAuthToken" : false,
+        "name" : "local",
+        "url" : "https://sapui5.hana.ondemand.com/resources/"
+      }, {
+        "forwardAuthToken" : true,
+        "name" : "srv_api",
+        "url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top"
+      } ]
+    },
+    "parameters" : {
+      "app-name" : "approuter-healthcheck",
+      "default-app-name" : "approuter-healthcheck",
+      "default-host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "default-instances" : 1,
+      "default-uri" : "china-presales-innotest001-dev-approuter-healthcheck.innolab.oncloud.top",
+      "default-url" : "https://china-presales-innotest001-dev-approuter-healthcheck.innolab.oncloud.top",
+      "domain" : "innolab.oncloud.top",
+      "generated-password" : "********",
+      "generated-user" : "QQ]pZQAil_7WbIGp",
+      "host" : "china-presales-innotest001-dev-approuter-healthcheck",
+      "instances" : 1,
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "approuter-healthcheck",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db",
+    "type" : "javascript.nodejs",
+    "path" : "db",
+    "properties" : { },
+    "parameters" : {
+      "app-name" : "healthcheck-db",
+      "default-app-name" : "healthcheck-db",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-db",
+      "default-instances" : 1,
+      "default-uri" : "china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top",
+      "default-url" : "https://china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top",
+      "domain" : "innolab.oncloud.top",
+      "generated-password" : "********",
+      "generated-user" : ")o5XgSFdPfd[cFvv",
+      "host" : "china-presales-innotest001-dev-healthcheck-db",
+      "instances" : 1,
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "isPublic" : true,
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-srv",
+    "type" : "javascript.nodejs",
+    "path" : "srv",
+    "properties" : {
+      "SAP_JWT_TRUST_ACL" : "[{\"clientid\" : \"*\", \"identityzone\" : \"*\"}]"
+    },
+    "parameters" : {
+      "app-name" : "healthcheck-srv",
+      "command" : "node srv/index.js",
+      "default-app-name" : "healthcheck-srv",
+      "default-host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "default-instances" : 1,
+      "default-uri" : "china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top",
+      "default-url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top",
+      "domain" : "innolab.oncloud.top",
+      "generated-password" : "********",
+      "generated-user" : "p6)KCaulUrlG[Vv1",
+      "host" : "china-presales-innotest001-dev-healthcheck-srv",
+      "instances" : 1,
+      "protocol" : "https",
+      "timestamp" : "20200214064105"
+    },
+    "requiredDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db-hdi-container",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-uaa",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    }, {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-db",
+      "properties" : { },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "providedDependencies" : [ {
+      "majorSchemaVersion" : 2,
+      "name" : "healthcheck-srv",
+      "isPublic" : true,
+      "properties" : {
+        "url" : "https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top"
+      },
+      "parameters" : { },
+      "propertiesMetadata" : {
+        "metadata" : { }
+      },
+      "parametersMetadata" : {
+        "metadata" : { }
+      }
+    } ],
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "hooks" : [ ]
+  } ],
+  "resources" : [ {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-uaa",
+    "type" : "com.sap.xs.uaa",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_UAA",
+      "default-service-name" : "healthcheck-uaa",
+      "default-xsappname" : "healthcheck-uaa",
+      "generated-password" : "********",
+      "generated-user" : "rXPb*n*SnAytliap",
+      "service" : "xsuaa",
+      "service-name" : "healthcheck-uaa",
+      "service-plan" : "application",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  }, {
+    "majorSchemaVersion" : 2,
+    "name" : "healthcheck-db-hdi-container",
+    "type" : "com.sap.xs.hdi-container",
+    "properties" : { },
+    "parameters" : {
+      "default-container-name" : "CHINA_PRESALES_INNOTEST001_DEV_HEALTHCHECK_DB_HDI_CONTAINER",
+      "default-service-name" : "healthcheck-db-hdi-container",
+      "default-xsappname" : "healthcheck-db-hdi-container",
+      "generated-password" : "********",
+      "generated-user" : "oOwJBArLvQ(_isZ&",
+      "service" : "hana",
+      "service-alternatives" : [ "hanatrial" ],
+      "service-name" : "healthcheck-db-hdi-container",
+      "service-plan" : "hdi-shared",
+      "type" : "managed-service"
+    },
+    "isActive" : true,
+    "isOptional" : false,
+    "propertiesMetadata" : {
+      "metadata" : { }
+    },
+    "parametersMetadata" : {
+      "metadata" : { }
+    },
+    "requiredDependencies" : [ ]
+  } ],
+  "parameters" : {
+    "authorization-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "controller-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "default-domain" : "innolab.oncloud.top",
+    "deploy-target" : "China_Presales_InnoTest001 Dev",
+    "deploy-url" : "deploy-service.cfapps.cn40.platform.sapcloud.cn",
+    "org" : "China_Presales_InnoTest001",
+    "space" : "Dev",
+    "user" : "nan.wang@sap.com",
+    "xs-api-url" : "https://api.cf.cn40.platform.sapcloud.cn",
+    "xs-auth-url" : "https://login.cf.cn40.platform.sapcloud.cn",
+    "xs-type" : "CF"
+  },
+  "parametersMetadata" : {
+    "metadata" : { }
+  }
+}#
+
+#2.0#2020 02 14 06:41:09.351#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[XS2ProcessDescriptorStep] Merged descriptor properties and parameters resolved#
+
+#2.0#2020 02 14 06:41:09.358#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.reprocessDescriptorTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+Step "Re-Process Descriptor Step" finished#
+
+#2.0#2020 02 14 06:41:09.443#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildApplicationDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildApplicationDeployModelStep] Executing task "buildApplicationDeployModelTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:09.458#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildApplicationDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildApplicationDeployModelStep] Building cloud deployment model for application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:09.475#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildApplicationDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildApplicationDeployModelStep] App with updated environment: {
+  "name" : "healthcheck-db",
+  "memory" : 0,
+  "diskQuota" : 0,
+  "instances" : 1,
+  "runningInstances" : 0,
+  "staging" : {
+    "buildpacks" : [ ]
+  },
+  "uris" : [ "china-presales-innotest001-dev-healthcheck-db.innolab.oncloud.top" ],
+  "services" : [ "healthcheck-db-hdi-container" ],
+  "env" : {
+    "MTA_METADATA" : "{\n  \"id\" : \"com.nan.healthcheck\",\n  \"version\" : \"0.1.0\"\n}",
+    "MTA_MODULE_METADATA" : "{\n  \"name\" : \"healthcheck-db\"\n}",
+    "MTA_MODULE_PROVIDED_DEPENDENCIES" : "[ \"healthcheck-db\" ]",
+    "MTA_SERVICES" : "[ \"healthcheck-db-hdi-container\" ]"
+  },
+  "moduleName" : "healthcheck-db",
+  "idleUris" : [ ],
+  "bindingParameters" : { },
+  "tasks" : [ ],
+  "routes" : [ ],
+  "serviceKeysToInject" : [ ],
+  "domains" : [ "innolab.oncloud.top" ],
+  "restartParameters" : {
+    "shouldRestartOnVcapAppChange" : true,
+    "shouldRestartOnVcapServicesChange" : true,
+    "shouldRestartOnUserProvidedChange" : true
+  },
+  "attributesUpdateStrategy" : {
+    "shouldKeepExistingEnv" : false,
+    "shouldKeepExistingServiceBindings" : false,
+    "shouldKeepExistingRoutes" : false
+  }
+}#
+
+#2.0#2020 02 14 06:41:09.483#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildApplicationDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildApplicationDeployModelStep] Configuration entries to publish: [ {
+  "id" : 0,
+  "providerNid" : "mta",
+  "providerId" : "com.nan.healthcheck:healthcheck-db",
+  "providerVersion" : "0.1.0",
+  "targetSpace" : {
+    "org" : "China_Presales_InnoTest001",
+    "space" : "Dev"
+  },
+  "content" : "{}",
+  "visibility" : [ {
+    "org" : "China_Presales_InnoTest001",
+    "space" : "*"
+  } ],
+  "spaceId" : "888fb3ef-2f45-4cec-bd30-add0e14281c2"
+} ]#
+
+#2.0#2020 02 14 06:41:09.483#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildApplicationDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[XS2BuildApplicationDeployModelStep] Cloud deployment model for application built#
+
+#2.0#2020 02 14 06:41:09.489#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.buildApplicationDeployModelTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Build Application Deploy Model" finished#
+
+#2.0#2020 02 14 06:41:09.626#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.createAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[CreateOrUpdateAppStep] Executing task "createAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:09.840#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.createAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[CreateOrUpdateAppStep] Updating application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:09.850#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.createAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[CreateOrUpdateAppStep] Application "healthcheck-db" attributes are not modified and will not be updated#
+
+#2.0#2020 02 14 06:41:09.874#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.createAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[CreateOrUpdateAppStep] Binding parameters for application "healthcheck-db": { }#
+
+#2.0#2020 02 14 06:41:15.343#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.createAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[CreateOrUpdateAppStep] Application "healthcheck-db" updated#
+
+#2.0#2020 02 14 06:41:15.349#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.createAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+Step "Create App" finished#
+
+#2.0#2020 02 14 06:41:15.452#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[UploadAppStep] Executing task "uploadAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:15.465#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[UploadAppStep] Upload app timeout in seconds: 3,600#
+
+#2.0#2020 02 14 06:41:15.465#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[UploadAppStep] Uploading application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:15.474#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[UploadAppStep] Uploading file "db" for application "healthcheck-db"#
+
+#2.0#2020 02 14 06:41:16.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[UploadAppStep] Started async upload of application "healthcheck-db"#
+
+#2.0#2020 02 14 06:41:16.471#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Upload App" finished#
+
+#2.0#2020 02 14 06:41:16.528#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########App upload monitor: 4227c716-0227-465e-9856-a9c7c2f947a3###
+[UploadAppStep] Upload status: PROCESSING_UPLOAD#
+
+#2.0#2020 02 14 06:41:21.604#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########App upload monitor: 4227c716-0227-465e-9856-a9c7c2f947a3###
+[UploadAppStep] Upload status: READY#
+
+#2.0#2020 02 14 06:41:21.604#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########App upload monitor: 4227c716-0227-465e-9856-a9c7c2f947a3###
+[UploadAppStep] Deleting temp file: META-INF/.sap_java_buildpack/tomcat/temp/9010963466343989356.zip#
+
+#2.0#2020 02 14 06:41:22.110#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[UploadAppStep] Executing task "uploadAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:22.124#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[UploadAppStep] Upload app timeout in seconds: 3,600#
+
+#2.0#2020 02 14 06:41:22.124#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[UploadAppStep] Checking upload status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:22.235#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+[UploadAppStep] Application "healthcheck-db" uploaded#
+
+#2.0#2020 02 14 06:41:22.244#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.uploadAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-3###
+Step "Upload App" finished#
+
+#2.0#2020 02 14 06:41:22.334#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.scaleAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[ScaleAppStep] Executing task "scaleAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:22.350#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.scaleAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[ScaleAppStep] Scaling application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:22.350#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.scaleAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+[ScaleAppStep] Application "healthcheck-db" scaled#
+
+#2.0#2020 02 14 06:41:22.356#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.scaleAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-7###
+Step "Scale App" finished#
+
+#2.0#2020 02 14 06:41:22.422#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetermineDesiredStateAchievingActionsStep] Executing task "determineDesiredStateAchievingActionsTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:22.741#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetermineDesiredStateAchievingActionsStep] Current state of application healthcheck-db: STOPPED#
+
+#2.0#2020 02 14 06:41:22.741#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetermineDesiredStateAchievingActionsStep] Desired state of application healthcheck-db: STARTED#
+
+#2.0#2020 02 14 06:41:22.830#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetermineDesiredStateAchievingActionsStep] Application "healthcheck-db" was not staged correctly during the previous deployment#
+
+#2.0#2020 02 14 06:41:22.844#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetermineDesiredStateAchievingActionsStep] Last build: {"metadata":{"guid":"3c718e1b-7b14-4cd8-ab22-3bbdd8e2765c","createdAt":1581603415000,"updatedAt":1581603945000},"state":"FAILED","createdBy":{"guid":"daf14df3-4398-4dac-b124-7f58f89d976e","name":"nan.wang@sap.com"},"packageInfo":{"guid":"923482c9-68fa-47eb-9e04-48748c7a0182"},"error":"BuildpackCompileFailed - App staging failed in the buildpack compile phase"}#
+
+#2.0#2020 02 14 06:41:22.845#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[DetermineDesiredStateAchievingActionsStep] Actions that should be executed on application healthcheck-db: [START, STAGE]#
+
+#2.0#2020 02 14 06:41:22.851#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.determineDesiredStateAchievingActionsTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Determine Desired State Achieving Actions" finished#
+
+#2.0#2020 02 14 06:41:22.948#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:22.966#Z#INFO#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+[StageAppStep] Staging application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:23.717#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-2###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:41:30.214#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:30.386#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:30.525#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:41:30.914#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:41:37.313#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:37.327#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:37.411#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:41:37.765#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:41:47.362#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:47.375#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:47.419#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:41:47.720#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:41:57.396#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:41:57.409#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:41:57.497#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:41:57.813#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:42:07.446#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:42:07.459#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:42:07.546#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:42:07.922#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:42:17.488#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:42:17.502#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:42:17.574#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:42:17.969#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:42:27.537#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:42:27.550#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:42:27.607#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:42:27.948#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:42:37.580#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:42:37.593#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:42:37.640#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:42:37.996#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:42:47.649#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:42:47.661#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:42:47.764#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:42:48.082#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:42:57.689#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:42:57.701#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:42:57.759#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:42:58.141#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:43:07.726#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:43:07.738#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:43:07.809#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:43:08.098#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:43:17.770#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:43:17.782#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:43:17.826#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:43:18.079#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:43:27.802#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:43:27.815#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:43:27.888#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:43:28.244#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:43:37.852#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:43:37.864#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:43:37.920#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:43:38.266#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:43:47.882#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:43:47.895#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:43:47.946#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:43:48.325#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:43:57.933#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:43:57.945#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:43:58.015#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:43:58.322#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:44:07.964#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:44:07.976#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:44:08.051#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:44:08.340#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:44:18.017#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:44:18.028#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:44:18.114#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:44:18.371#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:44:28.048#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:44:28.060#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:44:28.147#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[StageAppStep] Staging status of application "healthcheck-db": PENDING#
+
+#2.0#2020 02 14 06:44:28.479#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+Step "Stage App" finished#
+
+#2.0#2020 02 14 06:44:38.100#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Executing task "stageAppTask" of process "fbcf12ca-4ef4-11ea-a70c-eeee0a94b448"...#
+
+#2.0#2020 02 14 06:44:38.112#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Checking status of application "healthcheck-db"...#
+
+#2.0#2020 02 14 06:44:38.193#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Staging status of application "healthcheck-db": FAILED#
+
+#2.0#2020 02 14 06:44:38.470#Z#ERROR#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] Staging of application "healthcheck-db" failed. Download the application logs via the dmol command and check them for more information.#
+
+#2.0#2020 02 14 06:44:38.479#Z#ERROR#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[StageAppStep] BuildpackCompileFailed - App staging failed in the buildpack compile phase#
+
+#2.0#2020 02 14 06:44:38.487#Z#ERROR#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Exception caught#
+
+com.sap.cloud.lm.sl.common.SLException: A step of the process has failed. Retrying it may solve the issue.
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.executeInternal(SyncFlowableStep.java:69)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.lambda$execute$0(SyncFlowableStep.java:58)
+	at com.sap.cloud.lm.sl.cf.core.util.LoggingUtil.logWithCorrelationId(LoggingUtil.java:15)
+	at com.sap.cloud.lm.sl.cf.process.steps.SyncFlowableStep.execute(SyncFlowableStep.java:58)
+	at org.flowable.engine.impl.delegate.invocation.JavaDelegateInvocation.invoke(JavaDelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DelegateInvocation.proceed(DelegateInvocation.java:35)
+	at org.flowable.engine.impl.delegate.invocation.DefaultDelegateInterceptor.handleInvocation(DefaultDelegateInterceptor.java:26)
+	at org.flowable.engine.impl.bpmn.behavior.ServiceTaskDelegateExpressionActivityBehavior.execute(ServiceTaskDelegateExpressionActivityBehavior.java:111)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeActivityBehavior(ContinueProcessOperation.java:275)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.executeSynchronous(ContinueProcessOperation.java:159)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.continueThroughFlowNode(ContinueProcessOperation.java:114)
+	at org.flowable.engine.impl.agenda.ContinueProcessOperation.run(ContinueProcessOperation.java:78)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperation(CommandInvoker.java:88)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.executeOperations(CommandInvoker.java:72)
+	at org.flowable.engine.impl.interceptor.CommandInvoker.execute(CommandInvoker.java:56)
+	at org.flowable.engine.impl.interceptor.BpmnOverrideContextInterceptor.execute(BpmnOverrideContextInterceptor.java:25)
+	at org.flowable.common.engine.impl.interceptor.TransactionContextInterceptor.execute(TransactionContextInterceptor.java:53)
+	at org.flowable.common.engine.impl.interceptor.CommandContextInterceptor.execute(CommandContextInterceptor.java:72)
+	at org.flowable.common.spring.SpringTransactionInterceptor.lambda$execute$0(SpringTransactionInterceptor.java:56)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:140)
+	at org.flowable.common.spring.SpringTransactionInterceptor.execute(SpringTransactionInterceptor.java:56)
+	at org.flowable.common.engine.impl.interceptor.LogInterceptor.execute(LogInterceptor.java:30)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:56)
+	at org.flowable.common.engine.impl.cfg.CommandExecutorImpl.execute(CommandExecutorImpl.java:51)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.executeJob(ExecuteAsyncRunnable.java:128)
+	at org.flowable.job.service.impl.asyncexecutor.ExecuteAsyncRunnable.run(ExecuteAsyncRunnable.java:116)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:836)
+#2.0#2020 02 14 06:44:38.501#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.MAIN_LOG.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+Step "Stage App" finished#
+

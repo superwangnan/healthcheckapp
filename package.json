@@ -1,0 +1,42 @@
+{
+  "name": "healthcheck",
+  "version": "1.0.0",
+  "description": "A simple CAP project.",
+  "repository": "<Add your repository here>",
+  "license": "ISC",
+  "engines": {
+    "node": "^10"
+  },
+  "dependencies": {
+    "@sap/audit-logging": "^3.1.0",
+    "@sap/cds": "^3",
+    "@sap/cds-odata-v2-adapter-proxy": "^1.4.18",
+    "@sap/hana-client": "^2.4.182",
+    "@sap/xsenv": "^2.2.0",
+    "@sap/xssec": "^2.2.4",
+    "express": "^4",
+    "passport": "^0.4.1"
+  },
+  "scripts": {
+    "start": "npx cds run"
+  },
+  "cds": {
+    "requires": {
+      "db": {
+        "[production]": {
+          "kind": "hana",
+          "model": [
+            "db",
+            "srv"
+          ]
+        }
+      },
+      "uaa": {
+        "kind": "xsuaa"
+      }
+    },
+    "odata": {
+      "version": "v2"
+    }
+  }
+}

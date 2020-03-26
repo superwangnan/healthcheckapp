@@ -1,0 +1,23 @@
+{
+  "welcomeFile": "/app/",
+  "routes": [{
+      "source": "^/svc/(.*)",
+      "target": "/$1",
+      "destination": "srv_api"
+    }, {
+      "source": "^/resources/(.*)",
+      "target": "$1",
+      "destination": "local"
+    },
+    {
+      "source": "^/app/(.*)",
+      "target": "/$1",
+      "localDir": "webapp"
+    },
+    {
+      "source": "^/AliService_HealthCheck/odata/v2/AdminService/(.*)",
+      "target": "/$1",
+      "destination": "srv_api2"
+    }
+  ]
+}

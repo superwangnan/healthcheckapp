@@ -1,0 +1,368 @@
+#2.0#2020 02 14 06:41:30.904#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:16 UTC 2020] Uploading app package for app with guid 671a213e-a9de-434a-b4d3-c4fdf06ee361 (STDOUT, API)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Creating build for app with guid 671a213e-a9de-434a-b4d3-c4fdf06ee361 (STDOUT, API)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading php_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading uas_dataflow_server_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading staticfile_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading ruby_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading dotnet_core_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading nodejs_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded staticfile_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading r_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded php_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading nginx_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded dotnet_core_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading java_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded ruby_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.905#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading go_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded uas_dataflow_server_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading sap_java_buildpack_1_21... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded nodejs_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading binary_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded nginx_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading sap_java_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded go_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading python_buildpack... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded binary_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading sap_java_buildpack_1_20... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded r_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloading sap_java_buildpack_1_19... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded sap_java_buildpack_1_21 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded java_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded python_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded sap_java_buildpack_1_20 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded sap_java_buildpack (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Cell bf4146b5-413b-4f72-a18c-fd76b3ed93b6 creating container for instance e88cb0a4-8b95-488c-80fd-5340bc860fe1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.906#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:23 UTC 2020] Downloaded sap_java_buildpack_1_19 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:24 UTC 2020] Cell bf4146b5-413b-4f72-a18c-fd76b3ed93b6 successfully created container for instance e88cb0a4-8b95-488c-80fd-5340bc860fe1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:24 UTC 2020] Downloading app package... (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:24 UTC 2020] Downloaded app package (70.9K) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020] -----> Nodejs Buildpack version 1.7.4 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020]        Copy [/tmp/buildpacks/c445041c558bf5c00a28a3ca24550e02/dependencies/043f221191f4641f10dd5a5fe4c1a157/node-8.16.2-linux-x64-cflinuxfs3-41238419.tgz] (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020] -----> Installing node 8.16.2 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020]        .npm (package.json): unspecified (use default) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020]        engines.node (package.json): ^8 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020] -----> Installing binaries (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020]        [31;1m**WARNING**[0m node 8.x.x will no longer be available in new buildpacks released after 2019-12-01. (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:25 UTC 2020]        See: https://github.com/nodejs/Release (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Copy [/tmp/buildpacks/c445041c558bf5c00a28a3ca24550e02/dependencies/3c6e4143e3d81d24d938953b6c5437e0/yarn-1.19.1-any-stack-34293da6.tar.gz] (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Installing yarn 1.19.1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Using default npm version: 6.4.1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Creating runtime environment (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installed yarn 1.19.1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        NPM_CONFIG_PRODUCTION=true (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        NPM_CONFIG_LOGLEVEL=error (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        NODE_VERBOSE=false (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.907#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        NODE_MODULES_CACHE=true (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.908#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        NODE_HOME=/tmp/contents072805026/deps/0/node (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.908#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        NODE_ENV=production (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.908#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Visit http://docs.cloudfoundry.org/buildpacks/node/index.html#vendoring (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.908#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        [34;1mPRO TIP:[0m It is recommended to vendor the application's Node.js dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.908#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:30.908#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-6###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:37.753#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:47.707#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:41:57.801#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:42:07.910#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:42:17.958#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:42:27.936#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:42:37.984#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:42:48.071#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:42:58.129#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:43:08.086#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:43:18.067#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:43:28.234#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:43:38.255#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:43:48.315#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:43:58.310#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:08.330#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-5###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:18.359#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-8###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:28.469#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-4###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020] -----> Building dependencies (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.463#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:41:26 UTC 2020]        Installing node modules (package.json) (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] npm ERR! errno -5 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] npm ERR! code Z_BUF_ERROR (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] npm ERR! zlib: unexpected end of file (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] npm ERR!     /tmp/cache/final/.npm/_logs/2020-02-14T06_44_32_745Z-debug.log (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] npm ERR! A complete log of this run can be found in: (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020]        [31;1m**ERROR**[0m Unable to build dependencies: exit status 251 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] Failed to compile droplet: Failed to run all supply scripts: exit status 14 (STDERR, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:32 UTC 2020] Exit status 223 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:33 UTC 2020] Cell bf4146b5-413b-4f72-a18c-fd76b3ed93b6 destroying container for instance e88cb0a4-8b95-488c-80fd-5340bc860fe1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:33 UTC 2020] Cell bf4146b5-413b-4f72-a18c-fd76b3ed93b6 stopping instance e88cb0a4-8b95-488c-80fd-5340bc860fe1 (STDOUT, STG)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:33 UTC 2020] Failed to stage build: staging failed (STDERR, API)#
+
+#2.0#2020 02 14 06:44:38.464#Z#DEBUG#com.sap.cloud.lm.sl.xs2.f89ff301-4ef4-11ea-bc21-eeee0a9f3590.healthcheck-db.stageAppTask#
+######com.sap.cloud.lm.sl.cf.persistence.services.ProcessLogger########flowable-async-job-executor-thread-1###
+[PollStageAppStatusExecution] [healthcheck-db] 671a213e-a9de-434a-b4d3-c4fdf06ee361 [Fri Feb 14 06:44:33 UTC 2020] Cell bf4146b5-413b-4f72-a18c-fd76b3ed93b6 successfully destroyed container for instance e88cb0a4-8b95-488c-80fd-5340bc860fe1 (STDOUT, STG)#
+

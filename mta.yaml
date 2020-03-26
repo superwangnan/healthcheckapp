@@ -1,0 +1,92 @@
+## Generated mta.yaml based on template version 0.2.0
+## appName = healthcheck
+## language=nodejs; multiTenant=false
+## approuter=
+_schema-version: '3.1'
+ID: healthcheck
+version: 1.0.0
+description: "A simple CAP project."
+parameters:
+  enable-parallel-deployments: true  
+build-parameters:
+  before-all:
+   - builder: custom
+     commands:
+      - npm install
+      # - npx cds build\/all
+
+modules:
+ # --------------------- SERVER MODULE ------------------------
+ - name: healthcheck-srv
+ # ------------------------------------------------------------
+   type: nodejs
+   path: gen/srv
+   properties:
+      SAP_JWT_TRUST_ACL: '[{"clientid" : "*", "identityzone" : "*"}]'
+   parameters:
+        command: node srv/index.js
+
+   requires:
+    # Resources extracted from CAP configuration
+    - name: healthcheck-uaa
+    - name: healthcheck-db-container
+   provides:
+    - name: srv-binding      # required by consumers of CAP services (e.g. approuter)
+      properties:
+        srv-url: ${default-url}
+
+ # --------------------- SERVER MODULE ------------------------
+ - name: healthcheck-db
+ # ------------------------------------------------------------
+   type: hdb
+   path: gen/db
+   requires:
+     - name: healthcheck-db-container
+
+ - name: approuter-healthcheck
+   type: javascript.nodejs
+   path: app
+   parameters:
+     memory: 128M
+   requires:
+      - name: healthcheck-uaa
+      - name: healthcheck-db
+      - name: srv-binding
+
+
+   properties:
+      SEND_XFRAMEOPTIONS: false
+      destinations: 
+        - name: local
+          url: https://sapui5.hana.ondemand.com/resources/
+          forwardAuthToken: false
+        - name: srv_api
+          url: ~{srv-binding/srv-url}
+          forwardAuthToken: true
+        - name: srv_api2
+          url: ~{srv-binding/srv-url}/v2/admin
+          forwardAuthToken: true
+
+
+resources:
+ # services extracted from CAP configuration
+ # 'service-plan' can be configured via 'cds.requires.<name>.vcap.plan'
+# ------------------------------------------------------------
+ - name: healthcheck-uaa
+# ------------------------------------------------------------
+   type: org.cloudfoundry.managed-service
+   parameters:
+     service: xsuaa
+     service-plan: application  
+       ##  path to xs-security.json to add roles and scopes
+     path: ./xs-security.json
+       ## or inline definition
+       # scopes:
+       # - name: $XSAPPNAME...
+
+ - name: healthcheck-db-container
+   optional: false
+   type: org.cloudfoundry.managed-service
+   parameters:
+      service: hana
+      service-plan: hdi-shared

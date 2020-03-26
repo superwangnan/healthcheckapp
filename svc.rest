@@ -1,0 +1,18 @@
+@url=https://innotest001.authentication.cn40.platform.sapcloud.cn
+@clientid=sb-healthcheck!t64
+@clientSecret=bhGLEAnCXzRL/hsENs1tjuJP91s=
+# @name jwt
+post {{url}}/oauth/token http/1.1
+Authorization: Basic {{clientid}} {{clientSecret}}
+Content-Type: application/x-www-form-urlencoded
+
+client_id={{clientid}}&grant_type=client_credentials
+
+
+### v4
+get https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top/admin/HealthData http/1.1
+Authorization: Bearer {{jwt.response.body.$.access_token}}
+
+### v2
+https://china-presales-innotest001-dev-healthcheck-srv.innolab.oncloud.top/v2/admin/HealthData
+Authorization: Bearer {{jwt.response.body.$.access_token}}

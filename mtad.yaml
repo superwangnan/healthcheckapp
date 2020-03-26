@@ -1,0 +1,62 @@
+_schema-version: "3.1"
+ID: healthcheck
+description: A simple CAP project.
+version: 1.0.0
+modules:
+- name: healthcheck-srv
+  type: javascript.nodejs
+  path: healthcheck-srv
+  requires:
+  - name: healthcheck-uaa
+  - name: healthcheck-db-container
+  provides:
+  - name: srv-binding
+    properties:
+      srv-url: ${default-url}
+- name: healthcheck-db
+  type: com.sap.xs.hdi
+  path: healthcheck-db
+  requires:
+  - name: healthcheck-db-container
+- name: approuter-healthcheck
+  type: javascript.nodejs
+  path: approuter-healthcheck
+  properties:
+    destinations:
+    - forwardAuthToken: false
+      name: local
+      url: https://sapui5.hana.ondemand.com/resources/
+    - forwardAuthToken: true
+      name: srv_api
+      url: ~{srv-binding/srv-url}
+    - forwardAuthToken: true
+      name: srv_api2
+      url: ~{srv-binding/srv-url}/v2/admin
+  requires:
+  - name: healthcheck-uaa
+  - name: healthcheck-db
+  - name: healthcheck-srv
+  parameters:
+    memory: 128M
+resources:
+- name: healthcheck-uaa
+  type: org.cloudfoundry.managed-service
+  parameters:
+    config:
+      tenant-mode: dedicated
+      xsappname: healthcheck-${space}
+    service: xsuaa
+    service-plan: application
+- name: healthcheck-db-container
+  type: org.cloudfoundry.managed-service
+  parameters:
+    service: hana
+    service-plan: hdi-shared
+parameters:
+  enable-parallel-deployments: true
+build-parameters:
+  before-all:
+  - builder: custom
+    commands:
+    - npm install
+    - npx cds build\/all

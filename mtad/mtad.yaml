@@ -1,0 +1,56 @@
+_schema-version: "2.0.0" 
+ID: com.nan.healthcheck 
+version: 0.1.0 
+modules:
+  - name: approuter-healthcheck
+    type: javascript.nodejs
+    path: app
+    memory: 128M
+    requires:
+      - name: healthcheck-uaa
+      - name: healthcheck-db
+      - name: healthcheck-srv
+
+
+    properties:
+      destinations: 
+        - name: local
+          url: https://sapui5.hana.ondemand.com/resources/
+          forwardAuthToken: false
+        - name: srv_api
+          url: ~{healthcheck-srv/url}
+          forwardAuthToken: true
+        - name: srv_api2
+          url: ~{healthcheck-srv/url}/v2/admin
+          forwardAuthToken: true
+
+
+
+  - name: healthcheck-db
+    type: com.sap.xs.hdi
+    path: db
+    memory: 128M
+    requires:
+      - name: healthcheck-db-hdi-container
+
+  - name: healthcheck-srv
+    type: javascript.nodejs
+    path: srv
+    memory: 128M
+    properties:
+      SAP_JWT_TRUST_ACL: '[{"clientid" : "*", "identityzone" : "*"}]'
+    parameters:
+        command: node srv/index.js
+    provides:
+      - name: healthcheck-srv
+        properties:
+          url: ${default-url}
+    requires:
+      - name: healthcheck-db-hdi-container
+      - name: healthcheck-uaa
+      - name: healthcheck-db
+resources:
+   - name: healthcheck-uaa
+     type: com.sap.xs.uaa 
+   - name: healthcheck-db-hdi-container
+     type: com.sap.xs.hdi-container
